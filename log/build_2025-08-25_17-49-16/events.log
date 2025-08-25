@@ -1,0 +1,409 @@
+[0.000000] (-) TimerEvent: {}
+[0.002191] (dojo) JobQueued: {'identifier': 'dojo', 'dependencies': OrderedDict()}
+[0.002715] (serial) JobQueued: {'identifier': 'serial', 'dependencies': OrderedDict()}
+[0.002908] (sllidar_ros2) JobQueued: {'identifier': 'sllidar_ros2', 'dependencies': OrderedDict()}
+[0.003195] (diffdrive_arduino) JobQueued: {'identifier': 'diffdrive_arduino', 'dependencies': OrderedDict([('serial', '/home/limitbreakers/breakers_ws/install/serial')])}
+[0.003372] (serial) JobStarted: {'identifier': 'serial'}
+[0.038388] (dojo) JobStarted: {'identifier': 'dojo'}
+[0.067771] (sllidar_ros2) JobStarted: {'identifier': 'sllidar_ros2'}
+[0.099835] (-) TimerEvent: {}
+[0.101608] (serial) JobProgress: {'identifier': 'serial', 'progress': 'cmake'}
+[0.104576] (serial) JobProgress: {'identifier': 'serial', 'progress': 'build'}
+[0.107795] (serial) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/limitbreakers/breakers_ws/build/serial', '--', '-j4', '-l4'], 'cwd': '/home/limitbreakers/breakers_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'limitbreakers'), ('SSH_CLIENT', '192.168.0.103 37368 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/limitbreakers/breakers_ws/install/diffdrive_arduino/lib:/home/limitbreakers/breakers_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/limitbreakers'), ('OLDPWD', '/home/limitbreakers/breakers_ws/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1336b97d-b370-4369-a2a8-aecd27e3c16e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install:/home/limitbreakers/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'limitbreakers'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c127e37d50.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/limitbreakers/breakers_ws/build/serial'), ('SSH_CONNECTION', '192.168.0.103 37368 192.168.0.104 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[0.122179] (dojo) JobProgress: {'identifier': 'dojo', 'progress': 'cmake'}
+[0.125033] (dojo) JobProgress: {'identifier': 'dojo', 'progress': 'build'}
+[0.132409] (dojo) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/limitbreakers/breakers_ws/build/dojo', '--', '-j4', '-l4'], 'cwd': '/home/limitbreakers/breakers_ws/build/dojo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'limitbreakers'), ('SSH_CLIENT', '192.168.0.103 37368 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/limitbreakers/breakers_ws/install/diffdrive_arduino/lib:/home/limitbreakers/breakers_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/limitbreakers'), ('OLDPWD', '/home/limitbreakers/breakers_ws/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1336b97d-b370-4369-a2a8-aecd27e3c16e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install:/home/limitbreakers/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'limitbreakers'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c127e37d50.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/limitbreakers/breakers_ws/build/dojo'), ('SSH_CONNECTION', '192.168.0.103 37368 192.168.0.104 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[0.153787] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'cmake'}
+[0.156565] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'build'}
+[0.158325] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/limitbreakers/breakers_ws/build/sllidar_ros2', '--', '-j4', '-l4'], 'cwd': '/home/limitbreakers/breakers_ws/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'limitbreakers'), ('SSH_CLIENT', '192.168.0.103 37368 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/limitbreakers/breakers_ws/install/diffdrive_arduino/lib:/home/limitbreakers/breakers_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/limitbreakers'), ('OLDPWD', '/home/limitbreakers/breakers_ws/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1336b97d-b370-4369-a2a8-aecd27e3c16e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install:/home/limitbreakers/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'limitbreakers'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c127e37d50.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/limitbreakers/breakers_ws/build/sllidar_ros2'), ('SSH_CONNECTION', '192.168.0.103 37368 192.168.0.104 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[0.200099] (-) TimerEvent: {}
+[0.301095] (-) TimerEvent: {}
+[0.321990] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial\x1b[0m\n'}
+[0.347618] (dojo) CommandEnded: {'returncode': 0}
+[0.349802] (dojo) JobProgress: {'identifier': 'dojo', 'progress': 'install'}
+[0.349993] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest_main\x1b[0m\n'}
+[0.358405] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest\x1b[0m\n'}
+[0.401381] (-) TimerEvent: {}
+[0.435783] (dojo) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/limitbreakers/breakers_ws/build/dojo'], 'cwd': '/home/limitbreakers/breakers_ws/build/dojo', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'limitbreakers'), ('SSH_CLIENT', '192.168.0.103 37368 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/limitbreakers/breakers_ws/install/diffdrive_arduino/lib:/home/limitbreakers/breakers_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/limitbreakers'), ('OLDPWD', '/home/limitbreakers/breakers_ws/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1336b97d-b370-4369-a2a8-aecd27e3c16e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install:/home/limitbreakers/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'limitbreakers'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c127e37d50.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/limitbreakers/breakers_ws/build/dojo'), ('SSH_CONNECTION', '192.168.0.103 37368 192.168.0.104 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[0.440128] (serial) StdoutLine: {'line': b'[ 14%] Built target gtest_main\n'}
+[0.449388] (sllidar_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sllidar_node\x1b[0m\n'}
+[0.482814] (serial) StdoutLine: {'line': b'[ 42%] Built target serial\n'}
+[0.501576] (-) TimerEvent: {}
+[0.507523] (sllidar_ros2) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target sllidar_client\x1b[0m\n'}
+[0.515142] (dojo) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.517014] (dojo) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.535569] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/config/default_view.rviz\n'}
+[0.536531] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/config/empty.yaml\n'}
+[0.537411] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/config/my_controllers.yaml\n'}
+[0.538254] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/config/twist_mux.yaml\n'}
+[0.540148] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/gazebo_control.xacro\n'}
+[0.541037] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/inertial_macros.xacro\n'}
+[0.541840] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/lidar.xacro\n'}
+[0.550846] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/robot.urdf.xacro\n'}
+[0.551694] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/robot_core.xacro\n'}
+[0.552574] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/ros2_control.xacro\n'}
+[0.554375] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/launch/launch_robot.launch.py\n'}
+[0.555305] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/launch/launch_sim.launch.py\n'}
+[0.556205] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/launch/rsp.launch.py\n'}
+[0.561194] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/worlds/dojo2024\n'}
+[0.562010] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/worlds/empty.world\n'}
+[0.562879] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/worlds/world_model/model.config\n'}
+[0.563679] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/worlds/world_model/model.sdf\n'}
+[0.564902] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/ament_index/resource_index/package_run_dependencies/dojo\n'}
+[0.578334] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/ament_index/resource_index/parent_prefix_path/dojo\n'}
+[0.580032] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/environment/ament_prefix_path.sh\n'}
+[0.581989] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/environment/ament_prefix_path.dsv\n'}
+[0.583112] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/environment/path.sh\n'}
+[0.601840] (-) TimerEvent: {}
+[0.604924] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/environment/path.dsv\n'}
+[0.606997] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/local_setup.bash\n'}
+[0.611539] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/local_setup.sh\n'}
+[0.613545] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/local_setup.zsh\n'}
+[0.628097] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/local_setup.dsv\n'}
+[0.630251] (dojo) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/package.dsv\n'}
+[0.631657] (serial) StdoutLine: {'line': b'[ 57%] Built target gtest\n'}
+[0.637315] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial_example\x1b[0m\n'}
+[0.678497] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/ament_index/resource_index/packages/dojo\n'}
+[0.680672] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/cmake/dojoConfig.cmake\n'}
+[0.682709] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/cmake/dojoConfig-version.cmake\n'}
+[0.684652] (dojo) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/package.xml\n'}
+[0.702328] (dojo) CommandEnded: {'returncode': 0}
+[0.703798] (-) TimerEvent: {}
+[0.738885] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial-test\x1b[0m\n'}
+[0.751915] (serial) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target serial-test-timer\x1b[0m\n'}
+[0.768924] (sllidar_ros2) StdoutLine: {'line': b'[ 10%] Built target sllidar_client\n'}
+[0.793534] (serial) StdoutLine: {'line': b'[ 71%] Built target serial_example\n'}
+[0.804102] (-) TimerEvent: {}
+[0.831688] (sllidar_ros2) StdoutLine: {'line': b'[100%] Built target sllidar_node\n'}
+[0.842943] (dojo) JobEnded: {'identifier': 'dojo', 'rc': 0}
+[0.858620] (serial) StdoutLine: {'line': b'[ 85%] Built target serial-test\n'}
+[0.867268] (serial) StdoutLine: {'line': b'[100%] Built target serial-test-timer\n'}
+[0.891163] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[0.894481] (sllidar_ros2) JobProgress: {'identifier': 'sllidar_ros2', 'progress': 'install'}
+[0.895484] (sllidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/limitbreakers/breakers_ws/build/sllidar_ros2'], 'cwd': '/home/limitbreakers/breakers_ws/build/sllidar_ros2', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'limitbreakers'), ('SSH_CLIENT', '192.168.0.103 37368 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/limitbreakers/breakers_ws/install/diffdrive_arduino/lib:/home/limitbreakers/breakers_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/limitbreakers'), ('OLDPWD', '/home/limitbreakers/breakers_ws/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1336b97d-b370-4369-a2a8-aecd27e3c16e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install:/home/limitbreakers/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'limitbreakers'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c127e37d50.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/limitbreakers/breakers_ws/build/sllidar_ros2'), ('SSH_CONNECTION', '192.168.0.103 37368 192.168.0.104 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[0.904817] (-) TimerEvent: {}
+[0.921955] (serial) CommandEnded: {'returncode': 0}
+[0.923981] (serial) JobProgress: {'identifier': 'serial', 'progress': 'install'}
+[0.924316] (serial) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/limitbreakers/breakers_ws/build/serial'], 'cwd': '/home/limitbreakers/breakers_ws/build/serial', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'limitbreakers'), ('SSH_CLIENT', '192.168.0.103 37368 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/limitbreakers/breakers_ws/install/diffdrive_arduino/lib:/home/limitbreakers/breakers_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/limitbreakers'), ('OLDPWD', '/home/limitbreakers/breakers_ws/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1336b97d-b370-4369-a2a8-aecd27e3c16e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install:/home/limitbreakers/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'limitbreakers'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c127e37d50.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/limitbreakers/breakers_ws/build/serial'), ('SSH_CONNECTION', '192.168.0.103 37368 192.168.0.104 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[0.933849] (sllidar_ros2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.935633] (sllidar_ros2) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.937541] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py\n'}
+[0.939318] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz\n'}
+[0.940888] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node\n'}
+[0.941796] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client\n'}
+[0.943969] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2\n'}
+[0.945284] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2\n'}
+[0.946600] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh\n'}
+[0.947745] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv\n'}
+[0.948930] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh\n'}
+[0.950023] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv\n'}
+[0.951224] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash\n'}
+[0.952225] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh\n'}
+[0.953227] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh\n'}
+[0.954205] (serial) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.955087] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv\n'}
+[0.955684] (sllidar_ros2) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv\n'}
+[0.956608] (serial) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[0.957834] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/lib/libserial.a\n'}
+[0.959068] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/include/serial/serial.h\n'}
+[0.959793] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/include/serial/v8stdint.h\n'}
+[0.960879] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/environment/library_path.sh\n'}
+[0.961870] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/environment/library_path.dsv\n'}
+[0.963188] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial\n'}
+[0.964377] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial\n'}
+[0.965435] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/environment/ament_prefix_path.sh\n'}
+[0.966819] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/environment/ament_prefix_path.dsv\n'}
+[0.967842] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/environment/path.sh\n'}
+[0.968819] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/environment/path.dsv\n'}
+[0.969794] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/local_setup.bash\n'}
+[0.973278] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/local_setup.sh\n'}
+[0.974349] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/local_setup.zsh\n'}
+[0.975563] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/local_setup.dsv\n'}
+[0.976446] (serial) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/serial/share/serial/package.dsv\n'}
+[0.992353] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2\n'}
+[0.993247] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.994340] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.995352] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake\n'}
+[0.996516] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake\n'}
+[0.999221] (sllidar_ros2) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/sllidar_ros2/share/sllidar_ros2/package.xml\n'}
+[1.005025] (-) TimerEvent: {}
+[1.012486] (sllidar_ros2) CommandEnded: {'returncode': 0}
+[1.018729] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/ament_index/resource_index/packages/serial\n'}
+[1.022343] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[1.022928] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[1.023526] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/cmake/serialConfig.cmake\n'}
+[1.024399] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/cmake/serialConfig-version.cmake\n'}
+[1.025011] (serial) StdoutLine: {'line': b'-- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/serial/share/serial/package.xml\n'}
+[1.080188] (sllidar_ros2) JobEnded: {'identifier': 'sllidar_ros2', 'rc': 0}
+[1.085293] (serial) CommandEnded: {'returncode': 0}
+[1.105233] (-) TimerEvent: {}
+[1.148641] (serial) JobEnded: {'identifier': 'serial', 'rc': 0}
+[1.153145] (diffdrive_arduino) JobStarted: {'identifier': 'diffdrive_arduino'}
+[1.198966] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'cmake'}
+[1.201917] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'build'}
+[1.203101] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/limitbreakers/breakers_ws/build/diffdrive_arduino', '--', '-j4', '-l4'], 'cwd': '/home/limitbreakers/breakers_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'limitbreakers'), ('SSH_CLIENT', '192.168.0.103 37368 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/limitbreakers/breakers_ws/install/diffdrive_arduino/lib:/home/limitbreakers/breakers_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/limitbreakers'), ('OLDPWD', '/home/limitbreakers/breakers_ws/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1336b97d-b370-4369-a2a8-aecd27e3c16e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install:/home/limitbreakers/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'limitbreakers'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c127e37d50.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/limitbreakers/breakers_ws/build/diffdrive_arduino'), ('SSH_CONNECTION', '192.168.0.103 37368 192.168.0.104 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[1.212052] (-) TimerEvent: {}
+[1.312634] (-) TimerEvent: {}
+[1.399453] (diffdrive_arduino) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target diffdrive_arduino\x1b[0m\n'}
+[1.412840] (-) TimerEvent: {}
+[1.449460] (diffdrive_arduino) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/fake_robot.cpp.o\x1b[0m\n'}
+[1.458534] (diffdrive_arduino) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/fake_robot.dir/src/wheel.cpp.o\x1b[0m\n'}
+[1.513147] (-) TimerEvent: {}
+[1.518518] (diffdrive_arduino) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/wheel.cpp.o\x1b[0m\n'}
+[1.544129] (diffdrive_arduino) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/diffdrive_arduino.cpp.o\x1b[0m\n'}
+[1.613377] (-) TimerEvent: {}
+[1.715037] (-) TimerEvent: {}
+[1.816592] (-) TimerEvent: {}
+[1.918210] (-) TimerEvent: {}
+[2.019747] (-) TimerEvent: {}
+[2.121277] (-) TimerEvent: {}
+[2.222957] (-) TimerEvent: {}
+[2.325467] (-) TimerEvent: {}
+[2.427402] (-) TimerEvent: {}
+[2.529302] (-) TimerEvent: {}
+[2.631483] (-) TimerEvent: {}
+[2.733504] (-) TimerEvent: {}
+[2.835006] (-) TimerEvent: {}
+[2.936829] (-) TimerEvent: {}
+[3.037971] (-) TimerEvent: {}
+[3.138881] (-) TimerEvent: {}
+[3.239796] (-) TimerEvent: {}
+[3.340773] (-) TimerEvent: {}
+[3.441767] (-) TimerEvent: {}
+[3.542715] (-) TimerEvent: {}
+[3.643695] (-) TimerEvent: {}
+[3.711128] (diffdrive_arduino) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/diffdrive_arduino.dir/src/arduino_comms.cpp.o\x1b[0m\n'}
+[3.743915] (-) TimerEvent: {}
+[3.844801] (-) TimerEvent: {}
+[3.945761] (-) TimerEvent: {}
+[4.046764] (-) TimerEvent: {}
+[4.147797] (-) TimerEvent: {}
+[4.248993] (-) TimerEvent: {}
+[4.350185] (-) TimerEvent: {}
+[4.451480] (-) TimerEvent: {}
+[4.552668] (-) TimerEvent: {}
+[4.653735] (-) TimerEvent: {}
+[4.754686] (-) TimerEvent: {}
+[4.855723] (-) TimerEvent: {}
+[4.957379] (-) TimerEvent: {}
+[5.058414] (-) TimerEvent: {}
+[5.159295] (-) TimerEvent: {}
+[5.260223] (-) TimerEvent: {}
+[5.361107] (-) TimerEvent: {}
+[5.461961] (-) TimerEvent: {}
+[5.562897] (-) TimerEvent: {}
+[5.663861] (-) TimerEvent: {}
+[5.764684] (-) TimerEvent: {}
+[5.865538] (-) TimerEvent: {}
+[5.966336] (-) TimerEvent: {}
+[6.067272] (-) TimerEvent: {}
+[6.168232] (-) TimerEvent: {}
+[6.276675] (-) TimerEvent: {}
+[6.378309] (-) TimerEvent: {}
+[6.481642] (-) TimerEvent: {}
+[6.584919] (-) TimerEvent: {}
+[6.687196] (-) TimerEvent: {}
+[6.789594] (-) TimerEvent: {}
+[6.892960] (-) TimerEvent: {}
+[6.995128] (-) TimerEvent: {}
+[7.097503] (-) TimerEvent: {}
+[7.200010] (-) TimerEvent: {}
+[7.302649] (-) TimerEvent: {}
+[7.404687] (-) TimerEvent: {}
+[7.508136] (-) TimerEvent: {}
+[7.609471] (-) TimerEvent: {}
+[7.711471] (-) TimerEvent: {}
+[7.813422] (-) TimerEvent: {}
+[7.915431] (-) TimerEvent: {}
+[8.016475] (-) TimerEvent: {}
+[8.118989] (-) TimerEvent: {}
+[8.220811] (-) TimerEvent: {}
+[8.322560] (-) TimerEvent: {}
+[8.424302] (-) TimerEvent: {}
+[8.526604] (-) TimerEvent: {}
+[8.628895] (-) TimerEvent: {}
+[8.731443] (-) TimerEvent: {}
+[8.833049] (-) TimerEvent: {}
+[8.934689] (-) TimerEvent: {}
+[9.036945] (-) TimerEvent: {}
+[9.139297] (-) TimerEvent: {}
+[9.242212] (-) TimerEvent: {}
+[9.344637] (-) TimerEvent: {}
+[9.447225] (-) TimerEvent: {}
+[9.550003] (-) TimerEvent: {}
+[9.652543] (-) TimerEvent: {}
+[9.755375] (-) TimerEvent: {}
+[9.858017] (-) TimerEvent: {}
+[9.959892] (-) TimerEvent: {}
+[10.062089] (-) TimerEvent: {}
+[10.165141] (-) TimerEvent: {}
+[10.267153] (-) TimerEvent: {}
+[10.368695] (-) TimerEvent: {}
+[10.470468] (-) TimerEvent: {}
+[10.572750] (-) TimerEvent: {}
+[10.675981] (-) TimerEvent: {}
+[10.778427] (-) TimerEvent: {}
+[10.880893] (-) TimerEvent: {}
+[10.983392] (-) TimerEvent: {}
+[11.085987] (-) TimerEvent: {}
+[11.188439] (-) TimerEvent: {}
+[11.296784] (-) TimerEvent: {}
+[11.398813] (-) TimerEvent: {}
+[11.501207] (-) TimerEvent: {}
+[11.603283] (-) TimerEvent: {}
+[11.705572] (-) TimerEvent: {}
+[11.807951] (-) TimerEvent: {}
+[11.910335] (-) TimerEvent: {}
+[12.012683] (-) TimerEvent: {}
+[12.115002] (-) TimerEvent: {}
+[12.217362] (-) TimerEvent: {}
+[12.319842] (-) TimerEvent: {}
+[12.421894] (-) TimerEvent: {}
+[12.524255] (-) TimerEvent: {}
+[12.626495] (-) TimerEvent: {}
+[12.728832] (-) TimerEvent: {}
+[12.831341] (-) TimerEvent: {}
+[12.933730] (-) TimerEvent: {}
+[13.036453] (-) TimerEvent: {}
+[13.138949] (-) TimerEvent: {}
+[13.241290] (-) TimerEvent: {}
+[13.343463] (-) TimerEvent: {}
+[13.445939] (-) TimerEvent: {}
+[13.548786] (-) TimerEvent: {}
+[13.651345] (-) TimerEvent: {}
+[13.753379] (-) TimerEvent: {}
+[13.855521] (-) TimerEvent: {}
+[13.957682] (-) TimerEvent: {}
+[14.059685] (-) TimerEvent: {}
+[14.161701] (-) TimerEvent: {}
+[14.263855] (-) TimerEvent: {}
+[14.365704] (-) TimerEvent: {}
+[14.467457] (-) TimerEvent: {}
+[14.569838] (-) TimerEvent: {}
+[14.672579] (-) TimerEvent: {}
+[14.775146] (-) TimerEvent: {}
+[14.876740] (-) TimerEvent: {}
+[14.978528] (-) TimerEvent: {}
+[15.080105] (-) TimerEvent: {}
+[15.182348] (-) TimerEvent: {}
+[15.284425] (-) TimerEvent: {}
+[15.387271] (-) TimerEvent: {}
+[15.489627] (-) TimerEvent: {}
+[15.592569] (-) TimerEvent: {}
+[15.694928] (-) TimerEvent: {}
+[15.797334] (-) TimerEvent: {}
+[15.899713] (-) TimerEvent: {}
+[16.003057] (-) TimerEvent: {}
+[16.105487] (-) TimerEvent: {}
+[16.207663] (-) TimerEvent: {}
+[16.315330] (-) TimerEvent: {}
+[16.418196] (-) TimerEvent: {}
+[16.520967] (-) TimerEvent: {}
+[16.623551] (-) TimerEvent: {}
+[16.726025] (-) TimerEvent: {}
+[16.828117] (-) TimerEvent: {}
+[16.930318] (-) TimerEvent: {}
+[17.032442] (-) TimerEvent: {}
+[17.134571] (-) TimerEvent: {}
+[17.236205] (-) TimerEvent: {}
+[17.337852] (-) TimerEvent: {}
+[17.439502] (-) TimerEvent: {}
+[17.541772] (-) TimerEvent: {}
+[17.644130] (-) TimerEvent: {}
+[17.747163] (-) TimerEvent: {}
+[17.850483] (-) TimerEvent: {}
+[17.953811] (-) TimerEvent: {}
+[18.056324] (-) TimerEvent: {}
+[18.159108] (-) TimerEvent: {}
+[18.261357] (-) TimerEvent: {}
+[18.363633] (-) TimerEvent: {}
+[18.466253] (-) TimerEvent: {}
+[18.569805] (-) TimerEvent: {}
+[18.672299] (-) TimerEvent: {}
+[18.775729] (-) TimerEvent: {}
+[18.877384] (-) TimerEvent: {}
+[18.979381] (-) TimerEvent: {}
+[19.081077] (-) TimerEvent: {}
+[19.183527] (-) TimerEvent: {}
+[19.286000] (-) TimerEvent: {}
+[19.388446] (-) TimerEvent: {}
+[19.490836] (-) TimerEvent: {}
+[19.593260] (-) TimerEvent: {}
+[19.695793] (-) TimerEvent: {}
+[19.798343] (-) TimerEvent: {}
+[19.900045] (-) TimerEvent: {}
+[20.001902] (-) TimerEvent: {}
+[20.103552] (-) TimerEvent: {}
+[20.205254] (-) TimerEvent: {}
+[20.307299] (-) TimerEvent: {}
+[20.408307] (-) TimerEvent: {}
+[20.510357] (-) TimerEvent: {}
+[20.612632] (-) TimerEvent: {}
+[20.714283] (-) TimerEvent: {}
+[20.796444] (diffdrive_arduino) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking CXX shared library libfake_robot.so\x1b[0m\n'}
+[20.814499] (-) TimerEvent: {}
+[20.915569] (-) TimerEvent: {}
+[21.016775] (-) TimerEvent: {}
+[21.099258] (diffdrive_arduino) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libdiffdrive_arduino.so\x1b[0m\n'}
+[21.117083] (-) TimerEvent: {}
+[21.219056] (-) TimerEvent: {}
+[21.320505] (-) TimerEvent: {}
+[21.421834] (-) TimerEvent: {}
+[21.523286] (-) TimerEvent: {}
+[21.624621] (-) TimerEvent: {}
+[21.726187] (-) TimerEvent: {}
+[21.790353] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target fake_robot\n'}
+[21.826338] (-) TimerEvent: {}
+[21.927451] (-) TimerEvent: {}
+[22.028479] (-) TimerEvent: {}
+[22.129331] (-) TimerEvent: {}
+[22.230193] (-) TimerEvent: {}
+[22.325539] (diffdrive_arduino) StdoutLine: {'line': b'[100%] Built target diffdrive_arduino\n'}
+[22.330365] (-) TimerEvent: {}
+[22.369096] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[22.371769] (diffdrive_arduino) JobProgress: {'identifier': 'diffdrive_arduino', 'progress': 'install'}
+[22.373026] (diffdrive_arduino) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/limitbreakers/breakers_ws/build/diffdrive_arduino'], 'cwd': '/home/limitbreakers/breakers_ws/build/diffdrive_arduino', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'limitbreakers'), ('SSH_CLIENT', '192.168.0.103 37368 22'), ('LC_TIME', 'C.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/limitbreakers/breakers_ws/install/diffdrive_arduino/lib:/home/limitbreakers/breakers_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/serial/lib:/home/limitbreakers/ros2_ws/install/diffdrive_arduino/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/limitbreakers'), ('OLDPWD', '/home/limitbreakers/breakers_ws/src'), ('TERM_PROGRAM_VERSION', '1.103.2'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-1336b97d-b370-4369-a2a8-aecd27e3c16e.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/extensions/git/dist/askpass-main.js'), ('LC_MONETARY', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_NODE', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install:/home/limitbreakers/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'limitbreakers'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/limitbreakers/.vscode-server/cli/servers/Stable-6f17636121051a53c88d3e605c491d22af2ba755/server/bin/remote-cli:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('LC_ADDRESS', 'C.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'C.UTF-8'), ('LC_TELEPHONE', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-c127e37d50.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'C.UTF-8'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'C.UTF-8'), ('LC_IDENTIFICATION', 'C.UTF-8'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/limitbreakers/breakers_ws/build/diffdrive_arduino'), ('SSH_CONNECTION', '192.168.0.103 37368 192.168.0.104 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C.UTF-8'), ('LC_PAPER', 'C.UTF-8'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/limitbreakers/breakers_ws/install/serial:/home/limitbreakers/breakers_ws/install/sllidar_ros2:/home/limitbreakers/breakers_ws/install/diffdrive_arduino:/home/limitbreakers/breakers_ws/install/dojo:/home/limitbreakers/ros2_ws/install/serial:/home/limitbreakers/ros2_ws/install/rplidar_ros:/home/limitbreakers/ros2_ws/install/diffdrive_arduino:/home/limitbreakers/ros2_ws/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[22.409220] (diffdrive_arduino) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[22.411159] (diffdrive_arduino) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[22.412265] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino//robot_hardware.xml\n'}
+[22.430601] (-) TimerEvent: {}
+[22.446785] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino//fake_robot_hardware.xml\n'}
+[22.481851] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/lib/libdiffdrive_arduino.so\n'}
+[22.519336] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/lib/libfake_robot.so\n'}
+[22.530775] (-) TimerEvent: {}
+[22.557658] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/controllers/robot_controller_example.yaml\n'}
+[22.595025] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/__pycache__/test_robot.launch.cpython-310.pyc\n'}
+[22.630962] (-) TimerEvent: {}
+[22.631926] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/fake_robot.launch.py\n'}
+[22.666520] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/test_robot.launch.py\n'}
+[22.703323] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.sh\n'}
+[22.731190] (-) TimerEvent: {}
+[22.739237] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/library_path.dsv\n'}
+[22.775624] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/ament_index/resource_index/package_run_dependencies/diffdrive_arduino\n'}
+[22.811461] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/ament_index/resource_index/parent_prefix_path/diffdrive_arduino\n'}
+[22.831421] (-) TimerEvent: {}
+[22.847814] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.sh\n'}
+[22.884116] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/ament_prefix_path.dsv\n'}
+[22.920453] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.sh\n'}
+[22.931674] (-) TimerEvent: {}
+[22.957729] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/environment/path.dsv\n'}
+[22.994046] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.bash\n'}
+[23.030860] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.sh\n'}
+[23.031795] (-) TimerEvent: {}
+[23.067042] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.zsh\n'}
+[23.104495] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/local_setup.dsv\n'}
+[23.132013] (-) TimerEvent: {}
+[23.141367] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv\n'}
+[23.178394] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/ament_index/resource_index/packages/diffdrive_arduino\n'}
+[23.214827] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/diffdrive_arduino\n'}
+[23.232212] (-) TimerEvent: {}
+[23.250466] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[23.286945] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[23.324879] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig.cmake\n'}
+[23.332504] (-) TimerEvent: {}
+[23.362738] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/cmake/diffdrive_arduinoConfig-version.cmake\n'}
+[23.399981] (diffdrive_arduino) StdoutLine: {'line': b'-- Symlinking: /home/limitbreakers/breakers_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.xml\n'}
+[23.432660] (-) TimerEvent: {}
+[23.441723] (diffdrive_arduino) CommandEnded: {'returncode': 0}
+[23.522091] (diffdrive_arduino) JobEnded: {'identifier': 'diffdrive_arduino', 'rc': 0}
+[23.525249] (-) EventReactorShutdown: {}

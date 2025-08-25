@@ -1,0 +1,38 @@
+[0.107s] Invoking command in '/home/limitbreakers/breakers_ws/build/dojo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/limitbreakers/breakers_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/limitbreakers/breakers_ws/build/dojo -- -j4 -l4
+[0.332s] Invoked command in '/home/limitbreakers/breakers_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/limitbreakers/breakers_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/limitbreakers/breakers_ws/build/dojo -- -j4 -l4
+[0.393s] Invoking command in '/home/limitbreakers/breakers_ws/build/dojo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/limitbreakers/breakers_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/limitbreakers/breakers_ws/build/dojo
+[0.434s] -- Install configuration: ""
+[0.437s] -- Execute custom install script
+[0.443s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/config/default_view.rviz
+[0.445s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/config/empty.yaml
+[0.447s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/config/my_controllers.yaml
+[0.449s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/config/twist_mux.yaml
+[0.452s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/gazebo_control.xacro
+[0.454s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/inertial_macros.xacro
+[0.456s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/lidar.xacro
+[0.458s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/robot.urdf.xacro
+[0.460s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/robot_core.xacro
+[0.462s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/description/ros2_control.xacro
+[0.464s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/launch/launch_robot.launch.py
+[0.471s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/launch/launch_sim.launch.py
+[0.473s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/launch/rsp.launch.py
+[0.477s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/worlds/dojo2024
+[0.480s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/worlds/empty.world
+[0.482s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/worlds/world_model/model.config
+[0.485s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/worlds/world_model/model.sdf
+[0.487s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/ament_index/resource_index/package_run_dependencies/dojo
+[0.490s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/ament_index/resource_index/parent_prefix_path/dojo
+[0.493s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/environment/ament_prefix_path.sh
+[0.495s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/environment/ament_prefix_path.dsv
+[0.498s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/environment/path.sh
+[0.501s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/environment/path.dsv
+[0.503s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/local_setup.bash
+[0.506s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/local_setup.sh
+[0.509s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/local_setup.zsh
+[0.511s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/local_setup.dsv
+[0.514s] -- Symlinking: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/package.dsv
+[0.556s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/ament_index/resource_index/packages/dojo
+[0.559s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/cmake/dojoConfig.cmake
+[0.560s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/cmake/dojoConfig-version.cmake
+[0.561s] -- Up-to-date symlink: /home/limitbreakers/breakers_ws/install/dojo/share/dojo/package.xml
+[0.576s] Invoked command in '/home/limitbreakers/breakers_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/limitbreakers/breakers_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/limitbreakers/breakers_ws/build/dojo
