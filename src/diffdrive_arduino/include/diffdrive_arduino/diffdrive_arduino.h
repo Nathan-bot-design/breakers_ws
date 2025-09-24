@@ -1,5 +1,5 @@
-#ifndef DIFFDRIVE_ARDUINO_H
-#define DIFFDRIVE_ARDUINO_H
+#ifndef DIFFDRIVE_ARDUINO_REAL_ROBOT_H
+#define DIFFDRIVE_ARDUINO_REAL_ROBOT_H
 
 #include <cstring>
 #include "rclcpp/rclcpp.hpp"
@@ -14,6 +14,7 @@
 #include "wheel.h"
 #include "arduino_comms.h"
 
+
 using hardware_interface::CallbackReturn;
 using hardware_interface::return_type;
 
@@ -22,6 +23,8 @@ namespace diffdrive_arduino
 
 class DiffDriveArduino : public hardware_interface::SystemInterface
 {
+
+
 public:
   DiffDriveArduino();
 
@@ -39,7 +42,10 @@ public:
 
   return_type write(const rclcpp::Time & time, const rclcpp::Duration & period) override;
 
+
+
 private:
+
   Config cfg_;
   ArduinoComms arduino_;
 
@@ -50,23 +56,9 @@ private:
 
   std::chrono::time_point<std::chrono::system_clock> time_;
 
-  // =========================
-  // IMU state variables
-  // =========================
-  double imu_orientation_x_;
-  double imu_orientation_y_;
-  double imu_orientation_z_;
-  double imu_orientation_w_;
-
-  double imu_angular_vel_x_;
-  double imu_angular_vel_y_;
-  double imu_angular_vel_z_;
-
-  double imu_linear_acc_x_;
-  double imu_linear_acc_y_;
-  double imu_linear_acc_z_;
+ 
+  
 };
-
 } // namespace diffdrive_arduino
 
-#endif // DIFFDRIVE_ARDUINO_H
+#endif // DIFFDRIVE_ARDUINO_REAL_ROBOT_H

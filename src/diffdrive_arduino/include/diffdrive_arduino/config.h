@@ -12,7 +12,7 @@ struct Config
   std::string device = "/dev/arduino";
   int baud_rate = 57600;
   int timeout = 1000;
-  int enc_counts_per_rev = 1980;
+  int enc_counts_per_rev = 1135;
 };
 
 
