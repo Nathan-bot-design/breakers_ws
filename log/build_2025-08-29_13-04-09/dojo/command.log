@@ -1,0 +1,6 @@
+Invoking command in '/home/nathan/ros2_ws/build/dojo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nathan/ros2_ws/src/dojo -DCMAKE_INSTALL_PREFIX=/home/nathan/ros2_ws/install/dojo
+Invoked command in '/home/nathan/ros2_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/nathan/ros2_ws/src/dojo -DCMAKE_INSTALL_PREFIX=/home/nathan/ros2_ws/install/dojo
+Invoking command in '/home/nathan/ros2_ws/build/dojo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/dojo -- -j4 -l4
+Invoked command in '/home/nathan/ros2_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/dojo -- -j4 -l4
+Invoking command in '/home/nathan/ros2_ws/build/dojo': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/dojo
+Invoked command in '/home/nathan/ros2_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/dojo

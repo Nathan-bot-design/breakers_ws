@@ -1,0 +1,42 @@
+running egg_info
+creating ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info
+writing ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/PKG-INFO
+writing dependency_links to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/dependency_links.txt
+writing entry points to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/entry_points.txt
+writing requirements to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/requires.txt
+writing top-level names to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/top_level.txt
+writing manifest file '../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/SOURCES.txt'
+reading manifest file '../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/SOURCES.txt'
+writing manifest file '../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build
+creating /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib
+creating /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection
+copying rdj2025_potato_disease_detection/test_image_publisher.py -> /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection
+copying rdj2025_potato_disease_detection/inference_engine.py -> /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection
+copying rdj2025_potato_disease_detection/__init__.py -> /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection
+copying rdj2025_potato_disease_detection/potato_disease_detection_node.py -> /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection
+running install
+running install_lib
+creating /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection
+copying /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection/test_image_publisher.py -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection
+copying /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection/inference_engine.py -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection
+copying /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection/__init__.py -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection
+copying /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection/potato_disease_detection_node.py -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection
+byte-compiling /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection/test_image_publisher.py to test_image_publisher.cpython-310.pyc
+byte-compiling /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection/inference_engine.py to inference_engine.cpython-310.pyc
+byte-compiling /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection/potato_disease_detection_node.py to potato_disease_detection_node.cpython-310.pyc
+running install_data
+creating /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/ament_index
+creating /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/ament_index/resource_index
+creating /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/ament_index/resource_index/packages
+copying resource/rdj2025_potato_disease_detection -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/ament_index/resource_index/packages
+copying package.xml -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection
+running install_egg_info
+Copying ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info to /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection-0.0.0-py3.10.egg-info
+running install_scripts
+Installing potato_disease_detection_node script to /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/rdj2025_potato_disease_detection
+Installing publish_test_image script to /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/rdj2025_potato_disease_detection
+writing list of installed files to '/home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/install.log'

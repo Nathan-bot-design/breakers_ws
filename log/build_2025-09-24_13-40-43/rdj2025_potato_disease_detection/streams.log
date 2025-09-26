@@ -1,0 +1,44 @@
+[5.148s] Invoking command in '/home/nathan/ros2_ws/src/rdj2025_potato_disease_detection': PYTHONPATH=/home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rdj2025_potato_disease_detection build --build-base /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build install --record /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/install.log --single-version-externally-managed install_data
+[5.441s] running egg_info
+[5.441s] creating ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info
+[5.442s] writing ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/PKG-INFO
+[5.442s] writing dependency_links to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/dependency_links.txt
+[5.442s] writing entry points to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/entry_points.txt
+[5.443s] writing requirements to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/requires.txt
+[5.443s] writing top-level names to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/top_level.txt
+[5.443s] writing manifest file '../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/SOURCES.txt'
+[5.445s] reading manifest file '../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/SOURCES.txt'
+[5.448s] writing manifest file '../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/SOURCES.txt'
+[5.448s] running build
+[5.448s] running build_py
+[5.448s] creating /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build
+[5.449s] creating /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib
+[5.449s] creating /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection
+[5.449s] copying rdj2025_potato_disease_detection/test_image_publisher.py -> /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection
+[5.449s] copying rdj2025_potato_disease_detection/inference_engine.py -> /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection
+[5.449s] copying rdj2025_potato_disease_detection/__init__.py -> /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection
+[5.450s] copying rdj2025_potato_disease_detection/potato_disease_detection_node.py -> /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection
+[5.450s] running install
+[5.450s] running install_lib
+[5.451s] creating /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection
+[5.451s] copying /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection/test_image_publisher.py -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection
+[5.451s] copying /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection/inference_engine.py -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection
+[5.452s] copying /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection/__init__.py -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection
+[5.452s] copying /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build/lib/rdj2025_potato_disease_detection/potato_disease_detection_node.py -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection
+[5.452s] byte-compiling /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection/test_image_publisher.py to test_image_publisher.cpython-310.pyc
+[5.453s] byte-compiling /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection/inference_engine.py to inference_engine.cpython-310.pyc
+[5.454s] byte-compiling /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection/__init__.py to __init__.cpython-310.pyc
+[5.454s] byte-compiling /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection/potato_disease_detection_node.py to potato_disease_detection_node.cpython-310.pyc
+[5.454s] running install_data
+[5.455s] creating /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/ament_index
+[5.455s] creating /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/ament_index/resource_index
+[5.455s] creating /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/ament_index/resource_index/packages
+[5.455s] copying resource/rdj2025_potato_disease_detection -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/ament_index/resource_index/packages
+[5.455s] copying package.xml -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection
+[5.456s] running install_egg_info
+[5.458s] Copying ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info to /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection-0.0.0-py3.10.egg-info
+[5.459s] running install_scripts
+[5.482s] Installing potato_disease_detection_node script to /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/rdj2025_potato_disease_detection
+[5.482s] Installing publish_test_image script to /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/rdj2025_potato_disease_detection
+[5.483s] writing list of installed files to '/home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/install.log'
+[5.528s] Invoked command in '/home/nathan/ros2_ws/src/rdj2025_potato_disease_detection' returned '0': PYTHONPATH=/home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rdj2025_potato_disease_detection build --build-base /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build install --record /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/install.log --single-version-externally-managed install_data

@@ -1,0 +1,30 @@
+[0.189s] Invoking command in '/home/nathan/ros2_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/sllidar_ros2 -- -j4 -l4
+[2.811s] [ 10%] Built target sllidar_client
+[3.268s] [100%] Built target sllidar_node
+[3.281s] Invoked command in '/home/nathan/ros2_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/sllidar_ros2 -- -j4 -l4
+[3.347s] Invoking command in '/home/nathan/ros2_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/sllidar_ros2
+[3.401s] -- Install configuration: ""
+[3.401s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/launch
+[3.434s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py
+[3.434s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/rviz
+[3.435s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz
+[3.545s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node
+[3.636s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client
+[3.636s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2
+[3.636s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2
+[3.636s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh
+[3.637s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv
+[3.637s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh
+[3.637s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv
+[3.637s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash
+[3.637s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh
+[3.637s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh
+[3.637s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv
+[3.638s] -- Installing: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv
+[3.638s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2
+[3.638s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.638s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.638s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake
+[3.638s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake
+[3.638s] -- Up-to-date: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.xml
+[3.641s] Invoked command in '/home/nathan/ros2_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/sllidar_ros2

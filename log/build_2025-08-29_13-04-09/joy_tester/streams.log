@@ -1,0 +1,38 @@
+[1.425s] Invoking command in '/home/nathan/ros2_ws/src/joy_tester': PYTHONPATH=/home/nathan/ros2_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_tester build --build-base /home/nathan/ros2_ws/build/joy_tester/build install --record /home/nathan/ros2_ws/build/joy_tester/install.log --single-version-externally-managed install_data
+[1.888s] running egg_info
+[1.890s] creating ../../build/joy_tester/joy_tester.egg-info
+[1.890s] writing ../../build/joy_tester/joy_tester.egg-info/PKG-INFO
+[1.890s] writing dependency_links to ../../build/joy_tester/joy_tester.egg-info/dependency_links.txt
+[1.891s] writing entry points to ../../build/joy_tester/joy_tester.egg-info/entry_points.txt
+[1.891s] writing requirements to ../../build/joy_tester/joy_tester.egg-info/requires.txt
+[1.891s] writing top-level names to ../../build/joy_tester/joy_tester.egg-info/top_level.txt
+[1.891s] writing manifest file '../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+[1.894s] reading manifest file '../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+[1.895s] adding license file 'LICENSE'
+[1.896s] writing manifest file '../../build/joy_tester/joy_tester.egg-info/SOURCES.txt'
+[1.896s] running build
+[1.896s] running build_py
+[1.899s] creating /home/nathan/ros2_ws/build/joy_tester/build
+[1.899s] creating /home/nathan/ros2_ws/build/joy_tester/build/lib
+[1.899s] creating /home/nathan/ros2_ws/build/joy_tester/build/lib/joy_tester
+[1.900s] copying joy_tester/test_joy.py -> /home/nathan/ros2_ws/build/joy_tester/build/lib/joy_tester
+[1.900s] copying joy_tester/__init__.py -> /home/nathan/ros2_ws/build/joy_tester/build/lib/joy_tester
+[1.900s] running install
+[1.900s] running install_lib
+[1.900s] creating /home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages/joy_tester
+[1.900s] copying /home/nathan/ros2_ws/build/joy_tester/build/lib/joy_tester/test_joy.py -> /home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages/joy_tester
+[1.901s] copying /home/nathan/ros2_ws/build/joy_tester/build/lib/joy_tester/__init__.py -> /home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages/joy_tester
+[1.901s] byte-compiling /home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages/joy_tester/test_joy.py to test_joy.cpython-310.pyc
+[1.903s] byte-compiling /home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages/joy_tester/__init__.py to __init__.cpython-310.pyc
+[1.905s] running install_data
+[1.905s] creating /home/nathan/ros2_ws/install/joy_tester/share/ament_index
+[1.905s] creating /home/nathan/ros2_ws/install/joy_tester/share/ament_index/resource_index
+[1.905s] creating /home/nathan/ros2_ws/install/joy_tester/share/ament_index/resource_index/packages
+[1.905s] copying resource/joy_tester -> /home/nathan/ros2_ws/install/joy_tester/share/ament_index/resource_index/packages
+[1.906s] copying package.xml -> /home/nathan/ros2_ws/install/joy_tester/share/joy_tester
+[1.906s] running install_egg_info
+[1.908s] Copying ../../build/joy_tester/joy_tester.egg-info to /home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages/joy_tester-0.0.2-py3.10.egg-info
+[1.909s] running install_scripts
+[1.941s] Installing test_joy script to /home/nathan/ros2_ws/install/joy_tester/lib/joy_tester
+[1.942s] writing list of installed files to '/home/nathan/ros2_ws/build/joy_tester/install.log'
+[1.998s] Invoked command in '/home/nathan/ros2_ws/src/joy_tester' returned '0': PYTHONPATH=/home/nathan/ros2_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_tester build --build-base /home/nathan/ros2_ws/build/joy_tester/build install --record /home/nathan/ros2_ws/build/joy_tester/install.log --single-version-externally-managed install_data

@@ -1,0 +1,71 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nathan/ros2_ws/build/dojo
+-- Install configuration: ""
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/config
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/config/my_controllers.yaml
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/config/joystick.yaml
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/config/default_view.rviz
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/config/gazebo_params.yaml
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/config/gaz_ros2_ctl_use_sim.yaml
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/config/twist_mux.yaml
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/config/empty.yaml
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/config/mapper_params_online_async.yaml
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/config/nav2_params.yaml
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/ros2_control.xacro
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/lidar.xacro
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/robot.urdf.xacro
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/gazebo_control.xacro
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/robot_core.xacro
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/inertial_macros.xacro
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/launch
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/joystick.launch.py
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/raspi_bot.launch.py
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/navigation_launch.py
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/rsp.launch.py
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/consolidated.launch.py
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/launch_robot.launch.py
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/launch_sim.launch.py
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/localization_launch.py
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/dojo2024
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model/model.config
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model/model.sdf
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/empty.world
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/package_run_dependencies/dojo
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/parent_prefix_path/dojo
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/ament_prefix_path.sh
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/ament_prefix_path.dsv
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/path.sh
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/path.dsv
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.bash
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.sh
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.zsh
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.dsv
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/package.dsv
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/packages/dojo
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/cmake/dojoConfig.cmake
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/cmake/dojoConfig-version.cmake
+-- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/package.xml
