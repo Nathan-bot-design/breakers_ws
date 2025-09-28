@@ -55,6 +55,30 @@ std::vector<hardware_interface::StateInterface> DiffDriveArduino::export_state_i
   state_interfaces.emplace_back(hardware_interface::StateInterface(l_wheel_.name, hardware_interface::HW_IF_POSITION, &l_wheel_.pos));
   state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_.name, hardware_interface::HW_IF_VELOCITY, &r_wheel_.vel));
   state_interfaces.emplace_back(hardware_interface::StateInterface(r_wheel_.name, hardware_interface::HW_IF_POSITION, &r_wheel_.pos));
+  // Linear acceleration
+
+  // --- IMU ---
+  state_interfaces.emplace_back("imu_sensor", "orientation.x", &imu_orientation_[0]);
+  state_interfaces.emplace_back("imu_sensor", "orientation.y", &imu_orientation_[1]);
+  state_interfaces.emplace_back("imu_sensor", "orientation.z", &imu_orientation_[2]);
+  state_interfaces.emplace_back("imu_sensor", "orientation.w", &imu_orientation_[3]);
+
+state_interfaces.emplace_back(
+  hardware_interface::StateInterface("imu_sensor", "linear_acceleration.x", &imu_ax_));
+state_interfaces.emplace_back(
+  hardware_interface::StateInterface("imu_sensor", "linear_acceleration.y", &imu_ay_));
+state_interfaces.emplace_back(
+  hardware_interface::StateInterface("imu_sensor", "linear_acceleration.z", &imu_az_));
+
+// Angular velocity
+state_interfaces.emplace_back(
+  hardware_interface::StateInterface("imu_sensor", "angular_velocity.x", &imu_gx_));
+state_interfaces.emplace_back(
+  hardware_interface::StateInterface("imu_sensor", "angular_velocity.y", &imu_gy_));
+state_interfaces.emplace_back(
+  hardware_interface::StateInterface("imu_sensor", "angular_velocity.z", &imu_gz_));
+
+
 
   return state_interfaces;
 }
@@ -116,6 +140,26 @@ return_type DiffDriveArduino::read(const rclcpp::Time & /* time */, const rclcpp
   pos_prev = r_wheel_.pos;
   r_wheel_.pos = r_wheel_.calcEncAngle();
   r_wheel_.vel = (r_wheel_.pos - pos_prev) / deltaSeconds;
+  // ---------------- IMU ----------------
+ // ---------------- IMU ----------------
+  double ax, ay, az, gx, gy, gz;
+  arduino_.readImuValues(ax, ay, az, gx, gy, gz);
+
+// Convert and store
+  imu_ax_ = ax * 9.80665;          // convert g → m/s²
+  imu_ay_ = ay * 9.80665;
+  imu_az_ = az * 9.80665;
+
+  imu_gx_ = gx * M_PI / 180.0;     // convert deg/s → rad/s
+  imu_gy_ = gy * M_PI / 180.0;
+  imu_gz_ = gz * M_PI / 180.0;
+
+  imu_orientation_[0] = 0.0;  // x
+imu_orientation_[1] = 0.0;  // y
+imu_orientation_[2] = 0.0;  // z
+imu_orientation_[3] = 1.0;  // w
+
+
 
 
 

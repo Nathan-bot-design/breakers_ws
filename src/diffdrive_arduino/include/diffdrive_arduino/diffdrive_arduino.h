@@ -41,6 +41,7 @@ public:
   return_type read(const rclcpp::Time & time, const rclcpp::Duration & period) override;
 
   return_type write(const rclcpp::Time & time, const rclcpp::Duration & period) override;
+  
 
 
 
@@ -55,8 +56,12 @@ private:
   rclcpp::Logger logger_;
 
   std::chrono::time_point<std::chrono::system_clock> time_;
+  // double imu_ax_{0.0}, imu_ay_{0.0}, imu_az_{0.0};   // linear accel (m/s²)
+  // double imu_gx_{0.0}, imu_gy_{0.0}, imu_gz_{0.0};   // angular vel (rad/s)
+ double imu_orientation_[4] = {0.0, 0.0, 0.0, 1.0};  // simple identity quaternion
+double imu_ax_, imu_ay_, imu_az_;
+double imu_gx_, imu_gy_, imu_gz_;
 
- 
   
 };
 } // namespace diffdrive_arduino

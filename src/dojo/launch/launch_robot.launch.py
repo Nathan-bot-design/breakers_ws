@@ -77,6 +77,20 @@ def generate_launch_description():
             on_start=[joint_broad_spawner],
         )
     )
+    imu_broad_spawner = Node(
+    package="controller_manager",
+    executable="spawner",
+    arguments=["imu_broad"],
+)
+
+    delayed_imu_broad_spawner = RegisterEventHandler(
+        event_handler=OnProcessStart(
+            target_action=controller_manager,
+            on_start=[imu_broad_spawner],
+        )
+    )
+
+    
 
 
     # Code for delaying a node (I haven't tested how effective it is)
@@ -103,5 +117,6 @@ def generate_launch_description():
         twist_mux,
         delayed_controller_manager,
         delayed_diff_drive_spawner,
-        delayed_joint_broad_spawner
+        delayed_joint_broad_spawner,
+        delayed_imu_broad_spawner
     ])
