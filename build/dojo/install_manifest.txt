@@ -21,6 +21,7 @@
 /home/nathan/ros2_ws/install/dojo/share/dojo/launch/launch_robot.launch.py
 /home/nathan/ros2_ws/install/dojo/share/dojo/launch/launch_sim.launch.py
 /home/nathan/ros2_ws/install/dojo/share/dojo/launch/localization_launch.py
+/home/nathan/ros2_ws/install/dojo/share/dojo/worlds/gamefield.sdf
 /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/dojo2024
 /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model/model.config
 /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model/model.sdf

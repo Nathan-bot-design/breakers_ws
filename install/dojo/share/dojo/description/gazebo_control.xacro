@@ -6,8 +6,8 @@
             <!-- wheel -->
             <left_joint>left_wheel_joint</left_joint>
             <right_joint>right_wheel_joint</right_joint>
-            <wheel_separation>0.28</wheel_separation>
-            <wheel_diameter>0.065</wheel_diameter>
+            <wheel_separation>0.25</wheel_separation>
+            <wheel_diameter>0.085</wheel_diameter>
 
             <!-- limits -->
 

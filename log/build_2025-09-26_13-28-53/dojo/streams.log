@@ -1,0 +1,53 @@
+[0.182s] Invoking command in '/home/nathan/ros2_ws/build/dojo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/dojo -- -j4 -l4
+[1.841s] Invoked command in '/home/nathan/ros2_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/dojo -- -j4 -l4
+[1.983s] Invoking command in '/home/nathan/ros2_ws/build/dojo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/dojo
+[2.048s] -- Install configuration: ""
+[2.048s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/config
+[2.048s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/config/my_controllers.yaml
+[2.048s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/config/joystick.yaml
+[2.049s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/config/default_view.rviz
+[2.049s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/config/gazebo_params.yaml
+[2.049s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/config/gaz_ros2_ctl_use_sim.yaml
+[2.049s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/config/twist_mux.yaml
+[2.050s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/config/empty.yaml
+[2.050s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/config/mapper_params_online_async.yaml
+[2.050s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/config/nav2_params.yaml
+[2.050s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/description
+[2.050s] -- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/ros2_control.xacro
+[2.051s] -- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/lidar.xacro
+[2.051s] -- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/robot.urdf.xacro
+[2.051s] -- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/gazebo_control.xacro
+[2.051s] -- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/robot_core.xacro
+[2.051s] -- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/description/inertial_macros.xacro
+[2.051s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/launch
+[2.052s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/joystick.launch.py
+[2.052s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/raspi_bot.launch.py
+[2.052s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/navigation_launch.py
+[2.052s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/rsp.launch.py
+[2.052s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/consolidated.launch.py
+[2.052s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/launch_robot.launch.py
+[2.052s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/launch_sim.launch.py
+[2.052s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/localization_launch.py
+[2.052s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds
+[2.052s] -- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/gamefield.sdf
+[2.052s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/dojo2024
+[2.052s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model
+[2.053s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model/model.config
+[2.053s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model/model.sdf
+[2.053s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/empty.world
+[2.053s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/package_run_dependencies/dojo
+[2.087s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/parent_prefix_path/dojo
+[2.087s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/ament_prefix_path.sh
+[2.087s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/ament_prefix_path.dsv
+[2.087s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/path.sh
+[2.087s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/path.dsv
+[2.087s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.bash
+[2.087s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.sh
+[2.088s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.zsh
+[2.088s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.dsv
+[2.088s] -- Installing: /home/nathan/ros2_ws/install/dojo/share/dojo/package.dsv
+[2.203s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/packages/dojo
+[2.204s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/cmake/dojoConfig.cmake
+[2.204s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/cmake/dojoConfig-version.cmake
+[2.204s] -- Up-to-date: /home/nathan/ros2_ws/install/dojo/share/dojo/package.xml
+[2.206s] Invoked command in '/home/nathan/ros2_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/dojo

@@ -1,0 +1,144 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nathan/ros2_ws/build/ppp_bot
+-- Install configuration: ""
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/ros2_control.xacro
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/camera.xacro
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/ignition_control.xacro
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/lidar.xacro
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/depth_camera.xacro
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/robot.urdf.xacro
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/materials.xacro
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/robot_core.xacro
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/inertial_macros.xacro
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/joystick.launch.py
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/teleop_sim.launch.py
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/navigation.launch.py
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/rsp.launch.py
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/online_async.launch.py
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/launch_ign.launch.py
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/localization.launch.py
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/keyboard.launch.py
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/launch_sim.launch.py
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/legacy_launch_sim.launch.py
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/room_with_cones.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/simple_room.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/barrels.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/cones.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/empty.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/moving_robot.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/cones2.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/maze.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/room.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/my_controllers.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/default.rviz
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/joystick.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/twist_mux.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/mapper_params_online_async.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/nav2_params.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/meshes
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/meshes/construction_barrel.dae
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/3.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/1.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/5.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/4.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/2.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model.config
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/materials
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/materials/textures
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/materials/textures/Construction_Barrel_Diffuse.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/materials/textures/Construction_Barrel_Spec.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model-1_3.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model-1_4.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/meshes
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/meshes/construction_cone.dae
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/3.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/1.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/5.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/4.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/2.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model.config
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/materials
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/materials/textures
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/materials/textures/Construction_Cone_Diffuse.png
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model-1_3.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model-1_4.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/maze
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/maze/model.config
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/maze/model.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/room
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/room/model.config
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/room/model.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/simple_room
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/simple_room/model.config
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/simple_room/model.sdf
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.pgm
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.posegraph
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.data
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.data
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.pgm
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/baseline.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones2.pgm
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.pgm
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.pgm
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.posegraph
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones2.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.data
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.posegraph
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.data
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.data
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.yaml
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/baseline.pgm
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.pgm
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.posegraph
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.posegraph
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ament_index/resource_index/package_run_dependencies/ppp_bot
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ament_index/resource_index/parent_prefix_path/ppp_bot
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/ament_prefix_path.sh
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/ament_prefix_path.dsv
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/path.sh
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/path.dsv
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.bash
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.sh
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.zsh
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.dsv
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.dsv
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ament_index/resource_index/packages/ppp_bot
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/cmake/ppp_botConfig.cmake
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/cmake/ppp_botConfig-version.cmake
+-- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.xml

@@ -1,0 +1,150 @@
+[0.078s] Invoking command in '/home/nathan/ros2_ws/build/ppp_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake /home/nathan/ros2_ws/src/gazebo_ignition_fortress/src/ppp_bot -DCMAKE_INSTALL_PREFIX=/home/nathan/ros2_ws/install/ppp_bot
+[0.877s] -- The C compiler identification is GNU 11.4.0
+[1.085s] -- The CXX compiler identification is GNU 11.4.0
+[1.159s] -- Detecting C compiler ABI info
+[1.384s] -- Detecting C compiler ABI info - done
+[1.393s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.412s] -- Detecting C compile features
+[1.422s] -- Detecting C compile features - done
+[1.445s] -- Detecting CXX compiler ABI info
+[1.593s] -- Detecting CXX compiler ABI info - done
+[1.601s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.602s] -- Detecting CXX compile features
+[1.602s] -- Detecting CXX compile features - done
+[1.651s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.956s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.272s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.528s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.571s] -- Added test 'lint_cmake' to check CMake code style
+[2.581s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.602s] -- Added test 'xmllint' to check XML markup files
+[2.608s] -- Configuring done
+[2.618s] -- Generating done
+[2.624s] -- Build files have been written to: /home/nathan/ros2_ws/build/ppp_bot
+[2.633s] Invoked command in '/home/nathan/ros2_ws/build/ppp_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake /home/nathan/ros2_ws/src/gazebo_ignition_fortress/src/ppp_bot -DCMAKE_INSTALL_PREFIX=/home/nathan/ros2_ws/install/ppp_bot
+[2.637s] Invoking command in '/home/nathan/ros2_ws/build/ppp_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/ppp_bot -- -j4 -l4
+[2.682s] Invoked command in '/home/nathan/ros2_ws/build/ppp_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/ppp_bot -- -j4 -l4
+[2.684s] Invoking command in '/home/nathan/ros2_ws/build/ppp_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/ppp_bot
+[2.692s] -- Install configuration: ""
+[2.692s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description
+[2.693s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/ros2_control.xacro
+[2.693s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/camera.xacro
+[2.693s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/ignition_control.xacro
+[2.693s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/lidar.xacro
+[2.693s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/depth_camera.xacro
+[2.693s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/robot.urdf.xacro
+[2.693s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/materials.xacro
+[2.694s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/robot_core.xacro
+[2.694s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/inertial_macros.xacro
+[2.694s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch
+[2.694s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/joystick.launch.py
+[2.694s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/teleop_sim.launch.py
+[2.694s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/navigation.launch.py
+[2.694s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/rsp.launch.py
+[2.694s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/online_async.launch.py
+[2.695s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/launch_ign.launch.py
+[2.695s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/localization.launch.py
+[2.695s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/keyboard.launch.py
+[2.695s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/launch_sim.launch.py
+[2.695s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/legacy_launch_sim.launch.py
+[2.695s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds
+[2.695s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/room_with_cones.sdf
+[2.695s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/simple_room.sdf
+[2.696s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/barrels.sdf
+[2.696s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/cones.sdf
+[2.696s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/empty.sdf
+[2.696s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/moving_robot.sdf
+[2.696s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/cones2.sdf
+[2.696s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/maze.sdf
+[2.696s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/room.sdf
+[2.697s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config
+[2.697s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/my_controllers.yaml
+[2.697s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/default.rviz
+[2.697s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/joystick.yaml
+[2.697s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/twist_mux.yaml
+[2.697s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/mapper_params_online_async.yaml
+[2.697s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/nav2_params.yaml
+[2.697s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models
+[2.698s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel
+[2.698s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/meshes
+[2.698s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/meshes/construction_barrel.dae
+[2.698s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails
+[2.698s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/3.png
+[2.698s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/1.png
+[2.699s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/5.png
+[2.699s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/4.png
+[2.699s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/2.png
+[2.699s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model.config
+[2.699s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model.sdf
+[2.699s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/materials
+[2.699s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/materials/textures
+[2.700s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/materials/textures/Construction_Barrel_Diffuse.png
+[2.700s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/materials/textures/Construction_Barrel_Spec.png
+[2.701s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model-1_3.sdf
+[2.701s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model-1_4.sdf
+[2.702s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone
+[2.702s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/meshes
+[2.702s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/meshes/construction_cone.dae
+[2.702s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails
+[2.702s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/3.png
+[2.702s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/1.png
+[2.702s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/5.png
+[2.702s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/4.png
+[2.703s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/2.png
+[2.703s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model.config
+[2.703s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model.sdf
+[2.703s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/materials
+[2.703s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/materials/textures
+[2.703s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/materials/textures/Construction_Cone_Diffuse.png
+[2.704s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model-1_3.sdf
+[2.704s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model-1_4.sdf
+[2.704s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/maze
+[2.704s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/maze/model.config
+[2.704s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/maze/model.sdf
+[2.704s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/room
+[2.704s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/room/model.config
+[2.705s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/room/model.sdf
+[2.705s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/simple_room
+[2.705s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/simple_room/model.config
+[2.705s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/simple_room/model.sdf
+[2.705s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps
+[2.705s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.pgm
+[2.705s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.posegraph
+[2.719s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.data
+[2.722s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.data
+[2.725s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.pgm
+[2.726s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/baseline.yaml
+[2.726s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.yaml
+[2.726s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones2.pgm
+[2.726s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.pgm
+[2.726s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.pgm
+[2.726s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.posegraph
+[2.739s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.yaml
+[2.739s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.yaml
+[2.740s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.yaml
+[2.740s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones2.yaml
+[2.740s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.data
+[2.750s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.posegraph
+[2.763s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.data
+[2.766s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.data
+[2.771s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.yaml
+[2.771s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/baseline.pgm
+[2.771s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.pgm
+[2.771s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.posegraph
+[2.783s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.posegraph
+[2.813s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ament_index/resource_index/package_run_dependencies/ppp_bot
+[2.813s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ament_index/resource_index/parent_prefix_path/ppp_bot
+[2.814s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/ament_prefix_path.sh
+[2.814s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/ament_prefix_path.dsv
+[2.814s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/path.sh
+[2.814s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/path.dsv
+[2.814s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.bash
+[2.814s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.sh
+[2.814s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.zsh
+[2.814s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.dsv
+[2.815s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.dsv
+[2.815s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ament_index/resource_index/packages/ppp_bot
+[2.815s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/cmake/ppp_botConfig.cmake
+[2.815s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/cmake/ppp_botConfig-version.cmake
+[2.816s] -- Installing: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.xml
+[2.818s] Invoked command in '/home/nathan/ros2_ws/build/ppp_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/ppp_bot
