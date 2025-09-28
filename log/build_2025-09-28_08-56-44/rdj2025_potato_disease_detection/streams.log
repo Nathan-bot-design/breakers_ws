@@ -1,0 +1,22 @@
+[11.125s] Invoking command in '/home/nathan/ros2_ws/src/rdj2025_potato_disease_detection': PYTHONPATH=/home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rdj2025_potato_disease_detection build --build-base /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build install --record /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/install.log --single-version-externally-managed install_data
+[11.612s] running egg_info
+[11.613s] writing ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/PKG-INFO
+[11.613s] writing dependency_links to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/dependency_links.txt
+[11.613s] writing entry points to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/entry_points.txt
+[11.614s] writing requirements to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/requires.txt
+[11.614s] writing top-level names to ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/top_level.txt
+[11.617s] reading manifest file '../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/SOURCES.txt'
+[11.620s] writing manifest file '../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info/SOURCES.txt'
+[11.621s] running build
+[11.621s] running build_py
+[11.621s] running install
+[11.623s] running install_lib
+[11.624s] running install_data
+[11.624s] running install_egg_info
+[11.628s] removing '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection-0.0.0-py3.10.egg-info' (and everything under it)
+[11.630s] Copying ../../build/rdj2025_potato_disease_detection/rdj2025_potato_disease_detection.egg-info to /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025_potato_disease_detection-0.0.0-py3.10.egg-info
+[11.631s] running install_scripts
+[11.669s] Installing potato_disease_detection_node script to /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/rdj2025_potato_disease_detection
+[11.669s] Installing publish_test_image script to /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/rdj2025_potato_disease_detection
+[11.670s] writing list of installed files to '/home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/install.log'
+[11.736s] Invoked command in '/home/nathan/ros2_ws/src/rdj2025_potato_disease_detection' returned '0': PYTHONPATH=/home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rdj2025_potato_disease_detection build --build-base /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build install --record /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/install.log --single-version-externally-managed install_data

@@ -1,0 +1,569 @@
+[0.400s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.401s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x71bbd5851270>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x71bbd5850070>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x71bbd5850070>>)
+[5.679s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[5.680s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[5.680s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[5.680s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[5.680s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[5.681s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[5.681s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/nathan/ros2_ws'
+[5.681s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[5.682s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[5.682s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[5.682s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[5.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[5.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[5.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[5.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[5.683s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[5.728s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[5.728s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[5.728s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[5.729s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[5.729s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[5.729s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[5.729s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[5.730s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[5.731s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[5.731s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[5.731s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[5.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[5.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[5.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[5.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[5.732s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[5.733s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[5.733s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[5.733s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[5.733s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[5.733s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[5.733s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[5.733s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[5.734s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[5.734s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[5.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ignore', 'ignore_ament_install']
+[5.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore'
+[5.734s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore_ament_install'
+[5.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_pkg']
+[5.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_pkg'
+[5.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_meta']
+[5.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_meta'
+[5.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ros']
+[5.735s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ros'
+[5.783s] DEBUG:colcon.colcon_core.package_identification:Package 'src/articubot_one' with type 'ros.ament_cmake' and name 'articubot_one'
+[5.784s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ignore', 'ignore_ament_install']
+[5.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore'
+[5.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ignore_ament_install'
+[5.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_pkg']
+[5.785s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_pkg'
+[5.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['colcon_meta']
+[5.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'colcon_meta'
+[5.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extensions ['ros']
+[5.786s] Level 1:colcon.colcon_core.package_identification:_identify(src/diffdrive_arduino) by extension 'ros'
+[5.805s] DEBUG:colcon.colcon_core.package_identification:Package 'src/diffdrive_arduino' with type 'ros.ament_cmake' and name 'diffdrive_arduino'
+[5.805s] Level 1:colcon.colcon_core.package_identification:_identify(src/dojo) by extensions ['ignore', 'ignore_ament_install']
+[5.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/dojo) by extension 'ignore'
+[5.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/dojo) by extension 'ignore_ament_install'
+[5.806s] Level 1:colcon.colcon_core.package_identification:_identify(src/dojo) by extensions ['colcon_pkg']
+[5.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/dojo) by extension 'colcon_pkg'
+[5.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/dojo) by extensions ['colcon_meta']
+[5.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/dojo) by extension 'colcon_meta'
+[5.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/dojo) by extensions ['ros']
+[5.807s] Level 1:colcon.colcon_core.package_identification:_identify(src/dojo) by extension 'ros'
+[5.810s] DEBUG:colcon.colcon_core.package_identification:Package 'src/dojo' with type 'ros.ament_cmake' and name 'dojo'
+[5.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extensions ['ignore', 'ignore_ament_install']
+[5.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extension 'ignore'
+[5.811s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extension 'ignore_ament_install'
+[5.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extensions ['colcon_pkg']
+[5.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extension 'colcon_pkg'
+[5.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extensions ['colcon_meta']
+[5.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extension 'colcon_meta'
+[5.812s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extensions ['ros']
+[5.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extension 'ros'
+[5.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extensions ['cmake', 'python']
+[5.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extension 'cmake'
+[5.813s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extension 'python'
+[5.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extensions ['python_setup_py']
+[5.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress) by extension 'python_setup_py'
+[5.814s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extensions ['ignore', 'ignore_ament_install']
+[5.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extension 'ignore'
+[5.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extension 'ignore_ament_install'
+[5.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extensions ['colcon_pkg']
+[5.815s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extension 'colcon_pkg'
+[5.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extensions ['colcon_meta']
+[5.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extension 'colcon_meta'
+[5.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extensions ['ros']
+[5.816s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extension 'ros'
+[5.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extensions ['cmake', 'python']
+[5.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extension 'cmake'
+[5.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extension 'python'
+[5.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extensions ['python_setup_py']
+[5.817s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/images) by extension 'python_setup_py'
+[5.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extensions ['ignore', 'ignore_ament_install']
+[5.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extension 'ignore'
+[5.818s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extension 'ignore_ament_install'
+[5.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extensions ['colcon_pkg']
+[5.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extension 'colcon_pkg'
+[5.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extensions ['colcon_meta']
+[5.819s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extension 'colcon_meta'
+[5.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extensions ['ros']
+[5.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extension 'ros'
+[5.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extensions ['cmake', 'python']
+[5.820s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extension 'cmake'
+[5.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extension 'python'
+[5.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extensions ['python_setup_py']
+[5.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/sample_map) by extension 'python_setup_py'
+[5.821s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extensions ['ignore', 'ignore_ament_install']
+[5.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extension 'ignore'
+[5.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extension 'ignore_ament_install'
+[5.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extensions ['colcon_pkg']
+[5.822s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extension 'colcon_pkg'
+[5.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extensions ['colcon_meta']
+[5.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extension 'colcon_meta'
+[5.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extensions ['ros']
+[5.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extension 'ros'
+[5.823s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extensions ['cmake', 'python']
+[5.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extension 'cmake'
+[5.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extension 'python'
+[5.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extensions ['python_setup_py']
+[5.824s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src) by extension 'python_setup_py'
+[5.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src/ppp_bot) by extensions ['ignore', 'ignore_ament_install']
+[5.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src/ppp_bot) by extension 'ignore'
+[5.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src/ppp_bot) by extension 'ignore_ament_install'
+[5.825s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src/ppp_bot) by extensions ['colcon_pkg']
+[5.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src/ppp_bot) by extension 'colcon_pkg'
+[5.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src/ppp_bot) by extensions ['colcon_meta']
+[5.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src/ppp_bot) by extension 'colcon_meta'
+[5.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src/ppp_bot) by extensions ['ros']
+[5.826s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/src/ppp_bot) by extension 'ros'
+[5.830s] DEBUG:colcon.colcon_core.package_identification:Package 'src/gazebo_ignition_fortress/src/ppp_bot' with type 'ros.ament_cmake' and name 'ppp_bot'
+[5.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extensions ['ignore', 'ignore_ament_install']
+[5.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extension 'ignore'
+[5.831s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extension 'ignore_ament_install'
+[5.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extensions ['colcon_pkg']
+[5.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extension 'colcon_pkg'
+[5.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extensions ['colcon_meta']
+[5.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extension 'colcon_meta'
+[5.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extensions ['ros']
+[5.832s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extension 'ros'
+[5.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extensions ['cmake', 'python']
+[5.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extension 'cmake'
+[5.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extension 'python'
+[5.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extensions ['python_setup_py']
+[5.833s] Level 1:colcon.colcon_core.package_identification:_identify(src/gazebo_ignition_fortress/test_folder) by extension 'python_setup_py'
+[5.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['ignore', 'ignore_ament_install']
+[5.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'ignore'
+[5.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'ignore_ament_install'
+[5.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['colcon_pkg']
+[5.834s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'colcon_pkg'
+[5.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['colcon_meta']
+[5.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'colcon_meta'
+[5.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extensions ['ros']
+[5.835s] Level 1:colcon.colcon_core.package_identification:_identify(src/joy_tester) by extension 'ros'
+[5.838s] DEBUG:colcon.colcon_core.package_identification:Package 'src/joy_tester' with type 'ros.ament_python' and name 'joy_tester'
+[5.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/rdj2025_potato_disease_detection) by extensions ['ignore', 'ignore_ament_install']
+[5.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/rdj2025_potato_disease_detection) by extension 'ignore'
+[5.838s] Level 1:colcon.colcon_core.package_identification:_identify(src/rdj2025_potato_disease_detection) by extension 'ignore_ament_install'
+[5.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/rdj2025_potato_disease_detection) by extensions ['colcon_pkg']
+[5.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/rdj2025_potato_disease_detection) by extension 'colcon_pkg'
+[5.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/rdj2025_potato_disease_detection) by extensions ['colcon_meta']
+[5.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/rdj2025_potato_disease_detection) by extension 'colcon_meta'
+[5.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/rdj2025_potato_disease_detection) by extensions ['ros']
+[5.839s] Level 1:colcon.colcon_core.package_identification:_identify(src/rdj2025_potato_disease_detection) by extension 'ros'
+[5.860s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rdj2025_potato_disease_detection' with type 'ros.ament_python' and name 'rdj2025_potato_disease_detection'
+[5.860s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ignore', 'ignore_ament_install']
+[5.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore'
+[5.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ignore_ament_install'
+[5.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_pkg']
+[5.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_pkg'
+[5.861s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['colcon_meta']
+[5.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'colcon_meta'
+[5.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extensions ['ros']
+[5.862s] Level 1:colcon.colcon_core.package_identification:_identify(src/sllidar_ros2) by extension 'ros'
+[5.865s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sllidar_ros2' with type 'ros.ament_cmake' and name 'sllidar_ros2'
+[5.865s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[5.865s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[5.865s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[5.865s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[5.866s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[6.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[6.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[6.225s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 7 installed packages in /home/nathan/ros2_ws/install
+[6.234s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 371 installed packages in /opt/ros/humble
+[6.241s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[6.472s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_args' from command line to 'None'
+[6.473s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target' from command line to 'None'
+[6.473s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.473s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_cache' from command line to 'False'
+[6.473s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_first' from command line to 'False'
+[6.473s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_force_configure' from command line to 'False'
+[6.473s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'ament_cmake_args' from command line to 'None'
+[6.473s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_cmake_args' from command line to 'None'
+[6.473s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.473s] DEBUG:colcon.colcon_core.verb:Building package 'articubot_one' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/ros2_ws/build/articubot_one', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/ros2_ws/install/articubot_one', 'merge_install': False, 'path': '/home/nathan/ros2_ws/src/articubot_one', 'symlink_install': False, 'test_result_base': None}
+[6.473s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_args' from command line to 'None'
+[6.473s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target' from command line to 'None'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_cache' from command line to 'False'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_clean_first' from command line to 'False'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'cmake_force_configure' from command line to 'False'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'ament_cmake_args' from command line to 'None'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_cmake_args' from command line to 'None'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'diffdrive_arduino' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.474s] DEBUG:colcon.colcon_core.verb:Building package 'diffdrive_arduino' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/ros2_ws/build/diffdrive_arduino', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/ros2_ws/install/diffdrive_arduino', 'merge_install': False, 'path': '/home/nathan/ros2_ws/src/diffdrive_arduino', 'symlink_install': False, 'test_result_base': None}
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'dojo' build argument 'cmake_args' from command line to 'None'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'dojo' build argument 'cmake_target' from command line to 'None'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'dojo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'dojo' build argument 'cmake_clean_cache' from command line to 'False'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'dojo' build argument 'cmake_clean_first' from command line to 'False'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'dojo' build argument 'cmake_force_configure' from command line to 'False'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'dojo' build argument 'ament_cmake_args' from command line to 'None'
+[6.474s] Level 5:colcon.colcon_core.verb:set package 'dojo' build argument 'catkin_cmake_args' from command line to 'None'
+[6.475s] Level 5:colcon.colcon_core.verb:set package 'dojo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.475s] DEBUG:colcon.colcon_core.verb:Building package 'dojo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/ros2_ws/build/dojo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/ros2_ws/install/dojo', 'merge_install': False, 'path': '/home/nathan/ros2_ws/src/dojo', 'symlink_install': False, 'test_result_base': None}
+[6.475s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_args' from command line to 'None'
+[6.475s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_target' from command line to 'None'
+[6.475s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.475s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_clean_cache' from command line to 'False'
+[6.475s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_clean_first' from command line to 'False'
+[6.475s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'cmake_force_configure' from command line to 'False'
+[6.475s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'ament_cmake_args' from command line to 'None'
+[6.475s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'catkin_cmake_args' from command line to 'None'
+[6.475s] Level 5:colcon.colcon_core.verb:set package 'joy_tester' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.475s] DEBUG:colcon.colcon_core.verb:Building package 'joy_tester' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/ros2_ws/build/joy_tester', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/ros2_ws/install/joy_tester', 'merge_install': False, 'path': '/home/nathan/ros2_ws/src/joy_tester', 'symlink_install': False, 'test_result_base': None}
+[6.476s] Level 5:colcon.colcon_core.verb:set package 'ppp_bot' build argument 'cmake_args' from command line to 'None'
+[6.476s] Level 5:colcon.colcon_core.verb:set package 'ppp_bot' build argument 'cmake_target' from command line to 'None'
+[6.476s] Level 5:colcon.colcon_core.verb:set package 'ppp_bot' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.476s] Level 5:colcon.colcon_core.verb:set package 'ppp_bot' build argument 'cmake_clean_cache' from command line to 'False'
+[6.476s] Level 5:colcon.colcon_core.verb:set package 'ppp_bot' build argument 'cmake_clean_first' from command line to 'False'
+[6.476s] Level 5:colcon.colcon_core.verb:set package 'ppp_bot' build argument 'cmake_force_configure' from command line to 'False'
+[6.476s] Level 5:colcon.colcon_core.verb:set package 'ppp_bot' build argument 'ament_cmake_args' from command line to 'None'
+[6.476s] Level 5:colcon.colcon_core.verb:set package 'ppp_bot' build argument 'catkin_cmake_args' from command line to 'None'
+[6.476s] Level 5:colcon.colcon_core.verb:set package 'ppp_bot' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.476s] DEBUG:colcon.colcon_core.verb:Building package 'ppp_bot' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/ros2_ws/build/ppp_bot', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/ros2_ws/install/ppp_bot', 'merge_install': False, 'path': '/home/nathan/ros2_ws/src/gazebo_ignition_fortress/src/ppp_bot', 'symlink_install': False, 'test_result_base': None}
+[6.476s] Level 5:colcon.colcon_core.verb:set package 'rdj2025_potato_disease_detection' build argument 'cmake_args' from command line to 'None'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'rdj2025_potato_disease_detection' build argument 'cmake_target' from command line to 'None'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'rdj2025_potato_disease_detection' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'rdj2025_potato_disease_detection' build argument 'cmake_clean_cache' from command line to 'False'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'rdj2025_potato_disease_detection' build argument 'cmake_clean_first' from command line to 'False'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'rdj2025_potato_disease_detection' build argument 'cmake_force_configure' from command line to 'False'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'rdj2025_potato_disease_detection' build argument 'ament_cmake_args' from command line to 'None'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'rdj2025_potato_disease_detection' build argument 'catkin_cmake_args' from command line to 'None'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'rdj2025_potato_disease_detection' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.477s] DEBUG:colcon.colcon_core.verb:Building package 'rdj2025_potato_disease_detection' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/ros2_ws/build/rdj2025_potato_disease_detection', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection', 'merge_install': False, 'path': '/home/nathan/ros2_ws/src/rdj2025_potato_disease_detection', 'symlink_install': False, 'test_result_base': None}
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_args' from command line to 'None'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target' from command line to 'None'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[6.477s] Level 5:colcon.colcon_core.verb:set package 'sllidar_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[6.477s] DEBUG:colcon.colcon_core.verb:Building package 'sllidar_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/nathan/ros2_ws/build/sllidar_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/nathan/ros2_ws/install/sllidar_ros2', 'merge_install': False, 'path': '/home/nathan/ros2_ws/src/sllidar_ros2', 'symlink_install': False, 'test_result_base': None}
+[6.478s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[6.479s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[6.479s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nathan/ros2_ws/src/articubot_one' with build type 'ament_cmake'
+[6.479s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nathan/ros2_ws/src/articubot_one'
+[6.513s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[6.513s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.513s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.532s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nathan/ros2_ws/src/diffdrive_arduino' with build type 'ament_cmake'
+[6.532s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nathan/ros2_ws/src/diffdrive_arduino'
+[6.532s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.533s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.538s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nathan/ros2_ws/src/dojo' with build type 'ament_cmake'
+[6.538s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nathan/ros2_ws/src/dojo'
+[6.538s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.538s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.544s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nathan/ros2_ws/src/joy_tester' with build type 'ament_python'
+[6.545s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_tester', 'ament_prefix_path')
+[6.545s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/joy_tester/share/joy_tester/hook/ament_prefix_path.ps1'
+[6.554s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/joy_tester/share/joy_tester/hook/ament_prefix_path.dsv'
+[6.555s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/joy_tester/share/joy_tester/hook/ament_prefix_path.sh'
+[6.557s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.557s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.616s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/articubot_one -- -j4 -l4
+[6.686s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/diffdrive_arduino -- -j4 -l4
+[6.718s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/build/dojo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/dojo -- -j4 -l4
+[7.289s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nathan/ros2_ws/src/joy_tester'
+[7.290s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[7.290s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[7.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/articubot_one -- -j4 -l4
+[8.065s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/build/articubot_one': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/articubot_one
+[8.067s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/dojo -- -j4 -l4
+[8.269s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/build/dojo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/dojo
+[8.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[8.387s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/articubot_one
+[9.433s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one' for CMake module files
+[9.434s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one' for CMake config files
+[9.434s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[9.434s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[9.435s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[9.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[9.437s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one/bin'
+[9.437s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[9.437s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one/lib/python3.10/site-packages'
+[9.438s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one/bin'
+[9.438s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/package.ps1'
+[9.466s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/package.dsv'
+[9.510s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/package.sh'
+[9.513s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/package.bash'
+[9.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/package.zsh'
+[9.689s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/articubot_one/share/colcon-core/packages/articubot_one)
+[9.690s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[9.691s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one' for CMake module files
+[9.692s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one' for CMake config files
+[9.692s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[9.693s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[9.694s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[9.695s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[9.696s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one/bin'
+[9.696s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[9.696s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one/lib/python3.10/site-packages'
+[9.697s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/articubot_one/bin'
+[9.697s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/package.ps1'
+[9.698s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/package.dsv'
+[9.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/package.sh'
+[9.699s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/package.bash'
+[9.700s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/articubot_one/share/articubot_one/package.zsh'
+[9.701s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/articubot_one/share/colcon-core/packages/articubot_one)
+[9.702s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nathan/ros2_ws/src/gazebo_ignition_fortress/src/ppp_bot' with build type 'ament_cmake'
+[9.702s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nathan/ros2_ws/src/gazebo_ignition_fortress/src/ppp_bot'
+[9.703s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.703s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.711s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dojo)
+[9.712s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo' for CMake module files
+[9.713s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/dojo
+[9.714s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo' for CMake config files
+[9.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('dojo', 'cmake_prefix_path')
+[9.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/dojo/share/dojo/hook/cmake_prefix_path.ps1'
+[9.715s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/dojo/share/dojo/hook/cmake_prefix_path.dsv'
+[9.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/dojo/share/dojo/hook/cmake_prefix_path.sh'
+[9.716s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo/bin'
+[9.716s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo/lib/pkgconfig/dojo.pc'
+[9.717s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo/lib/python3.10/site-packages'
+[9.717s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo/bin'
+[9.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/dojo/share/dojo/package.ps1'
+[9.718s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/dojo/share/dojo/package.dsv'
+[9.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/dojo/share/dojo/package.sh'
+[9.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/dojo/share/dojo/package.bash'
+[9.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/dojo/share/dojo/package.zsh'
+[9.721s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/dojo/share/colcon-core/packages/dojo)
+[9.721s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(dojo)
+[9.722s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo' for CMake module files
+[9.722s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo' for CMake config files
+[9.723s] Level 1:colcon.colcon_core.shell:create_environment_hook('dojo', 'cmake_prefix_path')
+[9.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/dojo/share/dojo/hook/cmake_prefix_path.ps1'
+[9.724s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/dojo/share/dojo/hook/cmake_prefix_path.dsv'
+[9.724s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/dojo/share/dojo/hook/cmake_prefix_path.sh'
+[9.725s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo/bin'
+[9.725s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo/lib/pkgconfig/dojo.pc'
+[9.726s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo/lib/python3.10/site-packages'
+[9.726s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/dojo/bin'
+[9.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/dojo/share/dojo/package.ps1'
+[9.728s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/dojo/share/dojo/package.dsv'
+[9.728s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/dojo/share/dojo/package.sh'
+[9.729s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/dojo/share/dojo/package.bash'
+[9.731s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/dojo/share/dojo/package.zsh'
+[9.732s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/dojo/share/colcon-core/packages/dojo)
+[9.732s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/nathan/ros2_ws/src/rdj2025_potato_disease_detection' with build type 'ament_python'
+[9.733s] Level 1:colcon.colcon_core.shell:create_environment_hook('rdj2025_potato_disease_detection', 'ament_prefix_path')
+[9.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/hook/ament_prefix_path.ps1'
+[9.734s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/hook/ament_prefix_path.dsv'
+[9.735s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/hook/ament_prefix_path.sh'
+[9.737s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[9.737s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[9.840s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/build/ppp_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/ppp_bot -- -j4 -l4
+[10.411s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/nathan/ros2_ws/src/rdj2025_potato_disease_detection'
+[10.411s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[10.412s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[10.426s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/build/ppp_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/ppp_bot -- -j4 -l4
+[10.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/build/ppp_bot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/ppp_bot
+[10.953s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ppp_bot)
+[10.954s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot' for CMake module files
+[10.955s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot' for CMake config files
+[10.956s] Level 1:colcon.colcon_core.shell:create_environment_hook('ppp_bot', 'cmake_prefix_path')
+[10.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/hook/cmake_prefix_path.ps1'
+[10.960s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/hook/cmake_prefix_path.dsv'
+[10.960s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/hook/cmake_prefix_path.sh'
+[10.962s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot/bin'
+[10.962s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot/lib/pkgconfig/ppp_bot.pc'
+[10.966s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot/lib/python3.10/site-packages'
+[10.966s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot/bin'
+[10.967s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.ps1'
+[10.968s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.dsv'
+[10.971s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.sh'
+[10.974s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/build/ppp_bot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/ppp_bot
+[10.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.bash'
+[10.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.zsh'
+[10.977s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/ppp_bot/share/colcon-core/packages/ppp_bot)
+[10.978s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ppp_bot)
+[10.978s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot' for CMake module files
+[10.981s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot' for CMake config files
+[10.981s] Level 1:colcon.colcon_core.shell:create_environment_hook('ppp_bot', 'cmake_prefix_path')
+[10.981s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/hook/cmake_prefix_path.ps1'
+[10.982s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/hook/cmake_prefix_path.dsv'
+[10.983s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/hook/cmake_prefix_path.sh'
+[10.984s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot/bin'
+[10.984s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot/lib/pkgconfig/ppp_bot.pc'
+[10.985s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot/lib/python3.10/site-packages'
+[10.985s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/ppp_bot/bin'
+[10.986s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.ps1'
+[11.063s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.dsv'
+[11.064s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.sh'
+[11.065s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.bash'
+[11.066s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.zsh'
+[11.067s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/ppp_bot/share/colcon-core/packages/ppp_bot)
+[11.067s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/nathan/ros2_ws/src/sllidar_ros2' with build type 'ament_cmake'
+[11.068s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/nathan/ros2_ws/src/sllidar_ros2'
+[11.068s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[11.068s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[11.277s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/sllidar_ros2 -- -j4 -l4
+[13.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/diffdrive_arduino -- -j4 -l4
+[13.116s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/diffdrive_arduino
+[13.514s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[13.515s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino' for CMake module files
+[13.516s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/build/diffdrive_arduino' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/diffdrive_arduino
+[13.518s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino' for CMake config files
+[13.518s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[13.518s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[13.519s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[13.520s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[13.521s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino/lib'
+[13.521s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[13.522s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[13.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[13.523s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[13.524s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino/bin'
+[13.524s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[13.524s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino/lib/python3.10/site-packages'
+[13.525s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino/bin'
+[13.525s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[13.526s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[13.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[13.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[13.528s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[13.529s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[13.530s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(diffdrive_arduino)
+[13.530s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino' for CMake module files
+[13.531s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino' for CMake config files
+[13.531s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'cmake_prefix_path')
+[13.532s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.ps1'
+[13.533s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.dsv'
+[13.534s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/cmake_prefix_path.sh'
+[13.535s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino/lib'
+[13.535s] Level 1:colcon.colcon_core.shell:create_environment_hook('diffdrive_arduino', 'ld_library_path_lib')
+[13.536s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.ps1'
+[13.536s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.dsv'
+[13.537s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/hook/ld_library_path_lib.sh'
+[13.538s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino/bin'
+[13.538s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino/lib/pkgconfig/diffdrive_arduino.pc'
+[13.539s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino/lib/python3.10/site-packages'
+[13.539s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/diffdrive_arduino/bin'
+[13.540s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.ps1'
+[13.541s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.dsv'
+[13.542s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.sh'
+[13.543s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.bash'
+[13.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/diffdrive_arduino/share/diffdrive_arduino/package.zsh'
+[13.545s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/diffdrive_arduino/share/colcon-core/packages/diffdrive_arduino)
+[13.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/sllidar_ros2 -- -j4 -l4
+[13.629s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/sllidar_ros2
+[14.038s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[14.040s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2' for CMake module files
+[14.043s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2' for CMake config files
+[14.043s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[14.044s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[14.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/sllidar_ros2
+[14.047s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[14.050s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[14.052s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2/lib'
+[14.052s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2/bin'
+[14.052s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[14.053s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[14.054s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2/bin'
+[14.054s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[14.056s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[14.058s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[14.059s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[14.062s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[14.064s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[14.065s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sllidar_ros2)
+[14.066s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2' for CMake module files
+[14.068s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2' for CMake config files
+[14.068s] Level 1:colcon.colcon_core.shell:create_environment_hook('sllidar_ros2', 'cmake_prefix_path')
+[14.070s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.ps1'
+[14.071s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.dsv'
+[14.072s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/hook/cmake_prefix_path.sh'
+[14.109s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2/lib'
+[14.109s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2/bin'
+[14.110s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2/lib/pkgconfig/sllidar_ros2.pc'
+[14.110s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2/lib/python3.10/site-packages'
+[14.110s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/sllidar_ros2/bin'
+[14.111s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.ps1'
+[14.113s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv'
+[14.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.sh'
+[14.117s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.bash'
+[14.119s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.zsh'
+[14.120s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/sllidar_ros2/share/colcon-core/packages/sllidar_ros2)
+[20.853s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/src/joy_tester': PYTHONPATH=/home/nathan/ros2_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_tester build --build-base /home/nathan/ros2_ws/build/joy_tester/build install --record /home/nathan/ros2_ws/build/joy_tester/install.log --single-version-externally-managed install_data
+[20.864s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/nathan/ros2_ws/src/rdj2025_potato_disease_detection': PYTHONPATH=/home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rdj2025_potato_disease_detection build --build-base /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build install --record /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/install.log --single-version-externally-managed install_data
+[21.447s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/joy_tester' for CMake module files
+[21.448s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/joy_tester' for CMake config files
+[21.450s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/src/joy_tester' returned '0': PYTHONPATH=/home/nathan/ros2_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/joy_tester build --build-base /home/nathan/ros2_ws/build/joy_tester/build install --record /home/nathan/ros2_ws/build/joy_tester/install.log --single-version-externally-managed install_data
+[21.453s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/joy_tester/lib'
+[21.453s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/joy_tester/bin'
+[21.453s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/joy_tester/lib/pkgconfig/joy_tester.pc'
+[21.453s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages'
+[21.453s] Level 1:colcon.colcon_core.shell:create_environment_hook('joy_tester', 'pythonpath')
+[21.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/joy_tester/share/joy_tester/hook/pythonpath.ps1'
+[21.455s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/joy_tester/share/joy_tester/hook/pythonpath.dsv'
+[21.456s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/joy_tester/share/joy_tester/hook/pythonpath.sh'
+[21.458s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/joy_tester/bin'
+[21.458s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(joy_tester)
+[21.459s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/joy_tester/share/joy_tester/package.ps1'
+[21.460s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/joy_tester/share/joy_tester/package.dsv'
+[21.461s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/joy_tester/share/joy_tester/package.sh'
+[21.462s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/joy_tester/share/joy_tester/package.bash'
+[21.463s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/joy_tester/share/joy_tester/package.zsh'
+[21.464s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/joy_tester/share/colcon-core/packages/joy_tester)
+[21.474s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection' for CMake module files
+[21.475s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/nathan/ros2_ws/src/rdj2025_potato_disease_detection' returned '0': PYTHONPATH=/home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/rdj2025_potato_disease_detection build --build-base /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/build install --record /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/install.log --single-version-externally-managed install_data
+[21.476s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection' for CMake config files
+[21.477s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib'
+[21.477s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/bin'
+[21.477s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/pkgconfig/rdj2025_potato_disease_detection.pc'
+[21.478s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages'
+[21.478s] Level 1:colcon.colcon_core.shell:create_environment_hook('rdj2025_potato_disease_detection', 'pythonpath')
+[21.478s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/hook/pythonpath.ps1'
+[21.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/hook/pythonpath.dsv'
+[21.480s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/hook/pythonpath.sh'
+[21.481s] Level 1:colcon.colcon_core.environment:checking '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/bin'
+[21.481s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rdj2025_potato_disease_detection)
+[21.482s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/package.ps1'
+[21.482s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/package.dsv'
+[21.483s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/package.sh'
+[21.484s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/package.bash'
+[21.485s] INFO:colcon.colcon_core.shell:Creating package script '/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/package.zsh'
+[21.485s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/colcon-core/packages/rdj2025_potato_disease_detection)
+[21.486s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[21.488s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[21.488s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[21.488s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[21.557s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[21.558s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[21.558s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[21.581s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[21.582s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/ros2_ws/install/local_setup.ps1'
+[21.599s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nathan/ros2_ws/install/_local_setup_util_ps1.py'
+[21.644s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/ros2_ws/install/setup.ps1'
+[21.646s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/ros2_ws/install/local_setup.sh'
+[21.677s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/nathan/ros2_ws/install/_local_setup_util_sh.py'
+[21.678s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/ros2_ws/install/setup.sh'
+[21.681s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/ros2_ws/install/local_setup.bash'
+[21.702s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/ros2_ws/install/setup.bash'
+[21.705s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/nathan/ros2_ws/install/local_setup.zsh'
+[21.723s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/nathan/ros2_ws/install/setup.zsh'
