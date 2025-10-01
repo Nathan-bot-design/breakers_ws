@@ -49,13 +49,13 @@ void ArduinoComms::setPidValues(float k_p, float k_d, float k_i, float k_o)
     sendMsg(ss.str());
 }
 
-void ArduinoComms::readImuValues(double &ax, double &ay, double &az, double &gx, double &gy, double &gz)
+void ArduinoComms::readImuValues(double &ax, double &ay, double &az,
+                                 double &gx, double &gy, double &gz,
+                                 double &qx, double &qy, double &qz, double &qw)
 {
   std::string response = sendMsg("i\r");
-  // response should be like: "0.0123 -0.001 9.803 0.0001 -0.0002 0.0003\n"
   std::istringstream iss(response);
-  iss >> ax >> ay >> az >> gx >> gy >> gz;
-  // if you want, add sanity checks on iss.fail()
+  iss >> ax >> ay >> az >> gx >> gy >> gz >> qx >> qy >> qz >> qw;
 }
 
 std::string ArduinoComms::sendMsg(const std::string &msg_to_send, bool print_output)

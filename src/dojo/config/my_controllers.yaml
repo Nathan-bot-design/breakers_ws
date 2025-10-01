@@ -36,7 +36,7 @@ diff_cont:
     # pose_covariance_diagonal: x
     # twist_covariance_diagonal: x
     # open_loop: x
-    # enable_odom_tf: x
+    # enable_odom_tf: false
 
     # cmd_vel_timeout: x
     # publish_limited_velocity: x
@@ -72,11 +72,4 @@ imu_broad:
   ros__parameters:
     sensor_name: imu_sensor
     frame_id: imu_link
-    use_orientation: false   # Tell it to skip orientation
-    state_interfaces:
-      - linear_acceleration.x
-      - linear_acceleration.y
-      - linear_acceleration.z
-      - angular_velocity.x
-      - angular_velocity.y
-      - angular_velocity.z
+    use_orientation: false

@@ -25,7 +25,10 @@ public:
   void setPidValues(float k_p, float k_d, float k_i, float k_o);
 
   bool connected() const { return serial_conn_.isOpen(); }
-  void readImuValues(double &ax, double &ay, double &az, double &gx, double &gy, double &gz);
+  void readImuValues(double &ax, double &ay, double &az,
+                   double &gx, double &gy, double &gz,
+                   double &qx, double &qy, double &qz, double &qw);
+
 
 
   std::string sendMsg(const std::string &msg_to_send, bool print_output = false);

@@ -141,27 +141,25 @@ return_type DiffDriveArduino::read(const rclcpp::Time & /* time */, const rclcpp
   r_wheel_.pos = r_wheel_.calcEncAngle();
   r_wheel_.vel = (r_wheel_.pos - pos_prev) / deltaSeconds;
   // ---------------- IMU ----------------
- // ---------------- IMU ----------------
-  double ax, ay, az, gx, gy, gz;
-  arduino_.readImuValues(ax, ay, az, gx, gy, gz);
+double ax, ay, az, gx, gy, gz, qx, qy, qz, qw;
+arduino_.readImuValues(ax, ay, az, gx, gy, gz, qx, qy, qz, qw);
 
-// Convert and store
-  imu_ax_ = ax * 9.80665;          // convert g → m/s²
-  imu_ay_ = ay * 9.80665;
-  imu_az_ = az * 9.80665;
+// Convert accel to m/s²
+imu_ax_ = ax * 9.80665;
+imu_ay_ = ay * 9.80665;
+imu_az_ = az * 9.80665;
 
-  imu_gx_ = gx * M_PI / 180.0;     // convert deg/s → rad/s
-  imu_gy_ = gy * M_PI / 180.0;
-  imu_gz_ = gz * M_PI / 180.0;
+// Convert gyro to rad/s
+imu_gx_ = gx * M_PI / 180.0;
+imu_gy_ = gy * M_PI / 180.0;
+imu_gz_ = gz * M_PI / 180.0;
 
-  imu_orientation_[0] = 0.0;  // x
-imu_orientation_[1] = 0.0;  // y
-imu_orientation_[2] = 0.0;  // z
-imu_orientation_[3] = 1.0;  // w
-
-
-
-
+// Convert IMU quaternion (NED) → ROS (ENU)
+// Swap Y/Z, invert new X
+imu_orientation_[0] = qy;  // x
+imu_orientation_[1] =  qx;  // y
+imu_orientation_[2] =  qz;  // z
+imu_orientation_[3] =  qw;  // w
 
   return return_type::OK;
 
