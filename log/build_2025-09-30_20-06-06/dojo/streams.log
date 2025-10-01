@@ -1,0 +1,62 @@
+[0.127s] Invoking command in '/home/nathan/ros2_ws/build/dojo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake /home/nathan/ros2_ws/src/dojo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nathan/ros2_ws/install/dojo
+[1.082s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.532s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.846s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.374s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.538s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.587s] -- Added test 'lint_cmake' to check CMake code style
+[5.632s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.682s] -- Added test 'xmllint' to check XML markup files
+[5.834s] -- Configuring done
+[5.967s] -- Generating done
+[5.968s] -- Build files have been written to: /home/nathan/ros2_ws/build/dojo
+[5.979s] Invoked command in '/home/nathan/ros2_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake /home/nathan/ros2_ws/src/dojo -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nathan/ros2_ws/install/dojo
+[5.980s] Invoking command in '/home/nathan/ros2_ws/build/dojo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/dojo -- -j4 -l4
+[6.292s] Invoked command in '/home/nathan/ros2_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/dojo -- -j4 -l4
+[6.306s] Invoking command in '/home/nathan/ros2_ws/build/dojo': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/dojo
+[6.316s] -- Install configuration: ""
+[6.316s] -- Execute custom install script
+[6.317s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/default_view.rviz
+[6.330s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/empty.yaml
+[6.341s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/gaz_ros2_ctl_use_sim.yaml
+[6.352s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/gazebo_params.yaml
+[6.368s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/joystick.yaml
+[6.386s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/mapper_params_online_async.yaml
+[6.404s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/my_controllers.yaml
+[6.417s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/nav2_params.yaml
+[6.433s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/twist_mux.yaml
+[6.448s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/gazebo_control.xacro
+[6.460s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/inertial_macros.xacro
+[6.479s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/lidar.xacro
+[6.507s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/robot.urdf.xacro
+[6.522s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/robot_core.xacro
+[6.534s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/ros2_control.xacro
+[6.546s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/consolidated.launch.py
+[6.564s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/joystick.launch.py
+[6.580s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/launch_robot.launch.py
+[6.603s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/launch_sim.launch.py
+[6.621s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/localization_launch.py
+[6.634s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/navigation_launch.py
+[6.647s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/raspi_bot.launch.py
+[6.658s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/rsp.launch.py
+[6.676s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/dojo2024
+[6.693s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/empty.world
+[6.706s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/gamefield.sdf
+[6.720s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model/model.config
+[6.733s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model/model.sdf
+[6.747s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/package_run_dependencies/dojo
+[6.758s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/parent_prefix_path/dojo
+[6.776s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/ament_prefix_path.sh
+[6.796s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/ament_prefix_path.dsv
+[6.814s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/path.sh
+[6.832s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/path.dsv
+[6.844s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.bash
+[6.862s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.sh
+[6.882s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.zsh
+[6.903s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.dsv
+[6.918s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/package.dsv
+[6.931s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/packages/dojo
+[6.944s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/cmake/dojoConfig.cmake
+[6.955s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/cmake/dojoConfig-version.cmake
+[6.977s] -- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/package.xml
+[6.998s] Invoked command in '/home/nathan/ros2_ws/build/dojo' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/dojo

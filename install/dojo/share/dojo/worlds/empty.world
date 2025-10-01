@@ -1,13 +1,1 @@
-<?xml version="1.0" ?>
-<sdf version="1.7">
-  <world name="default">
-    <!-- A global light source -->
-    <include>
-      <uri>model://sun</uri>
-    </include>
-    <!-- A ground plane -->
-    <include>
-      <uri>model://ground_plane</uri>
-    </include>
-  </world>
-</sdf>
+/home/nathan/ros2_ws/src/dojo/worlds/empty.world

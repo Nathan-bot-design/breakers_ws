@@ -1,0 +1,114 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nathan/ros2_ws/build/ppp_bot
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/camera.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/depth_camera.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/ignition_control.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/inertial_macros.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/lidar.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/materials.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/robot.urdf.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/robot_core.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//description/ros2_control.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/joystick.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/keyboard.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/launch_ign.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/launch_sim.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/legacy_launch_sim.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/localization.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/navigation.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/online_async.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/rsp.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//launch/teleop_sim.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/barrels.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/cones.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/cones2.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/empty.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/maze.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/moving_robot.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/room.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/room_with_cones.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//worlds/simple_room.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/default.rviz
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/joystick.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/mapper_params_online_async.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/my_controllers.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/nav2_params.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//config/twist_mux.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/materials/textures/Construction_Barrel_Diffuse.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/materials/textures/Construction_Barrel_Spec.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/meshes/construction_barrel.dae
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model-1_3.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model-1_4.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model.config
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/model.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/1.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/2.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/3.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/4.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_barrel/thumbnails/5.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/materials/textures/Construction_Cone_Diffuse.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/meshes/construction_cone.dae
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model-1_3.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model-1_4.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model.config
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/model.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/1.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/2.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/3.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/4.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/construction_cone/thumbnails/5.png
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/maze/model.config
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/maze/model.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/room/model.config
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/room/model.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/simple_room/model.config
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//models/simple_room/model.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/baseline.pgm
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/baseline.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.data
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.pgm
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.posegraph
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones2.pgm
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/cones2.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.data
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.pgm
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.posegraph
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/maze.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.data
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.pgm
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.posegraph
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.data
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.pgm
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.posegraph
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/room_with_cones.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.data
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.pgm
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.posegraph
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot//maps/simple_room.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ament_index/resource_index/package_run_dependencies/ppp_bot
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ament_index/resource_index/parent_prefix_path/ppp_bot
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/ament_prefix_path.sh
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/ament_prefix_path.dsv
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/path.sh
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/environment/path.dsv
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.bash
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.sh
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.zsh
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/local_setup.dsv
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.dsv
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ament_index/resource_index/packages/ppp_bot
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/cmake/ppp_botConfig.cmake
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/cmake/ppp_botConfig-version.cmake
+-- Symlinking: /home/nathan/ros2_ws/install/ppp_bot/share/ppp_bot/package.xml

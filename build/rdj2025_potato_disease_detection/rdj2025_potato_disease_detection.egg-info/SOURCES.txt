@@ -1,4 +1,3 @@
-README.md
 package.xml
 setup.cfg
 setup.py
@@ -13,7 +12,11 @@ rdj2025_potato_disease_detection/__init__.py
 rdj2025_potato_disease_detection/inference_engine.py
 rdj2025_potato_disease_detection/potato_disease_detection_node.py
 rdj2025_potato_disease_detection/test_image_publisher.py
+rdj2025_potato_disease_detection.egg-info/PKG-INFO
+rdj2025_potato_disease_detection.egg-info/SOURCES.txt
+rdj2025_potato_disease_detection.egg-info/dependency_links.txt
+rdj2025_potato_disease_detection.egg-info/entry_points.txt
+rdj2025_potato_disease_detection.egg-info/requires.txt
+rdj2025_potato_disease_detection.egg-info/top_level.txt
+rdj2025_potato_disease_detection.egg-info/zip-safe
 resource/rdj2025_potato_disease_detection
-test/test_copyright.py
-test/test_flake8.py
-test/test_pep257.py

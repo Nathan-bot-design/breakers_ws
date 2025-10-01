@@ -4,3 +4,6 @@ source;share/rdj2025_potato_disease_detection/hook/pythonpath.sh
 source;share/rdj2025_potato_disease_detection/hook/ament_prefix_path.ps1
 source;share/rdj2025_potato_disease_detection/hook/ament_prefix_path.dsv
 source;share/rdj2025_potato_disease_detection/hook/ament_prefix_path.sh
+source;../../build/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/hook/pythonpath_develop.ps1
+source;../../build/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/hook/pythonpath_develop.dsv
+source;../../build/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection/hook/pythonpath_develop.sh

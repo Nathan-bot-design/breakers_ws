@@ -1,0 +1,19 @@
+[14.934s] Invoking command in '/home/nathan/ros2_ws/build/joy_tester': PYTHONPATH=/home/nathan/ros2_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nathan/ros2_ws/build/joy_tester/build --no-deps symlink_data --force
+[15.582s] running develop
+[16.050s] running egg_info
+[16.051s] writing joy_tester.egg-info/PKG-INFO
+[16.051s] writing dependency_links to joy_tester.egg-info/dependency_links.txt
+[16.052s] writing entry points to joy_tester.egg-info/entry_points.txt
+[16.052s] writing requirements to joy_tester.egg-info/requires.txt
+[16.053s] writing top-level names to joy_tester.egg-info/top_level.txt
+[16.056s] reading manifest file 'joy_tester.egg-info/SOURCES.txt'
+[16.058s] writing manifest file 'joy_tester.egg-info/SOURCES.txt'
+[16.063s] running build_ext
+[16.065s] Creating /home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages/joy-tester.egg-link (link to .)
+[16.067s] Installing test_joy script to /home/nathan/ros2_ws/install/joy_tester/lib/joy_tester
+[16.067s] 
+[16.070s] Installed /home/nathan/ros2_ws/build/joy_tester
+[16.070s] running symlink_data
+[16.070s] symbolically linking /home/nathan/ros2_ws/build/joy_tester/resource/joy_tester -> /home/nathan/ros2_ws/install/joy_tester/share/ament_index/resource_index/packages
+[16.071s] symbolically linking /home/nathan/ros2_ws/build/joy_tester/package.xml -> /home/nathan/ros2_ws/install/joy_tester/share/joy_tester
+[16.179s] Invoked command in '/home/nathan/ros2_ws/build/joy_tester' returned '0': PYTHONPATH=/home/nathan/ros2_ws/build/joy_tester/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/nathan/ros2_ws/install/joy_tester/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/nathan/ros2_ws/build/joy_tester/build --no-deps symlink_data --force

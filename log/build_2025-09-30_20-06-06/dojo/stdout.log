@@ -1,0 +1,56 @@
+-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/nathan/ros2_ws/build/dojo
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/default_view.rviz
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/empty.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/gaz_ros2_ctl_use_sim.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/gazebo_params.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/joystick.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/mapper_params_online_async.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/my_controllers.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/nav2_params.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/config/twist_mux.yaml
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/gazebo_control.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/inertial_macros.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/lidar.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/robot.urdf.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/robot_core.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/description/ros2_control.xacro
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/consolidated.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/joystick.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/launch_robot.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/launch_sim.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/localization_launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/navigation_launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/raspi_bot.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/launch/rsp.launch.py
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/dojo2024
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/empty.world
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/gamefield.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model/model.config
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/worlds/world_model/model.sdf
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/package_run_dependencies/dojo
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/parent_prefix_path/dojo
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/ament_prefix_path.sh
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/ament_prefix_path.dsv
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/path.sh
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/environment/path.dsv
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.bash
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.sh
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.zsh
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/local_setup.dsv
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/package.dsv
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/ament_index/resource_index/packages/dojo
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/cmake/dojoConfig.cmake
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/cmake/dojoConfig-version.cmake
+-- Symlinking: /home/nathan/ros2_ws/install/dojo/share/dojo/package.xml

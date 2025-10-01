@@ -1,0 +1,29 @@
+[0.792s] Invoking command in '/home/nathan/ros2_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/sllidar_ros2 -- -j4 -l4
+[1.032s] [ 90%] Built target sllidar_node
+[1.142s] [100%] Built target sllidar_client
+[1.177s] Invoked command in '/home/nathan/ros2_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/sllidar_ros2 -- -j4 -l4
+[1.178s] Invoking command in '/home/nathan/ros2_ws/build/sllidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/sllidar_ros2
+[1.202s] -- Install configuration: ""
+[1.202s] -- Execute custom install script
+[1.202s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/launch/sllidar_a1_launch.py
+[1.209s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/rviz/sllidar_ros2.rviz
+[1.211s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node
+[1.211s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/lib/sllidar_ros2/sllidar_client
+[1.212s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/ament_index/resource_index/package_run_dependencies/sllidar_ros2
+[1.216s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/ament_index/resource_index/parent_prefix_path/sllidar_ros2
+[1.216s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.sh
+[1.221s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/environment/ament_prefix_path.dsv
+[1.221s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.sh
+[1.230s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/environment/path.dsv
+[1.230s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.bash
+[1.230s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.sh
+[1.233s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.zsh
+[1.233s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/local_setup.dsv
+[1.233s] -- Symlinking: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.dsv
+[1.256s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/ament_index/resource_index/packages/sllidar_ros2
+[1.257s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.265s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.265s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config.cmake
+[1.265s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/cmake/sllidar_ros2Config-version.cmake
+[1.265s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/sllidar_ros2/share/sllidar_ros2/package.xml
+[1.273s] Invoked command in '/home/nathan/ros2_ws/build/sllidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/sllidar_ros2

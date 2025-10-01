@@ -1,0 +1,18 @@
+running develop
+running egg_info
+writing rdj2025_potato_disease_detection.egg-info/PKG-INFO
+writing dependency_links to rdj2025_potato_disease_detection.egg-info/dependency_links.txt
+writing entry points to rdj2025_potato_disease_detection.egg-info/entry_points.txt
+writing requirements to rdj2025_potato_disease_detection.egg-info/requires.txt
+writing top-level names to rdj2025_potato_disease_detection.egg-info/top_level.txt
+reading manifest file 'rdj2025_potato_disease_detection.egg-info/SOURCES.txt'
+writing manifest file 'rdj2025_potato_disease_detection.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/python3.10/site-packages/rdj2025-potato-disease-detection.egg-link (link to .)
+Installing potato_disease_detection_node script to /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/rdj2025_potato_disease_detection
+Installing publish_test_image script to /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/lib/rdj2025_potato_disease_detection
+
+Installed /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection
+running symlink_data
+symbolically linking /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/resource/rdj2025_potato_disease_detection -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/ament_index/resource_index/packages
+symbolically linking /home/nathan/ros2_ws/build/rdj2025_potato_disease_detection/package.xml -> /home/nathan/ros2_ws/install/rdj2025_potato_disease_detection/share/rdj2025_potato_disease_detection
