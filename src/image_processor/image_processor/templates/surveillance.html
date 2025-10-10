@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ROS Live Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #f4f4f4;
+            padding: 20px;
+            margin: 0;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        .image-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .image-block {
+            flex: 1 1 45%;
+            background: #fff;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        .image-block img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        .metadata-block {
+            margin-top: 30px;
+            background: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0f0f0;
+        }
+
+        @media (max-width: 768px) {
+            .image-row {
+                flex-direction: column;
+            }
+
+            .image-block {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Live ROS Image Dashboard</h1>
+    <p><strong>Timestamp:</strong> <span id="timestamp">Loading...</span></p>
+
+    <div class="image-row">
+        <div class="image-block">
+            <h2>Compressed Image (/image_compressed)</h2>
+            <img id="compressed-img" src="" />
+        </div>
+        <div class="image-block">
+            <h2>Annotated Image (/image_annotated)</h2>
+            <img id="annotated-img" src="" />
+        </div>
+    </div>
+
+    <div class="metadata-block">
+        <h2>Detection Metadata</h2>
+        <table id="metadata-table">
+            <thead>
+                <tr>
+                    <th>Label</th>
+                    <th>Confidence</th>
+                    <th>Bounding Box</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <p><strong>Total Objects Detected:</strong> <span id="object-count">0</span></p>
+    </div>
+
+    <script>
+        async function updateDashboard() {
+            try {
+                const res = await fetch('/data');
+                const data = await res.json();
+
+                document.getElementById('timestamp').textContent = data.timestamp;
+                document.getElementById('compressed-img').src = `data:image/jpeg;base64,${data.compressed}`;
+                document.getElementById('annotated-img').src = `data:image/jpeg;base64,${data.annotated}`;
+                document.getElementById('object-count').textContent = data.num_objects;
+
+                const tbody = document.querySelector('#metadata-table tbody');
+                tbody.innerHTML = '';
+                data.objects.forEach(obj => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${obj.label}</td>
+                        <td>${obj.confidence.toFixed(2)}</td>
+                        <td>[${obj.bbox.join(', ')}]</td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            } catch (err) {
+                console.error('Dashboard update failed:', err);
+            }
+        }
+
+        setInterval(updateDashboard, 500);
+        updateDashboard(); // initial load
+    </script>
+</body>
+</html>
