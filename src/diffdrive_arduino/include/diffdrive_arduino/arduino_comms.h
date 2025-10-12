@@ -3,6 +3,8 @@
 
 #include <serial/serial.h>
 #include <cstring>
+#include <mutex>
+
 
 class ArduinoComms
 {
@@ -28,6 +30,7 @@ public:
   void readImuValues(double &ax, double &ay, double &az,
                    double &gx, double &gy, double &gz,
                    double &qx, double &qy, double &qz, double &qw);
+  void setRelay(char cmd);   // send a single-letter relay command (e.g. 'f', 'g', 'h', 'j')
 
 
 
@@ -36,6 +39,8 @@ public:
 
 private:
   serial::Serial serial_conn_;  ///< Underlying serial connection 
+  std::mutex serial_mutex_;   // protect serial access
+
 };
 
 #endif // DIFFDRIVE_ARDUINO_ARDUINO_COMMS_H

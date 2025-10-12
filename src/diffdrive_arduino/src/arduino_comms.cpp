@@ -3,6 +3,7 @@
 #include <rclcpp/rclcpp.hpp>
 #include <sstream>
 #include <cstdlib>
+#include <mutex>   // at top if not present
 
 
 void ArduinoComms::setup(const std::string &serial_device, int32_t baud_rate, int32_t timeout_ms)
@@ -14,6 +15,30 @@ void ArduinoComms::setup(const std::string &serial_device, int32_t baud_rate, in
     serial_conn_.open();
     // serial_conn_.(serial_device, baud_rate, serial::Timeout::simpleTimeout(timeout_ms));
 
+}
+
+std::string ArduinoComms::sendMsg(const std::string &msg_to_send, bool print_output)
+{
+    std::lock_guard<std::mutex> lock(serial_mutex_);
+    serial_conn_.write(msg_to_send);
+    // readline() will block until a newline or timeout
+    std::string response = serial_conn_.readline();
+
+    if (print_output)
+    {
+        // logging optional
+    }
+
+    return response;
+}
+void ArduinoComms::setRelay(char cmd)
+{
+    // Compose a 1-char command + carriage return to match Arduino expectations
+    std::string msg;
+    msg.push_back(cmd);
+    msg.push_back('\r');
+    // we dont force print output, but you can set true for debugging
+    sendMsg(msg, false);
 }
 
 
@@ -56,18 +81,4 @@ void ArduinoComms::readImuValues(double &ax, double &ay, double &az,
   std::string response = sendMsg("i\r");
   std::istringstream iss(response);
   iss >> ax >> ay >> az >> gx >> gy >> gz >> qx >> qy >> qz >> qw;
-}
-
-std::string ArduinoComms::sendMsg(const std::string &msg_to_send, bool print_output)
-{
-    serial_conn_.write(msg_to_send);
-    std::string response = serial_conn_.readline();
-
-    if (print_output)
-    {
-        // RCLCPP_INFO_STREAM(logger_,"Sent: " << msg_to_send);
-        // RCLCPP_INFO_STREAM(logger_,"Received: " << response);
-    }
-
-    return response;
 }

@@ -13,8 +13,8 @@ def generate_launch_description():
                 {'format': 'YUYV'},
                 {'role': 'still'},
                 {'jpeg_quality': 25},
-                # {'FrameDurationLimits': [17000, 17000]}
-                {'FrameDurationLimits': [5000, 5000]}
+                {'FrameDurationLimits': [17000, 17000]}
+                # {'FrameDurationLimits': [5000, 5000]}
             ],
             remappings=[
                 ('out', '/camera/image_raw')
