@@ -22,6 +22,11 @@
 #define LEFT            0
 #define RIGHT           1
 #define READ_IMU 'i'
+#define RELAY_PUMP_ON   'f'
+#define RELAY_PUMP_OFF  'g'
+#define RELAY_VAC_ON    'h'
+#define RELAY_VAC_OFF   'j'
+
 
 
 #endif

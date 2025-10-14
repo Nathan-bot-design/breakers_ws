@@ -73,8 +73,11 @@
 #define BAUDRATE 57600
 
 /* Maximum PWM signal */
-#define MAX_PWM 150
+#define MAX_PWM 180
 #include "imu_driver.h"
+#include "relays.h"
+
+
 
 #if defined(ARDUINO) && ARDUINO >= 100
 #include "Arduino.h"
@@ -334,6 +337,14 @@ int runCommand() {
       Ko = pid_args[3];
       Serial.println("OK");
       break;
+        // === Relay commands (for pumps and vacuum) ===
+    case RELAY_PUMP_ON:
+    case RELAY_PUMP_OFF:
+    case RELAY_VAC_ON:
+    case RELAY_VAC_OFF:
+      handleRelayCommand(cmd);
+      break;
+
 
 #endif
     default:
@@ -346,6 +357,8 @@ int runCommand() {
 void setup() {
   Serial.begin(BAUDRATE);
   initIMU();
+  initRelays();
+
 
 
 // Initialize the motor controller if used */
