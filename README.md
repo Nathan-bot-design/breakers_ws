@@ -239,83 +239,120 @@ ros2 launch dojo navigation_launch.py use_sim_time:=false
 ```
 
 ---
-## Navigation Optimization & Tuning
 
-The navigation stack in the BREAKERS Robot was heavily tuned beyond default Nav2 settings to achieve smooth, reliable, and real-time motion on a low-power Raspberry Pi + PC setup.
-This section outlines the key improvements and tuning decisions made during development.
+##  Navigation Stack Tuning
 
-1️⃣ Localization (AMCL)
+The navigation stack in the **BREAKERS Robot** was **heavily optimized beyond default Nav2 parameters** to achieve **smooth, reliable, and real-time motion** on a **Raspberry Pi + PC** setup.
 
-Goal: Improve pose accuracy and reduce drift.
-Changes:
+This section summarizes the key improvements and tuning decisions made during development.
 
-α1–α5: 0.05       (was 0.2)
-update_rate: 5.0  (was 1.0)
+---
 
+### 1️⃣ Localization (AMCL)
 
-Effect: AMCL now trusts wheel odometry more, giving a tighter and more stable particle cloud with minimal jitter — essential for precise mapping and navigation.
+**Goal:** Improve pose accuracy and reduce drift.  
 
-2️⃣ Controller Server (Path Following)
+**Changes:**
 
-Goal: Achieve smoother, more natural movement and stronger obstacle avoidance.
-Changes:
+| Parameter | New | Old |
+|:--|:--:|:--:|
+| α1–α5 | 0.05 | 0.2 |
+| update_rate | 5.0 | 1.0 |
 
-xy_goal_tolerance:   0.20   (was 0.25)
-yaw_goal_tolerance:  0.20   (was 0.25)
-PathAlign.scale:     15.0   (was 32.0)
-BaseObstacle.scale:  0.5    (was 0.02)
+**Effect:**  
+AMCL now **trusts wheel odometry more**, producing a tighter and more stable particle cloud with minimal jitter — essential for **precise mapping and navigation**.
 
+---
 
-Effect: Reduced oscillations and zig-zag motion; smoother turns and more stable behavior across gravel, ramps, and uneven surfaces.
+### 2️⃣ Controller Server (Path Following)
 
-3️⃣ Local Costmap
+**Goal:** Achieve smoother, more natural motion and stronger obstacle avoidance.  
 
-Goal: Optimize for real-time updates on constrained hardware.
-Changes:
+**Changes:**
 
-resolution:          0.05 m   (was 0.02)
-robot_radius:        0.18 m   (was 0.15)
-inflation_radius:    0.08 m   (was 0.10)
-cost_scaling_factor: 2.0      (was 20.0)
+| Parameter | New | Old |
+|:--|:--:|:--:|
+| xy_goal_tolerance | 0.20 | 0.25 |
+| yaw_goal_tolerance | 0.20 | 0.25 |
+| PathAlign.scale | 15.0 | 32.0 |
+| BaseObstacle.scale | 0.5 | 0.02 |
 
+**Effect:**  
+Reduced oscillations and zig-zagging. The robot now executes **fluid turns** and maintains **stable paths** across gravel, ramps, and uneven terrain.
 
-Effect: Reduced CPU load while maintaining safe obstacle margins and smooth local pathing.
+---
 
-4️⃣ Global Costmap
+### 3️⃣ Local Costmap
 
-Goal: Faster global planning with reduced CPU usage.
-Changes:
+**Goal:** Optimize for real-time performance on limited hardware.  
 
-resolution:          0.05 m   (was 0.02)
-cost_scaling_factor: 2.5      (was 20.0)
-robot_radius:        0.18 m   (was 0.15)
+**Changes:**
 
+| Parameter | New | Old |
+|:--|:--:|:--:|
+| resolution | 0.05 m | 0.02 m |
+| robot_radius | 0.18 m | 0.15 m |
+| inflation_radius | 0.08 m | 0.10 m |
+| cost_scaling_factor | 2.0 | 20.0 |
 
-Effect: Smoother, more efficient global path generation — ideal for large open or semi-structured environments.
+**Effect:**  
+CPU load reduced significantly while maintaining **safe obstacle margins** and **smooth local pathing**.
 
-5️⃣ Planner & Smoother Servers
+---
 
-Goal: Combine stable global paths with smooth local execution.
-Changes:
+### 4️⃣ Global Costmap
 
-planner:             Dijkstra (was A*)
-goal_tolerance:      0.75     (was 0.5)
-smoother:            refinement_enabled: true
-                     max_iterations: 1000
+**Goal:** Accelerate global planning and reduce computational overhead.  
 
+**Changes:**
 
-Effect: The global Dijkstra planner works well in partially mapped environments, while the smoother ensures continuous, curve-optimized paths without stopping between waypoints.
+| Parameter | New | Old |
+|:--|:--:|:--:|
+| resolution | 0.05 m | 0.02 m |
+| cost_scaling_factor | 2.5 | 20.0 |
+| robot_radius | 0.18 m | 0.15 m |
 
-🧩 Summary of Improvements
-Localization →  Higher odometry trust → Low drift, stable positioning
-Controller   →  Balanced DWB critics  → Smooth obstacle-aware motion
-Local Map    →  Coarser resolution    → Lower CPU load, faster updates
-Global Map   →  Soft inflation zones  → Faster global planning
-Planner      →  Dijkstra + smoother   → Robust real-world navigation
+**Effect:**  
+Global planner now computes paths **faster and more efficiently**, ideal for **open or semi-structured fields**.
 
+---
 
-✅ Overall Result:
-These custom parameters allowed the BREAKERS Robot to achieve collision-free, power-efficient, and human-like navigation, adapting fluidly across grass, gravel, ramps, and sawdust — perfectly matching the Robotics Dojo 2025 Agriculture Challenge conditions.
+### 5️⃣ Planner & Smoother Servers
+
+**Goal:** Combine **stable global paths** with **smooth local execution**.  
+
+**Changes:**
+
+| Parameter | New | Old |
+|:--|:--:|:--:|
+| planner | Dijkstra | A* |
+| goal_tolerance | 0.75 | 0.5 |
+| smoother.refinement_enabled | true | — |
+| smoother.max_iterations | 1000 | — |
+
+**Effect:**  
+The **Dijkstra planner** performs better in partially mapped areas, while the **smoother** ensures **continuous, curve-optimized motion** without pausing between waypoints.
+
+---
+
+###  Summary of Improvements
+
+| Subsystem | Change | Result |
+|:--|:--|:--|
+| **Localization** | Higher odometry trust | Low drift, stable positioning |
+| **Controller** | Balanced DWB critics | Smooth obstacle-aware motion |
+| **Local Map** | Coarser resolution | Lower CPU load, faster updates |
+| **Global Map** | Soft inflation zones | Faster global planning |
+| **Planner** | Dijkstra + smoother | Robust real-world navigation |
+
+---
+
+###  Overall Result
+
+These tuned parameters enabled the **BREAKERS Robot** to achieve:
+- **Collision-free**, **power-efficient** navigation  
+- **Human-like motion profiles**  
+- Reliable performance across **grass**, **gravel**, **ramps**, and **sawdust**  
 
 ##  Autonomy — Behavior Tree–Driven Mission Control
 
