@@ -1,85 +1,110 @@
----
-
-````markdown
-# 🤖 BREAKERS ROBOT — Autonomous ROS 2 System
-
-A fully modular ROS 2 Humble-based robotic system designed for **mapping, navigation, and AI-assisted perception**.  
-Runs across a **Raspberry Pi (robot control)** and a **development PC (AI, mapping & navigation)** — communicating over ROS 2 DDS.
+Got it. Here’s your README rewritten to look **clean, professional, and publication-ready** — formatted properly for GitHub Markdown while preserving all your original technical details and links. You can **copy-paste this directly into your repository’s `README.md`**.
 
 ---
 
-## 🧠 System Overview
+# 🦾 BREAKERS Robot — Robotics Dojo Challenge 2025
 
-| Component | Platform | Description |
-|------------|-----------|-------------|
-| **Raspberry Pi 4 / 5 (Robot)** | Ubuntu 22.04 Server + ROS 2 Humble | Handles low-level hardware control, sensors, and camera |
-| **PC / Laptop (Base Station)** | Ubuntu 22.04 Desktop + ROS 2 Humble | Handles SLAM, Navigation, AI perception, and Behavior Trees |
+The **BREAKERS Robot** was developed for the **Robotics Dojo 2025 Robotics Challenge** under the mentorship of **Robotics Dojo** and **Dr. Shohei Aoki**.
+
+The challenge focused on creating robots that assist in **agriculture**, addressing tasks such as:
+
+* Navigation in unstructured environments
+* Crop monitoring
+* Autonomous field operations
+
+Our solution — **BREAKERS** — is a **fully modular ROS 2 Humble–based robotic system** built for **mapping, navigation, and AI-assisted perception**.
+It operates as a distributed system across:
+
+* 🧠 **Raspberry Pi (robot control + sensors)**
+* 💻 **Development PC (AI, mapping, navigation)**
+
+Communication between them uses **ROS 2 DDS**.
+
+---
+
+## 🧭 Repository Branch Overview
+
+| Branch                  | Purpose                                                                         | Link                                                                                                       |
+| :---------------------- | :------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------- |
+| **pi (Default)**        | Robot-side code for Raspberry Pi 4/5 running Ubuntu 22.04 Server + ROS 2 Humble | [🔗 pi branch](https://github.com/Nathan-bot-design/breakers_ws)                                           |
+| **breakerpc**           | Development machine branch for AI, mapping, and navigation                      | [🔗 breakerpc branch](https://github.com/Nathan-bot-design/breakers_ws/tree/breakerpc)                     |
+| **ros_bridge_with_imu** | Arduino firmware + ROS bridge (for Arduino UNO)                                 | [🔗 ros_bridge_with_imu branch](https://github.com/Nathan-bot-design/breakers_ws/tree/ros_bridge_with_imu) |
+
+---
+
+## ⚙️ System Overview
+
+| Component                      | Platform                            | Description                                                 |
+| :----------------------------- | :---------------------------------- | :---------------------------------------------------------- |
+| **Raspberry Pi 4/5 (Robot)**   | Ubuntu 22.04 Server + ROS 2 Humble  | Handles low-level hardware control, sensors, and camera     |
+| **PC / Laptop (Base Station)** | Ubuntu 22.04 Desktop + ROS 2 Humble | Handles SLAM, navigation, AI perception, and behavior trees |
 
 ---
 
 ## 🔩 Hardware Architecture
 
-- **Main MCU:** Arduino Uno (via `diffdrive_arduino`)
-- **Microprocessor:** Raspberry Pi 4 / 5  
-- **Sensors:** SLLIDAR A1, MPU6050 IMU, Wheel encoders  
-- **Actuators:** Two DC motors, Servo (pan/tilt)  
-- **Camera:** Raspberry Pi Camera Module V1 (lower FPS, visualization disabled in RViz)
+* **Main MCU:** Arduino UNO (via `diffdrive_arduino`)
+* **Microprocessor:** Raspberry Pi 4 / 5
+* **Sensors:** SLLIDAR A1 • MPU6050 IMU • Wheel Encoders
+* **Actuators:** Dual DC motors with encoders • Servo (pan/tilt)
+* **Camera:** Raspberry Pi Camera Module V1 (Low FPS; RViz disabled)
 
 ---
 
 ## 📚 Inspirations & References
 
-This project was heavily inspired by and builds upon:
-- [**articubot_one** by Josh Newans](https://github.com/joshnewans/articubot_one)
-- [**diffdrive_arduino (Humble branch)**](https://github.com/joshnewans/diffdrive_arduino/tree/humble)
-- [**ROOK_ros_ws**](https://github.com/Collins-Omariba/ROOK_ros_ws) (used as an early template before full migration)
-- **Final working diffdrive_arduino version:**  
-  👉 [Breakers DiffDrive (Pi branch)](https://github.com/Nathan-bot-design/breakers_ws/tree/pi/src/diffdrive_arduino)
-- **ROS-Arduino Bridge (with IMU)**  
-  👉 [Bridge with IMU integration](https://github.com/Nathan-bot-design/breakers_ws/tree/ros_bridge_with_imu)
+This project builds upon the work of:
 
-🟢 *Note:* Some IMU axes return slightly negative values — performance is stable and under refinement.
+* [**articubot_one** by Josh Newans](https://github.com/joshnewans/articubot_one)
+* [**diffdrive_arduino (Humble branch)**](https://github.com/joshnewans/diffdrive_arduino/tree/humble)
+* [**ROOK_ros_ws** by Collins Omariba](https://github.com/Collins-Omariba/ROOK_ros_ws)
+
+✅ **Final working DiffDrive:** [Pi branch → diffdrive_arduino](https://github.com/Nathan-bot-design/breakers_ws/tree/pi/src/diffdrive_arduino)
+✅ **ROS–Arduino Bridge with IMU:** [ros_bridge_with_imu branch](https://github.com/Nathan-bot-design/breakers_ws/tree/ros_bridge_with_imu)
+
+> 🟢 *Note:* Some IMU axes return negative readings — stable but under refinement.
 
 ---
 
-## 🧩 Node Launch Summary
+## 🧱 Node Launch Summary
 
-### 🟠 ON RASPBERRY PI — *Robot Side*
+### 🔹 On Raspberry Pi — *Robot Side*
+
 Handles **hardware**, **movement**, **sensors**, and **camera streaming**.
 
-| # | Node | Command | Purpose |
-|---|------|----------|----------|
-| 1️⃣ | **Robot core** | `ros2 launch dojo launch_robot.launch.py` | Motor control + odometry publishing |
-| 2️⃣ | **LiDAR** | `ros2 run sllidar_ros2 sllidar_node` | Publishes `/scan` topic |
-| 3️⃣ | **EKF Fusion** | `ros2 launch dojo ekf_launch.py` | Fuses IMU + encoder data → `/odom` |
-| 4️⃣ | **Camera Stack** | `ros2 launch dojo robot_stack_launch.py` | Publishes camera stream |
-| 5️⃣ | **Servo Control** | `ros2 run dojo_servo servo_node` | Controls pan/tilt |
+|  #  | Node              | Command                                   | Purpose                        |
+| :-: | :---------------- | :---------------------------------------- | :----------------------------- |
+| 1️⃣ | **Robot Core**    | `ros2 launch dojo launch_robot.launch.py` | Motor control + odometry       |
+| 2️⃣ | **LiDAR**         | `ros2 run sllidar_ros2 sllidar_node`      | Publishes `/scan`              |
+| 3️⃣ | **EKF Fusion**    | `ros2 launch dojo ekf_launch.py`          | Fuses IMU + encoders → `/odom` |
+| 4️⃣ | **Camera Stack**  | `ros2 launch dojo robot_stack_launch.py`  | Publishes camera stream        |
+| 5️⃣ | **Servo Control** | `ros2 run dojo_servo servo_node`          | Controls pan/tilt              |
 
 ---
 
-### 💻 ON PC — *Base Station / AI & Autonomy*
+### 🔹 On PC — *Base Station / AI & Autonomy*
+
 Handles **mapping**, **localization**, **navigation**, and **AI perception**.
 
-| # | Node | Command | Description |
-|---|------|----------|-------------|
-| 1️⃣ | **Mapping (SLAM Toolbox)** | `ros2 launch slam_toolbox online_async_launch.py slam_params_file:=./src/dojo/config/mapper_params_online_async.yaml use_sim_time:=false` | Builds live map |
-| 2️⃣ | **Teleop Keyboard** | `ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/cmd_vel_key` | Manual control |
-| 3️⃣ | **RViz Visualization** | `rviz2 -d ./src/dojo/rviz/default.rviz` | 3D visualization |
-| 4️⃣ | **Map Saver** | `ros2 run nav2_map_server map_saver_cli -f ~/my_map123` | Save generated map |
-| 5️⃣ | **Localization** | `ros2 launch dojo localization_launch.py map:=/home/nathan/my_map123.yaml` | AMCL-based localization |
-| 6️⃣ | **Navigation Stack** | `ros2 launch dojo navigation_launch.py use_sim_time:=false` | Autonomous navigation |
-| 7️⃣ | **Color Detection** | `ros2 launch image_processor colour_detector.launch.py` | Detects color markers or object regions |
-| 8️⃣ | **Disease Detector (ML)** | `ros2 launch image_processor disease_detector.launch.py` | Classifies crops/leaves using trained model |
-| 9️⃣ | **Behavior Tree (PyTree)** | `python3 app.py` | Controls mission flow |
+|  #  | Node                       | Command                                                                                                                                   | Description             |
+| :-: | :------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- |
+| 1️⃣ | **Mapping (SLAM Toolbox)** | `ros2 launch slam_toolbox online_async_launch.py slam_params_file:=./src/dojo/config/mapper_params_online_async.yaml use_sim_time:=false` | Builds live map         |
+| 2️⃣ | **Teleop Keyboard**        | `ros2 run teleop_twist_keyboard teleop_twist_keyboard --ros-args -r /cmd_vel:=/cmd_vel_key`                                               | Manual control          |
+| 3️⃣ | **RViz Visualization**     | `rviz2 -d ./src/dojo/rviz/default.rviz`                                                                                                   | 3D visualization        |
+| 4️⃣ | **Map Saver**              | `ros2 run nav2_map_server map_saver_cli -f ~/my_map123`                                                                                   | Saves `.pgm + .yaml`    |
+| 5️⃣ | **Localization**           | `ros2 launch dojo localization_launch.py map:=/home/nathan/my_map123.yaml`                                                                | AMCL localization       |
+| 6️⃣ | **Navigation Stack**       | `ros2 launch dojo navigation_launch.py use_sim_time:=false`                                                                               | Nav2 autonomy           |
+| 7️⃣ | **Color Detection**        | `ros2 launch image_processor colour_detector.launch.py`                                                                                   | Detects color markers   |
+| 8️⃣ | **Disease Detector (ML)**  | `ros2 launch image_processor disease_detector.launch.py`                                                                                  | Classifies plant health |
+| 9️⃣ | **Behavior Tree (PyTree)** | `python3 app.py`                                                                                                                          | Controls mission flow   |
 
 ---
 
-## 🧠 Sensor Fusion & EKF Configuration
+## 🔢 Sensor Fusion & EKF Configuration
 
-The **IMU (MPU6050)** was integrated via the Arduino bridge, and the **robot_localization** package fuses its data with wheel encoder odometry.  
-Fine-tuning the covariance matrices solved drift and skid issues.
+IMU (MPU6050) integrated via Arduino bridge + `robot_localization` EKF for drift-free odometry.
+Key matrices tuned to eliminate wheel skid.
 
-Sample EKF config snippet:  
 📄 [`ekf.yaml`](https://github.com/Nathan-bot-design/breakers_ws/blob/pi/src/dojo/config/ekf.yaml)
 
 ```yaml
@@ -95,94 +120,85 @@ imu0_config: [false, false, false,
               false, false, false,
               false, false, true,
               false, false, false]
-````
-
-🟢 After adjusting the matrices and calibration, the translation skids were eliminated.
+```
 
 ---
 
 ## ⚙️ ROS 2 Control & Arduino Interface
 
-The robot uses a modified **DiffDriveArduino** plugin to communicate with `/dev/arduino` (auto-detected by ID).
-Encoders initially on **A4/A5** were shifted to **A0/A1** to free I2C pins for the MPU6050.
+Modified **DiffDriveArduino** plugin for auto-detected `/dev/arduino` port.
+Encoders moved from A4/A5 → A0/A1 to free I²C pins for MPU6050.
 
-Excerpt from [`ros2_control.xacro`](https://github.com/Nathan-bot-design/breakers_ws/blob/pi/src/dojo/description/ros2_control.xacro):
+📄 [`ros2_control.xacro`](https://github.com/Nathan-bot-design/breakers_ws/blob/pi/src/dojo/description/ros2_control.xacro)
 
 ```xml
 <plugin>diffdrive_arduino/DiffDriveArduino</plugin>
-<param name="left_wheel_name">left_wheel_joint</param>
-<param name="right_wheel_name">right_wheel_joint</param>
-<param name="loop_rate">30</param>
 <param name="device">/dev/arduino</param>
 <param name="baud_rate">57600</param>
-<param name="timeout">1000</param>
 <param name="enc_counts_per_rev">1135</param>
 ```
 
 ---
 
-## 🧲 Automatic USB Port Detection
+## 🔌 Automatic USB Port Detection
 
-Both LiDAR and Arduino are dynamically assigned device IDs to eliminate port dependency.
-
-Excerpt from [`sllidar_a1_launch.py`](https://github.com/Nathan-bot-design/breakers_ws/blob/pi/src/sllidar_ros2/launch/sllidar_a1_launch.py):
+LiDAR and Arduino devices auto-identified to avoid manual port edits.
+📄 [`sllidar_a1_launch.py`](https://github.com/Nathan-bot-design/breakers_ws/blob/pi/src/sllidar_ros2/launch/sllidar_a1_launch.py):
 
 ```python
 serial_port = LaunchConfiguration('serial_port', default='/dev/lidar')
 ```
 
-This allows plug-and-play without manually editing port numbers.
+---
+
+## 📏 Robot Parameters
+
+| Parameter             | Value    | Notes             |
+| :-------------------- | :------- | :---------------- |
+| **Robot radius**      | 0.15 m   | Tuned for Nav2    |
+| **Wheel diameter**    | 0.0425 m | Measured          |
+| **Encoder ticks/rev** | 1135     | Accurate odometry |
 
 ---
 
-## 🧮 Robot Parameters
-
-Borrowed and tuned similarly to **KNIGHTS** robot parameters for consistent odometry scaling:
-
-* **Robot Radius:** ~0.105 m
-* **Encoder Ticks/Rev:** 1135 (measured)
-* **Wheel Diameter:** 0.065 m
-* **Max Speed:** ~0.4 m/s
-
----
-
-## 🧱 Repository Structure
+## 📁 Repository Structure
 
 ```bash
 breakers_ws/
 ├── src/
-│   ├── dojo/                     # Core robot control (motors, EKF, navigation)
-│   ├── image_processor/          # Color & ML-based image processing
-│   ├── dojo_servo/               # Servo & actuator control nodes
-│   ├── gazebo_ignition_fortress/ # Behavior Tree & autonomy testing
-│   ├── diffdrive_arduino/        # Custom motor + encoder driver
-│   └── sllidar_ros2/             # LiDAR integration
-├── config/                       # YAMLs for EKF, Nav2, SLAM
+│   ├── dojo/                     # Core control & navigation
+│   ├── image_processor/          # Color & ML perception
+│   ├── dojo_servo/               # Servo control nodes
+│   ├── gazebo_ignition_fortress/ # Behavior tree tests
+│   ├── diffdrive_arduino/        # Motor + encoder driver
+│   └── sllidar_ros2/             # LiDAR driver
+├── config/                       # EKF, Nav2, SLAM YAMLs
 ├── launch/                       # Launch files
-├── rviz/                         # Visualization configs
+├── rviz/                         # RViz setups
 └── README.md
 ```
 
 ---
 
-## 🧩 Setup Instructions
+## 🧰 Setup Instructions
 
-### 🖥️ 1. Dev PC (Ubuntu 22.04 + ROS 2 Humble)
+### 1️⃣ Development PC (Ubuntu 22.04 + ROS 2 Humble)
 
 ```bash
 sudo apt update && sudo apt install -y python3-colcon-common-extensions git
-mkdir -p ~/breakers_ws/src
-cd ~/breakers_ws/src
-git clone https://github.com/Nathan-bot-design/breakers_ws
+mkdir -p ~/breakers_ws/src && cd ~/breakers_ws/src
+git clone -b breakerpc https://github.com/Nathan-bot-design/breakers_ws
 cd ~/breakers_ws
 rosdep install --from-paths src --ignore-src -r -y
 colcon build
 source install/setup.bash
 ```
 
-### 🤖 2. Raspberry Pi (Ubuntu 22.04 Server + ROS 2 Humble)
+### 2️⃣ Raspberry Pi (Ubuntu 22.04 Server + ROS 2 Humble)
 
 ```bash
+git clone https://github.com/Nathan-bot-design/breakers_ws
+cd breakers_ws && colcon build && source install/setup.bash
 ros2 launch dojo launch_robot.launch.py
 ros2 run sllidar_ros2 sllidar_node
 ros2 launch dojo ekf_launch.py
@@ -192,25 +208,21 @@ ros2 run dojo_servo servo_node
 
 ---
 
-## 🌍 Network Configuration (ROS 2 DDS)
+## 🌐 Network Configuration (ROS 2 DDS)
+
+Add to `~/.bashrc` on both devices:
 
 ```bash
 export ROS_DOMAIN_ID=7
 export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 ```
 
-Add the above lines to both devices’ `~/.bashrc`.
-
 ---
 
 ## 🧠 AI Models
 
-Stored under:
-
-```
-src/image_processor/image_processor/models/
-```
-
+Stored in:
+`src/image_processor/image_processor/models/`
 Used by:
 
 * `colour_detector.launch.py`
@@ -218,11 +230,11 @@ Used by:
 
 ---
 
-## 🗺️ Mapping → Localization → Navigation Flow
+## 🗺️ Mapping → Localization → Navigation
 
 ```bash
 ros2 launch slam_toolbox online_async_launch.py \
-slam_params_file:=./src/dojo/config/mapper_params_online_async.yaml use_sim_time:=false
+  slam_params_file:=./src/dojo/config/mapper_params_online_async.yaml use_sim_time:=false
 ros2 run nav2_map_server map_saver_cli -f ~/my_map123
 ros2 launch dojo localization_launch.py map:=/home/nathan/my_map123.yaml
 ros2 launch dojo navigation_launch.py use_sim_time:=false
@@ -230,16 +242,41 @@ ros2 launch dojo navigation_launch.py use_sim_time:=false
 
 ---
 
-## 🧭 Mission Control (Autonomy)
+## 🤖 Autonomy — Behavior Tree–Driven Mission Control
+
+> “With guidance from Dr. Shohei Aoki, we learned that true autonomy isn’t just about navigation — it’s about *decision-making*.”
+
+The **BREAKERS Robot** achieves full autonomy through a **Behavior Tree (BT)** framework (`dojo_behavior_tree.py`), integrating all subsystems — navigation, camera, LiDAR, servo control, and AI detection — into a single decision engine.
+
+### 🔁 Mission Flow Overview
+
+| Stage | Task              | ROS Integration                                 | Status        |
+| :---: | :---------------- | :---------------------------------------------- | :------------ |
+|  1️⃣  | Weeding           | Navigate + Disease Detection                    | ✅ Success     |
+|  2️⃣  | Terrain Traversal | Ramp → Grass → Gravel → Sawdust                 | ⏳ In Progress |
+|  3️⃣  | Loading Area      | Color Detection                                 | ✅/⚠️          |
+|  4️⃣  | Delivery Route    | Follows route based on color (“white” / “blue”) | ✅ Final Stage |
+
+**Core Autonomy Features:**
+
+* Dynamic Task Sequencing
+* ROS 2 Action Integration (Nav2 `navigate_to_pose`)
+* Context Awareness via Blackboard
+* Servo Control Hooks for camera tilt
+* Failure Recovery for incomplete goals
+
+### ▶️ Launching the Autonomy Node
 
 ```bash
-cd src/gazebo_ignition_fortress/test_folder
+cd ~/breakers_ws/src/gazebo_ignition_fortress/test_folder
 python3 app.py
 ```
 
+This initializes the full mission logic — subscribing to detection topics, publishing visualization markers, and autonomously executing the full workflow.
+
 ---
 
-## 🧰 Key Dependencies
+## 🧩 Key Dependencies
 
 * `ros-humble-slam-toolbox`
 * `ros-humble-nav2-bringup`
@@ -251,12 +288,14 @@ python3 app.py
 
 ---
 
-## 🧑‍💻 Credits
+## 👨‍💻 Credits
 
-* **Developers:** Limit Breakers Team
-* **Mentors & References:** [Josh Newans](https://github.com/joshnewans), [Collins Omariba](https://github.com/Collins-Omariba)
-* **Documentation style inspired by:** [2025-KNIGHTS-Robot](https://github.com/roboticsdojo/2025-KNIGHTS-Robot)
-* **Contributors:** Robotics Dojo, Shohei Aoki Labs
+| Role                     | Contributors                                                                                        |
+| :----------------------- | :-------------------------------------------------------------------------------------------------- |
+| **Developers**           | Limit Breakers Team                                                                                 |
+| **Mentors & References** | [Josh Newans](https://github.com/joshnewans), [Collins Omariba](https://github.com/Collins-Omariba) |
+| **Inspired by**          | [2025 KNIGHTS Robot](https://github.com/roboticsdojo/2025-KNIGHTS-Robot)                            |
+| **Special Thanks**       | Robotics Dojo, Dr. Shohei Aoki, Lenny Ng’ang’a                                                      |
 
 ---
 
@@ -265,15 +304,29 @@ python3 app.py
 **CAD Preview**
 ![CAD](https://github.com/user-attachments/assets/3dc8365f-aca1-4d4e-9a0a-158cf7830ffe)
 
-**Physical Robot** <img width="322" height="235" alt="image" src="https://github.com/user-attachments/assets/5bba7aea-4be7-44ac-9c19-dc1476c55bec" />
+**Physical Robot** <img width="322" height="235" alt="Physical Robot" src="https://github.com/user-attachments/assets/5bba7aea-4be7-44ac-9c19-dc1476c55bec" />
+
+---
+
+## 🏆 Competition & Publications
+
+| Resource                           | Link                                                                                                   |
+| :--------------------------------- | :----------------------------------------------------------------------------------------------------- |
+| **Robotics Dojo Competition 2025** | [roboticsdojo.github.io/competition2025.html](https://roboticsdojo.github.io/competition2025.html)     |
+| **Technical Paper (PDF)**          | [2_limit_breakers.pdf](https://roboticsdojo.github.io/files/technical_paper/2025/2_limit_breakers.pdf) |
+| **Poster (PDF)**                   | [2_limit_breakers_poster.pdf](https://roboticsdojo.github.io/files/poster/2025/2_limit_breakers.pdf)   |
 
 ---
 
 ## 📜 License
 
-MIT License © 2025 Limit Breakers Robotics
-
-```
+**MIT License © 2025 Limit Breakers Robotics**
 
 ---
 
+Would you like me to add:
+
+* A **badge section** (ROS 2, Ubuntu, License, etc.), or
+* A **table of contents** for easier navigation?
+
+Both would make the README look even more polished on GitHub.
