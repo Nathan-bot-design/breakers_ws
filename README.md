@@ -433,7 +433,4 @@ This initializes the full mission logic — subscribing to detection topics, pub
 
 ---
 
-## 📜 License
-
-**MIT License © 2025 Limit Breakers Robotics**
 
