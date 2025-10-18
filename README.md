@@ -239,6 +239,83 @@ ros2 launch dojo navigation_launch.py use_sim_time:=false
 ```
 
 ---
+## Navigation Optimization & Tuning
+
+The navigation stack in the BREAKERS Robot was heavily tuned beyond default Nav2 settings to achieve smooth, reliable, and real-time motion on a low-power Raspberry Pi + PC setup.
+This section outlines the key improvements and tuning decisions made during development.
+
+1️⃣ Localization (AMCL)
+
+Goal: Improve pose accuracy and reduce drift.
+Changes:
+
+α1–α5: 0.05       (was 0.2)
+update_rate: 5.0  (was 1.0)
+
+
+Effect: AMCL now trusts wheel odometry more, giving a tighter and more stable particle cloud with minimal jitter — essential for precise mapping and navigation.
+
+2️⃣ Controller Server (Path Following)
+
+Goal: Achieve smoother, more natural movement and stronger obstacle avoidance.
+Changes:
+
+xy_goal_tolerance:   0.20   (was 0.25)
+yaw_goal_tolerance:  0.20   (was 0.25)
+PathAlign.scale:     15.0   (was 32.0)
+BaseObstacle.scale:  0.5    (was 0.02)
+
+
+Effect: Reduced oscillations and zig-zag motion; smoother turns and more stable behavior across gravel, ramps, and uneven surfaces.
+
+3️⃣ Local Costmap
+
+Goal: Optimize for real-time updates on constrained hardware.
+Changes:
+
+resolution:          0.05 m   (was 0.02)
+robot_radius:        0.18 m   (was 0.15)
+inflation_radius:    0.08 m   (was 0.10)
+cost_scaling_factor: 2.0      (was 20.0)
+
+
+Effect: Reduced CPU load while maintaining safe obstacle margins and smooth local pathing.
+
+4️⃣ Global Costmap
+
+Goal: Faster global planning with reduced CPU usage.
+Changes:
+
+resolution:          0.05 m   (was 0.02)
+cost_scaling_factor: 2.5      (was 20.0)
+robot_radius:        0.18 m   (was 0.15)
+
+
+Effect: Smoother, more efficient global path generation — ideal for large open or semi-structured environments.
+
+5️⃣ Planner & Smoother Servers
+
+Goal: Combine stable global paths with smooth local execution.
+Changes:
+
+planner:             Dijkstra (was A*)
+goal_tolerance:      0.75     (was 0.5)
+smoother:            refinement_enabled: true
+                     max_iterations: 1000
+
+
+Effect: The global Dijkstra planner works well in partially mapped environments, while the smoother ensures continuous, curve-optimized paths without stopping between waypoints.
+
+🧩 Summary of Improvements
+Localization →  Higher odometry trust → Low drift, stable positioning
+Controller   →  Balanced DWB critics  → Smooth obstacle-aware motion
+Local Map    →  Coarser resolution    → Lower CPU load, faster updates
+Global Map   →  Soft inflation zones  → Faster global planning
+Planner      →  Dijkstra + smoother   → Robust real-world navigation
+
+
+✅ Overall Result:
+These custom parameters allowed the BREAKERS Robot to achieve collision-free, power-efficient, and human-like navigation, adapting fluidly across grass, gravel, ramps, and sawdust — perfectly matching the Robotics Dojo 2025 Agriculture Challenge conditions.
 
 ##  Autonomy — Behavior Tree–Driven Mission Control
 
