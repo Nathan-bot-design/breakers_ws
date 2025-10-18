@@ -244,7 +244,8 @@ ros2 launch dojo navigation_launch.py use_sim_time:=false
 
 > “With guidance from Dr. Shohei Aoki, we learned that true autonomy isn’t just about navigation — it’s about *decision-making*.”
 
-The **BREAKERS Robot** achieves full autonomy through a **Behavior Tree (BT)** framework (`dojo_behavior_tree.py`), integrating all subsystems — navigation, camera, LiDAR, servo control, and AI detection — into a single decision engine.
+The **BREAKERS Robot** achieves full autonomy through a **Behavior Tree (BT)** framework [app.py](https://github.com/Nathan-bot-design/breakers_ws/blob/breakerpc/src/gazebo_ignition_fortress/test_folder/app.py)
+, integrating all subsystems — navigation, camera, LiDAR, servo control, and AI detection — into a single decision engine.
 
 ###  Mission Flow Overview
 
