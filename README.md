@@ -1,6 +1,6 @@
 
 
-# 🦾 BREAKERS Robot — Robotics Dojo Challenge 2025
+#  BREAKERS Robot — Robotics Dojo Challenge 2025
 
 The **BREAKERS Robot** was developed for the **Robotics Dojo 2025 Robotics Challenge** under the mentorship of **Robotics Dojo** and **Dr. Shohei Aoki**.
 
@@ -13,14 +13,14 @@ The challenge focused on creating robots that assist in **agriculture**, address
 Our solution — **BREAKERS** — is a **fully modular ROS 2 Humble–based robotic system** built for **mapping, navigation, and AI-assisted perception**.
 It operates as a distributed system across:
 
-* 🧠 **Raspberry Pi (robot control + sensors)**
-* 💻 **Development PC (AI, mapping, navigation)**
+*  **Raspberry Pi (robot control + sensors)**
+*  **Development PC (AI, mapping, navigation)**
 
 Communication between them uses **ROS 2 DDS**.
 
 ---
 
-## 🧭 Repository Branch Overview
+##  Repository Branch Overview
 
 | Branch                  | Purpose                                                                         | Link                                                                                                       |
 | :---------------------- | :------------------------------------------------------------------------------ | :--------------------------------------------------------------------------------------------------------- |
@@ -30,7 +30,7 @@ Communication between them uses **ROS 2 DDS**.
 
 ---
 
-## ⚙️ System Overview
+##  System Overview
 
 | Component                      | Platform                            | Description                                                 |
 | :----------------------------- | :---------------------------------- | :---------------------------------------------------------- |
@@ -39,7 +39,7 @@ Communication between them uses **ROS 2 DDS**.
 
 ---
 
-## 🔩 Hardware Architecture
+##  Hardware Architecture
 
 * **Main MCU:** Arduino UNO (via `diffdrive_arduino`)
 * **Microprocessor:** Raspberry Pi 4 / 5
@@ -49,7 +49,7 @@ Communication between them uses **ROS 2 DDS**.
 
 ---
 
-## 📚 Inspirations & References
+##  Inspirations & References
 
 This project builds upon the work of:
 
@@ -57,16 +57,16 @@ This project builds upon the work of:
 * [**diffdrive_arduino (Humble branch)**](https://github.com/joshnewans/diffdrive_arduino/tree/humble)
 * [**ROOK_ros_ws** by Collins Omariba](https://github.com/Collins-Omariba/ROOK_ros_ws)
 
-✅ **Final working DiffDrive:** [Pi branch → diffdrive_arduino](https://github.com/Nathan-bot-design/breakers_ws/tree/pi/src/diffdrive_arduino)
-✅ **ROS–Arduino Bridge with IMU:** [ros_bridge_with_imu branch](https://github.com/Nathan-bot-design/breakers_ws/tree/ros_bridge_with_imu)
+ **Final working DiffDrive:** [Pi branch → diffdrive_arduino](https://github.com/Nathan-bot-design/breakers_ws/tree/pi/src/diffdrive_arduino)
+ **ROS–Arduino Bridge with IMU:** [ros_bridge_with_imu branch](https://github.com/Nathan-bot-design/breakers_ws/tree/ros_bridge_with_imu)
 
-> 🟢 *Note:* Some IMU axes return negative readings — stable but under refinement.
+>  *Note:* Some IMU axes return negative readings — stable but under refinement.
 
 ---
 
-## 🧱 Node Launch Summary
+##  Node Launch Summary
 
-### 🔹 On Raspberry Pi — *Robot Side*
+###  On Raspberry Pi — *Robot Side*
 
 Handles **hardware**, **movement**, **sensors**, and **camera streaming**.
 
@@ -80,7 +80,7 @@ Handles **hardware**, **movement**, **sensors**, and **camera streaming**.
 
 ---
 
-### 🔹 On PC — *Base Station / AI & Autonomy*
+###  On PC — *Base Station / AI & Autonomy*
 
 Handles **mapping**, **localization**, **navigation**, and **AI perception**.
 
@@ -98,7 +98,7 @@ Handles **mapping**, **localization**, **navigation**, and **AI perception**.
 
 ---
 
-## 🔢 Sensor Fusion & EKF Configuration
+##  Sensor Fusion & EKF Configuration
 
 IMU (MPU6050) integrated via Arduino bridge + `robot_localization` EKF for drift-free odometry.
 Key matrices tuned to eliminate wheel skid.
@@ -122,7 +122,7 @@ imu0_config: [false, false, false,
 
 ---
 
-## ⚙️ ROS 2 Control & Arduino Interface
+##  ROS 2 Control & Arduino Interface
 
 Modified **DiffDriveArduino** plugin for auto-detected `/dev/arduino` port.
 Encoders moved from A4/A5 → A0/A1 to free I²C pins for MPU6050.
@@ -138,7 +138,7 @@ Encoders moved from A4/A5 → A0/A1 to free I²C pins for MPU6050.
 
 ---
 
-## 🔌 Automatic USB Port Detection
+##  Automatic USB Port Detection
 
 LiDAR and Arduino devices auto-identified to avoid manual port edits.
 📄 [`sllidar_a1_launch.py`](https://github.com/Nathan-bot-design/breakers_ws/blob/pi/src/sllidar_ros2/launch/sllidar_a1_launch.py):
@@ -149,7 +149,7 @@ serial_port = LaunchConfiguration('serial_port', default='/dev/lidar')
 
 ---
 
-## 📏 Robot Parameters
+##  Robot Parameters
 
 | Parameter             | Value    | Notes             |
 | :-------------------- | :------- | :---------------- |
@@ -178,9 +178,9 @@ breakers_ws/
 
 ---
 
-## 🧰 Setup Instructions
+##  Setup Instructions
 
-### 1️⃣ Development PC (Ubuntu 22.04 + ROS 2 Humble)
+###  Development PC (Ubuntu 22.04 + ROS 2 Humble)
 
 ```bash
 sudo apt update && sudo apt install -y python3-colcon-common-extensions git
@@ -192,7 +192,7 @@ colcon build
 source install/setup.bash
 ```
 
-### 2️⃣ Raspberry Pi (Ubuntu 22.04 Server + ROS 2 Humble)
+###  Raspberry Pi (Ubuntu 22.04 Server + ROS 2 Humble)
 
 ```bash
 git clone https://github.com/Nathan-bot-design/breakers_ws
@@ -206,7 +206,7 @@ ros2 run dojo_servo servo_node
 
 ---
 
-## 🌐 Network Configuration (ROS 2 DDS)
+##  Network Configuration (ROS 2 DDS)
 
 Add to `~/.bashrc` on both devices:
 
@@ -217,7 +217,7 @@ export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
 
 ---
 
-## 🧠 AI Models
+##  AI Models
 
 Stored in:
 `src/image_processor/image_processor/models/`
@@ -228,7 +228,7 @@ Used by:
 
 ---
 
-## 🗺️ Mapping → Localization → Navigation
+##  Mapping → Localization → Navigation
 
 ```bash
 ros2 launch slam_toolbox online_async_launch.py \
@@ -240,13 +240,13 @@ ros2 launch dojo navigation_launch.py use_sim_time:=false
 
 ---
 
-## 🤖 Autonomy — Behavior Tree–Driven Mission Control
+##  Autonomy — Behavior Tree–Driven Mission Control
 
 > “With guidance from Dr. Shohei Aoki, we learned that true autonomy isn’t just about navigation — it’s about *decision-making*.”
 
 The **BREAKERS Robot** achieves full autonomy through a **Behavior Tree (BT)** framework (`dojo_behavior_tree.py`), integrating all subsystems — navigation, camera, LiDAR, servo control, and AI detection — into a single decision engine.
 
-### 🔁 Mission Flow Overview
+###  Mission Flow Overview
 
 | Stage | Task              | ROS Integration                                 | Status        |
 | :---: | :---------------- | :---------------------------------------------- | :------------ |
@@ -254,6 +254,8 @@ The **BREAKERS Robot** achieves full autonomy through a **Behavior Tree (BT)** f
 |  2️⃣  | Terrain Traversal | Ramp → Grass → Gravel → Sawdust                 | ⏳ In Progress |
 |  3️⃣  | Loading Area      | Color Detection                                 | ✅/⚠️          |
 |  4️⃣  | Delivery Route    | Follows route based on color (“white” / “blue”) | ✅ Final Stage |
+
+![WhatsApp Image 2025-10-11 at 07 41 28_433962e3](https://github.com/user-attachments/assets/f3d19e6e-7cd2-4e41-a2e2-f048bd633927)
 
 **Core Autonomy Features:**
 
@@ -263,7 +265,7 @@ The **BREAKERS Robot** achieves full autonomy through a **Behavior Tree (BT)** f
 * Servo Control Hooks for camera tilt
 * Failure Recovery for incomplete goals
 
-### ▶️ Launching the Autonomy Node
+###  Launching the Autonomy Node
 
 ```bash
 cd ~/breakers_ws/src/gazebo_ignition_fortress/test_folder
@@ -274,7 +276,7 @@ This initializes the full mission logic — subscribing to detection topics, pub
 
 ---
 
-## 🧩 Key Dependencies
+##  Key Dependencies
 
 * `ros-humble-slam-toolbox`
 * `ros-humble-nav2-bringup`
@@ -286,7 +288,7 @@ This initializes the full mission logic — subscribing to detection topics, pub
 
 ---
 
-## 👨‍💻 Credits
+##  Credits
 
 | Role                     | Contributors                                                                                        |
 | :----------------------- | :-------------------------------------------------------------------------------------------------- |
@@ -297,7 +299,7 @@ This initializes the full mission logic — subscribing to detection topics, pub
 
 ---
 
-## 🦾 CAD & Robot Previews
+##  CAD & Robot Previews
 
 **CAD Preview**
 ![CAD](https://github.com/user-attachments/assets/3dc8365f-aca1-4d4e-9a0a-158cf7830ffe)
@@ -306,7 +308,7 @@ This initializes the full mission logic — subscribing to detection topics, pub
 
 ---
 
-## 🏆 Competition & Publications
+##  Competition & Publications
 
 | Resource                           | Link                                                                                                   |
 | :--------------------------------- | :----------------------------------------------------------------------------------------------------- |
