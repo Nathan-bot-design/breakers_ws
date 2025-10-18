@@ -1,4 +1,4 @@
----
+
 
 # 🦾 BREAKERS Robot — Robotics Dojo Challenge 2025
 
@@ -320,4 +320,3 @@ This initializes the full mission logic — subscribing to detection topics, pub
 
 **MIT License © 2025 Limit Breakers Robotics**
 
----
