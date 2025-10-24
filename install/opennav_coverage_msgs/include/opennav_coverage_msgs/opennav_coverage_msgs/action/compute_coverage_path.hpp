@@ -1,0 +1,1 @@
+/home/nathan/ros2_ws/build/opennav_coverage_msgs/rosidl_generator_cpp/opennav_coverage_msgs/action/compute_coverage_path.hpp

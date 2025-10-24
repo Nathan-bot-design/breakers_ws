@@ -1,0 +1,1 @@
+/home/nathan/ros2_ws/src/image_processor/launch/disease_detector.launch.py

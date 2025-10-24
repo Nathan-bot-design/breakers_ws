@@ -1,0 +1,6 @@
+[console_scripts]
+camera_viewer_node = image_processor.camera_viewer_node:main
+colour_detector_node = image_processor.colour_detector_node:main
+disease_detector_node = image_processor.disease_detector_node:main
+image_processor_node = image_processor.image_processor_node:main
+

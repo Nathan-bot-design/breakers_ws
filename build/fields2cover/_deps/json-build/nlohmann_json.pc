@@ -1,0 +1,7 @@
+prefix=/home/nathan/ros2_ws/install/fields2cover
+includedir=${prefix}/include
+
+Name: nlohmann_json
+Description: JSON for Modern C++
+Version: 3.11.3
+Cflags: -I${includedir}

@@ -1,0 +1,1 @@
+/home/nathan/ros2_ws/build/opennav_coverage_msgs/rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode.py

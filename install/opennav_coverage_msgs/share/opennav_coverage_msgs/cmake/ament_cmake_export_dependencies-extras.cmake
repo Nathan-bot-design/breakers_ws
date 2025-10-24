@@ -1,0 +1,1 @@
+/home/nathan/ros2_ws/build/opennav_coverage_msgs/ament_cmake_export_dependencies/ament_cmake_export_dependencies-extras.cmake

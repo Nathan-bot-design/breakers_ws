@@ -1,0 +1,1 @@
+/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs/msg/RouteMode.msg

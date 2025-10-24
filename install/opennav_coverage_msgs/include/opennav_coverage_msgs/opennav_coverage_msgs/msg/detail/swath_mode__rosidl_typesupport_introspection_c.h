@@ -1,0 +1,1 @@
+/home/nathan/ros2_ws/build/opennav_coverage_msgs/rosidl_typesupport_introspection_c/opennav_coverage_msgs/msg/detail/swath_mode__rosidl_typesupport_introspection_c.h

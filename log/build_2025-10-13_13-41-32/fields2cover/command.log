@@ -1,0 +1,1 @@
+Invoking command in '/home/nathan/ros2_ws/build/fields2cover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/image_processor:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake /home/nathan/ros2_ws/src/Fields2Cover -DCMAKE_INSTALL_PREFIX=/home/nathan/ros2_ws/install/fields2cover

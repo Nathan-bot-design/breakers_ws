@@ -1,0 +1,1 @@
+/home/nathan/ros2_ws/build/opennav_coverage_msgs/rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_c.c

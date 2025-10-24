@@ -1,0 +1,16 @@
+{
+  "package_name": "opennav_coverage_msgs",
+  "non_idl_tuples": [
+    "/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs:msg/Coordinate.msg",
+    "/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs:msg/Coordinates.msg",
+    "/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs:msg/HeadlandMode.msg",
+    "/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs:msg/SwathMode.msg",
+    "/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs:msg/RowSwathMode.msg",
+    "/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs:msg/RouteMode.msg",
+    "/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs:msg/PathMode.msg",
+    "/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs:msg/Swath.msg",
+    "/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs:msg/PathComponents.msg",
+    "/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs:action/ComputeCoveragePath.action",
+    "/home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs:action/NavigateCompleteCoverage.action"
+  ]
+}

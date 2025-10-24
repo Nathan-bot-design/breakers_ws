@@ -1,0 +1,1 @@
+/home/nathan/ros2_ws/build/opennav_coverage_msgs/rosidl_generator_py/opennav_coverage_msgs/action/_navigate_complete_coverage.py

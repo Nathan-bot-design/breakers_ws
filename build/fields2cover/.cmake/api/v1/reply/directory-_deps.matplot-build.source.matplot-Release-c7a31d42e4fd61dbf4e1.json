@@ -1,0 +1,43 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"/home/nathan/ros2_ws/build/fields2cover/_deps/matplot-src/source/matplot/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 112,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include/matplot/detail",
+			"paths" : 
+			[
+				"/home/nathan/ros2_ws/build/fields2cover/_deps/matplot-build/source/matplot/matplot/detail/exports.h"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "_deps/matplot-build/source/matplot",
+		"source" : "/home/nathan/ros2_ws/build/fields2cover/_deps/matplot-src/source/matplot"
+	}
+}

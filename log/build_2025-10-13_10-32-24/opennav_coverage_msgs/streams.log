@@ -1,0 +1,466 @@
+[0.090s] Invoking command in '/home/nathan/ros2_ws/build/opennav_coverage_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake /home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nathan/ros2_ws/install/opennav_coverage_msgs
+[6.438s] -- The C compiler identification is GNU 11.4.0
+[11.374s] -- The CXX compiler identification is GNU 11.4.0
+[11.821s] -- Detecting C compiler ABI info
+[12.215s] -- Detecting C compiler ABI info - done
+[12.224s] -- Check for working C compiler: /usr/bin/cc - skipped
+[12.269s] -- Detecting C compile features
+[12.357s] -- Detecting C compile features - done
+[12.842s] -- Detecting CXX compiler ABI info
+[13.526s] -- Detecting CXX compiler ABI info - done
+[13.536s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[13.536s] -- Detecting CXX compile features
+[13.537s] -- Detecting CXX compile features - done
+[13.657s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[14.270s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[14.686s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[15.324s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[15.893s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[15.977s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[16.023s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[16.172s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[16.289s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[16.460s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[16.626s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[16.702s] -- Found action_msgs: 1.2.2 (/opt/ros/humble/share/action_msgs/cmake)
+[17.406s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[18.215s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[18.462s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[18.524s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[18.559s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[18.662s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[18.662s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[18.663s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[18.663s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[18.688s] -- Found PythonExtra: .so  
+[18.993s] -- Configuring done
+[19.147s] -- Generating done
+[19.164s] -- Build files have been written to: /home/nathan/ros2_ws/build/opennav_coverage_msgs
+[19.176s] Invoked command in '/home/nathan/ros2_ws/build/opennav_coverage_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake /home/nathan/ros2_ws/src/opennav_coverage/opennav_coverage_msgs -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/nathan/ros2_ws/install/opennav_coverage_msgs
+[19.178s] Invoking command in '/home/nathan/ros2_ws/build/opennav_coverage_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/opennav_coverage_msgs -- -j4 -l4
+[19.236s] [  0%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[21.600s] [  0%] Built target opennav_coverage_msgs__cpp
+[21.634s] [  0%] Built target ament_cmake_python_symlink_opennav_coverage_msgs
+[21.646s] [  0%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[23.512s] [  1%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opennav_coverage_msgs/msg/detail/dds_fastrtps/coordinate__type_support.cpp.o[0m
+[26.173s] [  2%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opennav_coverage_msgs/msg/detail/dds_fastrtps/coordinates__type_support.cpp.o[0m
+[26.652s] [  3%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opennav_coverage_msgs/msg/detail/dds_fastrtps/headland_mode__type_support.cpp.o[0m
+[27.094s] [  4%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opennav_coverage_msgs/msg/detail/dds_fastrtps/swath_mode__type_support.cpp.o[0m
+[27.535s] [  5%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opennav_coverage_msgs/msg/detail/dds_fastrtps/row_swath_mode__type_support.cpp.o[0m
+[28.050s] [  6%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opennav_coverage_msgs/msg/detail/dds_fastrtps/route_mode__type_support.cpp.o[0m
+[28.543s] [  7%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opennav_coverage_msgs/msg/detail/dds_fastrtps/path_mode__type_support.cpp.o[0m
+[28.979s] [  8%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opennav_coverage_msgs/msg/detail/dds_fastrtps/swath__type_support.cpp.o[0m
+[29.442s] [  9%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opennav_coverage_msgs/msg/detail/dds_fastrtps/path_components__type_support.cpp.o[0m
+[30.083s] [  9%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opennav_coverage_msgs/action/detail/dds_fastrtps/compute_coverage_path__type_support.cpp.o[0m
+[31.242s] [ 10%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/opennav_coverage_msgs/action/detail/dds_fastrtps/navigate_complete_coverage__type_support.cpp.o[0m
+[31.962s] [ 11%] [32m[1mLinking CXX shared library libopennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[32.284s] [ 11%] Built target opennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp
+[32.296s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[33.834s] [ 13%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opennav_coverage_msgs/msg/detail/coordinate__type_support.cpp.o[0m
+[34.548s] [ 13%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opennav_coverage_msgs/msg/detail/coordinates__type_support.cpp.o[0m
+[35.008s] [ 14%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opennav_coverage_msgs/msg/detail/headland_mode__type_support.cpp.o[0m
+[35.483s] [ 15%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opennav_coverage_msgs/msg/detail/swath_mode__type_support.cpp.o[0m
+[35.900s] [ 16%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opennav_coverage_msgs/msg/detail/row_swath_mode__type_support.cpp.o[0m
+[36.425s] [ 17%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opennav_coverage_msgs/msg/detail/route_mode__type_support.cpp.o[0m
+[36.883s] [ 18%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opennav_coverage_msgs/msg/detail/path_mode__type_support.cpp.o[0m
+[37.310s] [ 19%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opennav_coverage_msgs/msg/detail/swath__type_support.cpp.o[0m
+[37.722s] [ 20%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opennav_coverage_msgs/msg/detail/path_components__type_support.cpp.o[0m
+[38.326s] [ 21%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opennav_coverage_msgs/action/detail/compute_coverage_path__type_support.cpp.o[0m
+[39.185s] [ 22%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/opennav_coverage_msgs/action/detail/navigate_complete_coverage__type_support.cpp.o[0m
+[39.950s] [ 23%] [32m[1mLinking CXX shared library libopennav_coverage_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[40.160s] [ 23%] Built target opennav_coverage_msgs__rosidl_typesupport_introspection_cpp
+[40.451s] running egg_info
+[40.452s] creating opennav_coverage_msgs.egg-info
+[40.452s] writing opennav_coverage_msgs.egg-info/PKG-INFO
+[40.453s] writing dependency_links to opennav_coverage_msgs.egg-info/dependency_links.txt
+[40.453s] writing top-level names to opennav_coverage_msgs.egg-info/top_level.txt
+[40.453s] writing manifest file 'opennav_coverage_msgs.egg-info/SOURCES.txt'
+[40.456s] reading manifest file 'opennav_coverage_msgs.egg-info/SOURCES.txt'
+[40.456s] writing manifest file 'opennav_coverage_msgs.egg-info/SOURCES.txt'
+[40.494s] [ 23%] Built target ament_cmake_python_build_opennav_coverage_msgs_egg
+[40.506s] [ 24%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[41.723s] [ 25%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opennav_coverage_msgs/msg/coordinate__type_support.cpp.o[0m
+[42.113s] [ 26%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opennav_coverage_msgs/msg/headland_mode__type_support.cpp.o[0m
+[42.409s] [ 27%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opennav_coverage_msgs/msg/swath_mode__type_support.cpp.o[0m
+[42.703s] [ 28%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opennav_coverage_msgs/msg/row_swath_mode__type_support.cpp.o[0m
+[43.000s] [ 29%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opennav_coverage_msgs/msg/route_mode__type_support.cpp.o[0m
+[43.307s] [ 30%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opennav_coverage_msgs/msg/path_mode__type_support.cpp.o[0m
+[43.648s] [ 30%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opennav_coverage_msgs/msg/swath__type_support.cpp.o[0m
+[43.962s] [ 31%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opennav_coverage_msgs/msg/path_components__type_support.cpp.o[0m
+[44.297s] [ 32%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opennav_coverage_msgs/action/compute_coverage_path__type_support.cpp.o[0m
+[44.903s] [ 33%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opennav_coverage_msgs/action/navigate_complete_coverage__type_support.cpp.o[0m
+[45.484s] [ 34%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/opennav_coverage_msgs/msg/coordinates__type_support.cpp.o[0m
+[45.779s] [ 35%] [32m[1mLinking CXX shared library libopennav_coverage_msgs__rosidl_typesupport_cpp.so[0m
+[45.901s] [ 35%] Built target opennav_coverage_msgs__rosidl_typesupport_cpp
+[45.913s] [ 36%] [34m[1mGenerating C code for ROS interfaces[0m
+[48.157s] [ 37%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinate__functions.c.o[0m
+[48.346s] [ 38%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath_mode__functions.c.o[0m
+[48.433s] [ 39%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.c.o[0m
+[48.488s] [ 40%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/route_mode__functions.c.o[0m
+[48.546s] [ 41%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_mode__functions.c.o[0m
+[48.600s] [ 41%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/swath__functions.c.o[0m
+[48.686s] [ 42%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/path_components__functions.c.o[0m
+[48.844s] [ 43%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.c.o[0m
+[49.066s] [ 44%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.c.o[0m
+[49.277s] [ 45%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/headland_mode__functions.c.o[0m
+[49.333s] [ 46%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_c.dir/rosidl_generator_c/opennav_coverage_msgs/msg/detail/coordinates__functions.c.o[0m
+[49.401s] [ 47%] [32m[1mLinking C shared library libopennav_coverage_msgs__rosidl_generator_c.so[0m
+[49.878s] [ 47%] Built target opennav_coverage_msgs__rosidl_generator_c
+[49.893s] [ 48%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[51.632s] [ 49%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opennav_coverage_msgs/msg/detail/coordinate__type_support_c.cpp.o[0m
+[52.095s] [ 50%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opennav_coverage_msgs/msg/detail/coordinates__type_support_c.cpp.o[0m
+[52.464s] [ 51%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opennav_coverage_msgs/msg/detail/headland_mode__type_support_c.cpp.o[0m
+[52.833s] [ 52%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opennav_coverage_msgs/msg/detail/swath_mode__type_support_c.cpp.o[0m
+[53.220s] [ 52%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opennav_coverage_msgs/msg/detail/row_swath_mode__type_support_c.cpp.o[0m
+[53.581s] [ 53%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opennav_coverage_msgs/msg/detail/route_mode__type_support_c.cpp.o[0m
+[53.952s] [ 54%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opennav_coverage_msgs/msg/detail/path_mode__type_support_c.cpp.o[0m
+[54.339s] [ 55%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opennav_coverage_msgs/msg/detail/swath__type_support_c.cpp.o[0m
+[54.697s] [ 56%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opennav_coverage_msgs/msg/detail/path_components__type_support_c.cpp.o[0m
+[55.067s] [ 57%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opennav_coverage_msgs/action/detail/compute_coverage_path__type_support_c.cpp.o[0m
+[55.513s] [ 58%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__type_support_c.cpp.o[0m
+[55.955s] [ 59%] [32m[1mLinking CXX shared library libopennav_coverage_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[56.201s] [ 59%] Built target opennav_coverage_msgs__rosidl_typesupport_fastrtps_c
+[56.213s] [ 60%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[57.379s] [ 61%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opennav_coverage_msgs/msg/coordinate__type_support.cpp.o[0m
+[57.468s] [ 61%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opennav_coverage_msgs/msg/headland_mode__type_support.cpp.o[0m
+[57.510s] [ 62%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opennav_coverage_msgs/msg/swath_mode__type_support.cpp.o[0m
+[57.543s] [ 63%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opennav_coverage_msgs/msg/row_swath_mode__type_support.cpp.o[0m
+[57.576s] [ 64%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opennav_coverage_msgs/msg/route_mode__type_support.cpp.o[0m
+[57.608s] [ 65%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opennav_coverage_msgs/msg/path_mode__type_support.cpp.o[0m
+[57.641s] [ 66%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opennav_coverage_msgs/msg/swath__type_support.cpp.o[0m
+[57.673s] [ 67%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opennav_coverage_msgs/msg/path_components__type_support.cpp.o[0m
+[57.707s] [ 68%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opennav_coverage_msgs/action/compute_coverage_path__type_support.cpp.o[0m
+[57.811s] [ 69%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opennav_coverage_msgs/action/navigate_complete_coverage__type_support.cpp.o[0m
+[57.867s] [ 70%] [32mBuilding CXX object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/opennav_coverage_msgs/msg/coordinates__type_support.cpp.o[0m
+[57.899s] [ 71%] [32m[1mLinking CXX shared library libopennav_coverage_msgs__rosidl_typesupport_c.so[0m
+[57.983s] [ 71%] Built target opennav_coverage_msgs__rosidl_typesupport_c
+[57.996s] [ 72%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[59.581s] [ 73%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opennav_coverage_msgs/msg/detail/coordinate__type_support.c.o[0m
+[59.623s] [ 74%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opennav_coverage_msgs/msg/detail/swath_mode__type_support.c.o[0m
+[59.661s] [ 75%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opennav_coverage_msgs/msg/detail/row_swath_mode__type_support.c.o[0m
+[59.701s] [ 76%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opennav_coverage_msgs/msg/detail/route_mode__type_support.c.o[0m
+[59.740s] [ 76%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opennav_coverage_msgs/msg/detail/path_mode__type_support.c.o[0m
+[59.777s] [ 77%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opennav_coverage_msgs/msg/detail/swath__type_support.c.o[0m
+[59.864s] [ 78%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opennav_coverage_msgs/msg/detail/path_components__type_support.c.o[0m
+[59.979s] [ 79%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opennav_coverage_msgs/action/detail/compute_coverage_path__type_support.c.o[0m
+[60.099s] [ 80%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opennav_coverage_msgs/action/detail/navigate_complete_coverage__type_support.c.o[0m
+[60.181s] [ 81%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opennav_coverage_msgs/msg/detail/headland_mode__type_support.c.o[0m
+[60.229s] [ 82%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/opennav_coverage_msgs/msg/detail/coordinates__type_support.c.o[0m
+[60.266s] [ 83%] [32m[1mLinking C shared library libopennav_coverage_msgs__rosidl_typesupport_introspection_c.so[0m
+[60.404s] [ 83%] Built target opennav_coverage_msgs__rosidl_typesupport_introspection_c
+[60.425s] [ 83%] Built target opennav_coverage_msgs
+[60.450s] [ 84%] [34m[1mGenerating Python code for ROS interfaces[0m
+[63.961s] [ 84%] Built target opennav_coverage_msgs__py
+[63.985s] [ 85%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_coordinate_s.c.o[0m
+[64.849s] [ 86%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_swath_mode_s.c.o[0m
+[64.989s] [ 87%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_row_swath_mode_s.c.o[0m
+[65.113s] [ 87%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_route_mode_s.c.o[0m
+[65.232s] [ 88%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_path_mode_s.c.o[0m
+[65.345s] [ 89%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_swath_s.c.o[0m
+[65.454s] [ 90%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_path_components_s.c.o[0m
+[65.575s] [ 91%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/action/_compute_coverage_path_s.c.o[0m
+[65.748s] [ 92%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/action/_navigate_complete_coverage_s.c.o[0m
+[65.916s] [ 93%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_headland_mode_s.c.o[0m
+[66.028s] [ 94%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_generator_py.dir/rosidl_generator_py/opennav_coverage_msgs/msg/_coordinates_s.c.o[0m
+[66.140s] [ 95%] [32m[1mLinking C shared library rosidl_generator_py/opennav_coverage_msgs/libopennav_coverage_msgs__rosidl_generator_py.so[0m
+[66.317s] [ 95%] Built target opennav_coverage_msgs__rosidl_generator_py
+[66.342s] [ 96%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[66.534s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[66.588s] [ 97%] Built target opennav_coverage_msgs__rosidl_typesupport_fastrtps_c__pyext
+[66.610s] [ 97%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[66.803s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[66.855s] [ 98%] Built target opennav_coverage_msgs__rosidl_typesupport_c__pyext
+[66.878s] [ 99%] [32mBuilding C object CMakeFiles/opennav_coverage_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[67.074s] [100%] [32m[1mLinking C shared library rosidl_generator_py/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[67.133s] [100%] Built target opennav_coverage_msgs__rosidl_typesupport_introspection_c__pyext
+[67.148s] Invoked command in '/home/nathan/ros2_ws/build/opennav_coverage_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --build /home/nathan/ros2_ws/build/opennav_coverage_msgs -- -j4 -l4
+[67.150s] Invoking command in '/home/nathan/ros2_ws/build/opennav_coverage_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/opennav_coverage_msgs
+[67.159s] -- Install configuration: ""
+[67.160s] -- Execute custom install script
+[67.160s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/ament_index/resource_index/rosidl_interfaces/opennav_coverage_msgs
+[67.171s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/compute_coverage_path.h
+[67.180s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__functions.h
+[67.189s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__struct.h
+[67.198s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__type_support.h
+[67.208s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__functions.h
+[67.217s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__struct.h
+[67.226s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__type_support.h
+[67.235s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/navigate_complete_coverage.h
+[67.244s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/coordinate.h
+[67.253s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/coordinates.h
+[67.263s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__functions.h
+[67.272s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__struct.h
+[67.281s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__type_support.h
+[67.290s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__functions.h
+[67.298s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__struct.h
+[67.307s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__type_support.h
+[67.316s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__functions.h
+[67.325s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__struct.h
+[67.335s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__type_support.h
+[67.344s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__functions.h
+[67.353s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__struct.h
+[67.363s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__type_support.h
+[67.373s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__functions.h
+[67.384s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__struct.h
+[67.394s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__type_support.h
+[67.403s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__functions.h
+[67.412s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__struct.h
+[67.421s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__type_support.h
+[67.430s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__functions.h
+[67.439s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__struct.h
+[67.449s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__type_support.h
+[67.459s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__functions.h
+[67.469s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__struct.h
+[67.478s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__type_support.h
+[67.487s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__functions.h
+[67.496s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__struct.h
+[67.505s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__type_support.h
+[67.514s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/headland_mode.h
+[67.523s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/path_components.h
+[67.532s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/path_mode.h
+[67.541s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/rosidl_generator_c__visibility_control.h
+[67.550s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/route_mode.h
+[67.559s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/row_swath_mode.h
+[67.569s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/swath.h
+[67.578s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/swath_mode.h
+[67.587s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/environment/library_path.sh
+[67.597s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/environment/library_path.dsv
+[67.606s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__rosidl_typesupport_fastrtps_c.h
+[67.616s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__rosidl_typesupport_fastrtps_c.h
+[67.627s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__rosidl_typesupport_fastrtps_c.h
+[67.636s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__rosidl_typesupport_fastrtps_c.h
+[67.645s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__rosidl_typesupport_fastrtps_c.h
+[67.654s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__rosidl_typesupport_fastrtps_c.h
+[67.664s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__rosidl_typesupport_fastrtps_c.h
+[67.673s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__rosidl_typesupport_fastrtps_c.h
+[67.682s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__rosidl_typesupport_fastrtps_c.h
+[67.692s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__rosidl_typesupport_fastrtps_c.h
+[67.701s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__rosidl_typesupport_fastrtps_c.h
+[67.712s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[67.723s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/compute_coverage_path.hpp
+[67.734s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__builder.hpp
+[67.745s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__struct.hpp
+[67.756s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__traits.hpp
+[67.768s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__type_support.hpp
+[67.778s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__builder.hpp
+[67.789s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__struct.hpp
+[67.800s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__traits.hpp
+[67.810s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__type_support.hpp
+[67.820s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/navigate_complete_coverage.hpp
+[67.829s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/coordinate.hpp
+[67.838s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/coordinates.hpp
+[67.847s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__builder.hpp
+[67.856s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__struct.hpp
+[67.867s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__traits.hpp
+[67.876s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__type_support.hpp
+[67.887s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__builder.hpp
+[67.898s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__struct.hpp
+[67.909s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__traits.hpp
+[67.920s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__type_support.hpp
+[67.931s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__builder.hpp
+[67.941s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__struct.hpp
+[67.951s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__traits.hpp
+[67.963s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__type_support.hpp
+[67.973s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__builder.hpp
+[67.982s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__struct.hpp
+[67.991s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__traits.hpp
+[68.000s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__type_support.hpp
+[68.009s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__builder.hpp
+[68.018s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__struct.hpp
+[68.027s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__traits.hpp
+[68.038s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__type_support.hpp
+[68.049s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__builder.hpp
+[68.060s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__struct.hpp
+[68.072s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__traits.hpp
+[68.083s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__type_support.hpp
+[68.094s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__builder.hpp
+[68.103s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__struct.hpp
+[68.112s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__traits.hpp
+[68.121s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__type_support.hpp
+[68.130s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__builder.hpp
+[68.140s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__struct.hpp
+[68.149s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__traits.hpp
+[68.158s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__type_support.hpp
+[68.168s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__builder.hpp
+[68.177s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__struct.hpp
+[68.186s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__traits.hpp
+[68.196s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__type_support.hpp
+[68.206s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/headland_mode.hpp
+[68.219s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/path_components.hpp
+[68.229s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/path_mode.hpp
+[68.240s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[68.249s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/route_mode.hpp
+[68.258s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/row_swath_mode.hpp
+[68.268s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/swath.hpp
+[68.277s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/swath_mode.hpp
+[68.287s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__rosidl_typesupport_fastrtps_cpp.hpp
+[68.296s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__rosidl_typesupport_fastrtps_cpp.hpp
+[68.306s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__rosidl_typesupport_fastrtps_cpp.hpp
+[68.315s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__rosidl_typesupport_fastrtps_cpp.hpp
+[68.324s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[68.334s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__rosidl_typesupport_fastrtps_cpp.hpp
+[68.343s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[68.352s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[68.362s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[68.372s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__rosidl_typesupport_fastrtps_cpp.hpp
+[68.381s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[68.390s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[68.400s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__rosidl_typesupport_introspection_c.h
+[68.409s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__rosidl_typesupport_introspection_c.h
+[68.418s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__rosidl_typesupport_introspection_c.h
+[68.427s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__rosidl_typesupport_introspection_c.h
+[68.436s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__rosidl_typesupport_introspection_c.h
+[68.446s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__rosidl_typesupport_introspection_c.h
+[68.455s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__rosidl_typesupport_introspection_c.h
+[68.466s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__rosidl_typesupport_introspection_c.h
+[68.475s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__rosidl_typesupport_introspection_c.h
+[68.484s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__rosidl_typesupport_introspection_c.h
+[68.493s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__rosidl_typesupport_introspection_c.h
+[68.502s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[68.512s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/compute_coverage_path__rosidl_typesupport_introspection_cpp.hpp
+[68.521s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/action/detail/navigate_complete_coverage__rosidl_typesupport_introspection_cpp.hpp
+[68.530s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinate__rosidl_typesupport_introspection_cpp.hpp
+[68.539s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/coordinates__rosidl_typesupport_introspection_cpp.hpp
+[68.548s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/headland_mode__rosidl_typesupport_introspection_cpp.hpp
+[68.558s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_components__rosidl_typesupport_introspection_cpp.hpp
+[68.568s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/path_mode__rosidl_typesupport_introspection_cpp.hpp
+[68.577s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/route_mode__rosidl_typesupport_introspection_cpp.hpp
+[68.586s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/row_swath_mode__rosidl_typesupport_introspection_cpp.hpp
+[68.595s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath__rosidl_typesupport_introspection_cpp.hpp
+[68.604s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/include/opennav_coverage_msgs/opennav_coverage_msgs/msg/detail/swath_mode__rosidl_typesupport_introspection_cpp.hpp
+[68.613s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/environment/pythonpath.sh
+[68.622s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/environment/pythonpath.dsv
+[68.631s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs-0.0.1-py3.10.egg-info/PKG-INFO
+[68.640s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs-0.0.1-py3.10.egg-info/SOURCES.txt
+[68.649s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs-0.0.1-py3.10.egg-info/dependency_links.txt
+[68.658s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs-0.0.1-py3.10.egg-info/top_level.txt
+[68.670s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/__init__.py
+[68.679s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_c.c
+[68.688s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_fastrtps_c.c
+[68.697s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/_opennav_coverage_msgs_s.ep.rosidl_typesupport_introspection_c.c
+[68.706s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/action/__init__.py
+[68.716s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/action/_compute_coverage_path.py
+[68.725s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/action/_compute_coverage_path_s.c
+[68.734s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/action/_navigate_complete_coverage.py
+[68.745s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/action/_navigate_complete_coverage_s.c
+[68.756s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/libopennav_coverage_msgs__rosidl_generator_py.so
+[68.767s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/__init__.py
+[68.778s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_coordinate.py
+[68.789s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_coordinate_s.c
+[68.799s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_coordinates.py
+[68.809s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_coordinates_s.c
+[68.820s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_headland_mode.py
+[68.831s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_headland_mode_s.c
+[68.842s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_path_components.py
+[68.852s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_path_components_s.c
+[68.862s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_path_mode.py
+[68.871s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_path_mode_s.c
+[68.882s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_route_mode.py
+[68.892s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_route_mode_s.c
+[68.902s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_row_swath_mode.py
+[68.911s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_row_swath_mode_s.c
+[68.920s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_swath.py
+[68.929s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_swath_mode.py
+[68.938s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_swath_mode_s.c
+[68.948s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_swath_s.c
+[68.957s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[68.968s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[68.977s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[68.986s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[68.987s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[68.987s] -- Up-to-date symlink: /home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/opennav_coverage_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[68.987s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Coordinate.idl
+[68.996s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Coordinates.idl
+[69.005s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/HeadlandMode.idl
+[69.014s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/SwathMode.idl
+[69.023s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/RowSwathMode.idl
+[69.032s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/RouteMode.idl
+[69.041s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/PathMode.idl
+[69.050s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Swath.idl
+[69.060s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/PathComponents.idl
+[69.070s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/action/ComputeCoveragePath.idl
+[69.079s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/action/NavigateCompleteCoverage.idl
+[69.088s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Coordinate.msg
+[69.097s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Coordinates.msg
+[69.106s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/HeadlandMode.msg
+[69.115s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/SwathMode.msg
+[69.124s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/RowSwathMode.msg
+[69.133s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/RouteMode.msg
+[69.142s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/PathMode.msg
+[69.151s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/Swath.msg
+[69.161s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/msg/PathComponents.msg
+[69.171s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/action/ComputeCoveragePath.action
+[69.180s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/action/NavigateCompleteCoverage.action
+[69.189s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/ament_index/resource_index/package_run_dependencies/opennav_coverage_msgs
+[69.198s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/ament_index/resource_index/parent_prefix_path/opennav_coverage_msgs
+[69.207s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/environment/ament_prefix_path.sh
+[69.217s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/environment/ament_prefix_path.dsv
+[69.226s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/environment/path.sh
+[69.235s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/environment/path.dsv
+[69.244s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/local_setup.bash
+[69.254s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/local_setup.sh
+[69.265s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/local_setup.zsh
+[69.274s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/local_setup.dsv
+[69.283s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.dsv
+[69.293s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/ament_index/resource_index/packages/opennav_coverage_msgs
+[69.302s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/rosidl_cmake-extras.cmake
+[69.311s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[69.321s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[69.330s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[69.339s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[69.348s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[69.357s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[69.367s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/opennav_coverage_msgsConfig.cmake
+[69.377s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/opennav_coverage_msgsConfig-version.cmake
+[69.386s] -- Symlinking: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/package.xml
+[69.395s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_generator_c.so
+[69.395s] -- Set runtime path of "/home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_generator_c.so" to ""
+[69.396s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_fastrtps_c.so
+[69.396s] -- Set runtime path of "/home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[69.397s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.so
+[69.398s] -- Set runtime path of "/home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[69.398s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_introspection_c.so
+[69.398s] -- Set runtime path of "/home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_introspection_c.so" to ""
+[69.399s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_c.so
+[69.399s] -- Set runtime path of "/home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_c.so" to ""
+[69.399s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_introspection_cpp.so
+[69.400s] -- Set runtime path of "/home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[69.401s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_cpp.so
+[69.401s] -- Set runtime path of "/home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_typesupport_cpp.so" to ""
+[69.523s] Listing '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs'...
+[69.523s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/__init__.py'...
+[69.524s] Listing '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/action'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/action/__init__.py'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/action/_compute_coverage_path.py'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/action/_navigate_complete_coverage.py'...
+[69.524s] Listing '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/__init__.py'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_coordinate.py'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_coordinates.py'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_headland_mode.py'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_path_components.py'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_path_mode.py'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_route_mode.py'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_row_swath_mode.py'...
+[69.524s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_swath.py'...
+[69.525s] Compiling '/home/nathan/ros2_ws/install/opennav_coverage_msgs/local/lib/python3.10/dist-packages/opennav_coverage_msgs/msg/_swath_mode.py'...
+[69.531s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_generator_py.so
+[69.531s] -- Set runtime path of "/home/nathan/ros2_ws/install/opennav_coverage_msgs/lib/libopennav_coverage_msgs__rosidl_generator_py.so" to ""
+[69.532s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/export_opennav_coverage_msgs__rosidl_generator_cExport.cmake
+[69.532s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/export_opennav_coverage_msgs__rosidl_generator_cExport-noconfig.cmake
+[69.532s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/export_opennav_coverage_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[69.532s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/export_opennav_coverage_msgs__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[69.532s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/export_opennav_coverage_msgs__rosidl_generator_cppExport.cmake
+[69.533s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/export_opennav_coverage_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[69.533s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/export_opennav_coverage_msgs__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[69.533s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/opennav_coverage_msgs__rosidl_typesupport_introspection_cExport.cmake
+[69.533s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/opennav_coverage_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[69.534s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/opennav_coverage_msgs__rosidl_typesupport_cExport.cmake
+[69.534s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/opennav_coverage_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[69.534s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/opennav_coverage_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[69.534s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/opennav_coverage_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[69.534s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/opennav_coverage_msgs__rosidl_typesupport_cppExport.cmake
+[69.535s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/opennav_coverage_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[69.535s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/export_opennav_coverage_msgs__rosidl_generator_pyExport.cmake
+[69.535s] -- Installing: /home/nathan/ros2_ws/install/opennav_coverage_msgs/share/opennav_coverage_msgs/cmake/export_opennav_coverage_msgs__rosidl_generator_pyExport-noconfig.cmake
+[69.538s] Invoked command in '/home/nathan/ros2_ws/build/opennav_coverage_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake --install /home/nathan/ros2_ws/build/opennav_coverage_msgs

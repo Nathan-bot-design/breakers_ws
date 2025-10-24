@@ -1,0 +1,55 @@
+[0.105s] Invoking command in '/home/nathan/ros2_ws/build/fields2cover': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nathan/ros2_ws/install/image_processor:/home/nathan/ros2_ws/install/rdj2025_potato_disease_detection:/home/nathan/ros2_ws/install/joy_tester:/opt/ros/humble /usr/bin/cmake /home/nathan/ros2_ws/src/Fields2Cover -DCMAKE_INSTALL_PREFIX=/home/nathan/ros2_ws/install/fields2cover
+[0.928s] -- The CXX compiler identification is GNU 11.4.0
+[1.034s] -- Detecting CXX compiler ABI info
+[1.124s] -- Detecting CXX compiler ABI info - done
+[1.133s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.133s] -- Detecting CXX compile features
+[1.134s] -- Detecting CXX compile features - done
+[1.522s] -- Found TinyXML2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+[1.557s] -- Looking for C++ include pthread.h
+[1.656s] -- Looking for C++ include pthread.h - found
+[1.656s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.755s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.757s] -- Found Threads: TRUE  
+[1.866s] -- Could NOT find Gnuplot (missing: GNUPLOT_EXECUTABLE) 
+[1.969s] -- Found GDAL: /usr/lib/libgdal.so (found suitable version "3.4.1", minimum required is "3.0") 
+[22.519s] -- The C compiler identification is GNU 11.4.0
+[22.544s] -- Detecting C compiler ABI info
+[22.664s] -- Detecting C compiler ABI info - done
+[22.673s] -- Check for working C compiler: /usr/bin/cc - skipped
+[22.673s] -- Detecting C compile features
+[22.673s] -- Detecting C compile features - done
+[22.676s] -- Found Eigen3: /usr/local/share/eigen3/cmake/Eigen3Config.cmake (found version "3.4.0") 
+[202.650s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[202.734s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[202.741s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[202.744s] -- Found ZLIB: /usr/local/lib/libz.a (found version "1.2.13") 
+[202.771s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[202.774s] -- Looking for sgemm_
+[202.856s] -- Looking for sgemm_ - not found
+[202.909s] -- Looking for sgemm_
+[202.983s] -- Looking for sgemm_ - found
+[202.984s] -- Found BLAS: /usr/lib/x86_64-linux-gnu/libblas.so  
+[202.987s] -- Looking for cheev_
+[203.064s] -- Looking for cheev_ - not found
+[203.079s] -- Looking for cheev_
+[203.143s] -- Looking for cheev_ - not found
+[203.144s] -- Looking for cheev_
+[203.234s] -- Looking for cheev_ - found
+[203.235s] -- Found LAPACK: /usr/lib/x86_64-linux-gnu/liblapack.so;/usr/lib/x86_64-linux-gnu/libblas.so  
+[203.344s] -- Could NOT find FFTW (missing: FFTW_INCLUDE_DIRS) 
+[203.388s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY
+[203.478s] -- Performing Test COMPILER_HAS_HIDDEN_VISIBILITY - Success
+[203.479s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+[203.568s] -- Performing Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY - Success
+[203.568s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR
+[203.656s] -- Performing Test COMPILER_HAS_DEPRECATED_ATTR - Success
+[203.662s] [0mSetting matplotplusplus compiler options[0m
+[203.666s] -- Looking for __fbufsize
+[203.762s] -- Looking for __fbufsize - found
+[566.681s] -- Using the multi-header code from /home/nathan/ros2_ws/build/fields2cover/_deps/json-src/include/
+[566.745s] -- Found SWIG: /usr/bin/swig4.0 (found suitable version "4.0.2", minimum required is "4.0")  
+[567.208s] -- Found Python: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter Development Development.Module Development.Embed 
+[567.274s] -- Configuring done
+[567.363s] -- Generating done
+[567.376s] -- Build files have been written to: /home/nathan/ros2_ws/build/fields2cover

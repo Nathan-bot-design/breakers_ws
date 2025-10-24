@@ -1,0 +1,379 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						6,
+						7,
+						8
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Release-411c357f10b77e37d9ab.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.4"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						8
+					]
+				},
+				{
+					"build" : "_deps/steering_functions-build",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.steering_functions-build-Release-59e6a60894ccdb953459.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.11"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "/home/nathan/ros2_ws/build/fields2cover/_deps/steering_functions-src",
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"build" : "_deps/matplot-build",
+					"childIndexes" : 
+					[
+						3
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.matplot-build-Release-86205adeb28fe77dc29a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "/home/nathan/ros2_ws/build/fields2cover/_deps/matplot-src"
+				},
+				{
+					"build" : "_deps/matplot-build/source",
+					"childIndexes" : 
+					[
+						4,
+						5
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.matplot-build.source-Release-67e857192597e39f1f94.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 2,
+					"source" : "/home/nathan/ros2_ws/build/fields2cover/_deps/matplot-src/source"
+				},
+				{
+					"build" : "_deps/matplot-build/source/3rd_party",
+					"jsonFile" : "directory-_deps.matplot-build.source.3rd_party-Release-d1f9bcd2916fe464ef02.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "/home/nathan/ros2_ws/build/fields2cover/_deps/matplot-src/source/3rd_party",
+					"targetIndexes" : 
+					[
+						13
+					]
+				},
+				{
+					"build" : "_deps/matplot-build/source/matplot",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-_deps.matplot-build.source.matplot-Release-c7a31d42e4fd61dbf4e1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"parentIndex" : 3,
+					"projectIndex" : 2,
+					"source" : "/home/nathan/ros2_ws/build/fields2cover/_deps/matplot-src/source/matplot",
+					"targetIndexes" : 
+					[
+						12
+					]
+				},
+				{
+					"build" : "_deps/json-build",
+					"jsonFile" : "directory-_deps.json-build-Release-014a70bdf7e71705706c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.5"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 3,
+					"source" : "/home/nathan/ros2_ws/build/fields2cover/_deps/json-src"
+				},
+				{
+					"build" : "tutorials",
+					"jsonFile" : "directory-tutorials-Release-d407ad1453199e02e03f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "tutorials",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						14
+					]
+				},
+				{
+					"build" : "swig",
+					"childIndexes" : 
+					[
+						9
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-swig-Release-26f8d257f994abbc6dc4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.4"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "swig"
+				},
+				{
+					"build" : "swig/python",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-swig.python-Release-c89f5205545c367152e1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12.4"
+					},
+					"parentIndex" : 8,
+					"projectIndex" : 0,
+					"source" : "swig/python",
+					"targetIndexes" : 
+					[
+						9,
+						10,
+						11
+					]
+				}
+			],
+			"name" : "Release",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3
+					],
+					"directoryIndexes" : 
+					[
+						0,
+						7,
+						8,
+						9
+					],
+					"name" : "Fields2Cover",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						14
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "steering_functions",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						15
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2,
+						3,
+						4,
+						5
+					],
+					"name" : "Matplot++",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						12,
+						13
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						6
+					],
+					"name" : "nlohmann_json",
+					"parentIndex" : 0
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 7,
+					"id" : "1_basic_types_tutorial::@4ce9b2d9ee56e2d57298",
+					"jsonFile" : "target-1_basic_types_tutorial-Release-5f041252ba08bd30a360.json",
+					"name" : "1_basic_types_tutorial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "2_objective_functions_tutorial::@4ce9b2d9ee56e2d57298",
+					"jsonFile" : "target-2_objective_functions_tutorial-Release-2bbef53464229788a0b4.json",
+					"name" : "2_objective_functions_tutorial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "3_headland_generator_tutorial::@4ce9b2d9ee56e2d57298",
+					"jsonFile" : "target-3_headland_generator_tutorial-Release-937990024b888e48dcea.json",
+					"name" : "3_headland_generator_tutorial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "4_swath_generator_tutorial::@4ce9b2d9ee56e2d57298",
+					"jsonFile" : "target-4_swath_generator_tutorial-Release-4c36d8c72270ee5547f5.json",
+					"name" : "4_swath_generator_tutorial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "5_route_planning_tutorial::@4ce9b2d9ee56e2d57298",
+					"jsonFile" : "target-5_route_planning_tutorial-Release-3b2a9b94633c2816f694.json",
+					"name" : "5_route_planning_tutorial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "6_path_planning_tutorial::@4ce9b2d9ee56e2d57298",
+					"jsonFile" : "target-6_path_planning_tutorial-Release-96e03b80857def92e6c3.json",
+					"name" : "6_path_planning_tutorial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "7_decomposition_tutorial::@4ce9b2d9ee56e2d57298",
+					"jsonFile" : "target-7_decomposition_tutorial-Release-a753ae0122ce417431ab.json",
+					"name" : "7_decomposition_tutorial",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "8_complete_flow::@4ce9b2d9ee56e2d57298",
+					"jsonFile" : "target-8_complete_flow-Release-f9f0ad30b1f8c131d27f.json",
+					"name" : "8_complete_flow",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Fields2Cover::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Fields2Cover-Release-001f3520198a5e6265ea.json",
+					"name" : "Fields2Cover",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fields2cover_python::@7b3836adff5a2433b592",
+					"jsonFile" : "target-fields2cover_python-Release-15a139d7b16006f04fff.json",
+					"name" : "fields2cover_python",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "fields2cover_python_swig_compilation::@7b3836adff5a2433b592",
+					"jsonFile" : "target-fields2cover_python_swig_compilation-Release-0eb7c22481748903e768.json",
+					"name" : "fields2cover_python_swig_compilation",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 9,
+					"id" : "install-python::@7b3836adff5a2433b592",
+					"jsonFile" : "target-install-python-Release-032aab5994d3e29d257b.json",
+					"name" : "install-python",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "matplot::@5b2a666f1bed976d0518",
+					"jsonFile" : "target-matplot-Release-987a9e660fba801e1a0e.json",
+					"name" : "matplot",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "nodesoup::@d2c18438dff3ec1d22b2",
+					"jsonFile" : "target-nodesoup-Release-5dd0cef9dd1d28466b52.json",
+					"name" : "nodesoup",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 7,
+					"id" : "quick_start::@4ce9b2d9ee56e2d57298",
+					"jsonFile" : "target-quick_start-Release-d74ae1dbcd9fc38f78c4.json",
+					"name" : "quick_start",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "steering_functions::@0e2e29437f231c015b71",
+					"jsonFile" : "target-steering_functions-Release-2104eeefacdc231b21f8.json",
+					"name" : "steering_functions",
+					"projectIndex" : 1
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nathan/ros2_ws/build/fields2cover",
+		"source" : "/home/nathan/ros2_ws/src/Fields2Cover"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

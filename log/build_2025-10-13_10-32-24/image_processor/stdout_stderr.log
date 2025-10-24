@@ -1,0 +1,30 @@
+running develop
+running egg_info
+creating image_processor.egg-info
+writing image_processor.egg-info/PKG-INFO
+writing dependency_links to image_processor.egg-info/dependency_links.txt
+writing entry points to image_processor.egg-info/entry_points.txt
+writing requirements to image_processor.egg-info/requires.txt
+writing top-level names to image_processor.egg-info/top_level.txt
+writing manifest file 'image_processor.egg-info/SOURCES.txt'
+reading manifest file 'image_processor.egg-info/SOURCES.txt'
+writing manifest file 'image_processor.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/nathan/ros2_ws/install/image_processor/lib/python3.10/site-packages/image-processor.egg-link (link to .)
+Installing camera_viewer_node script to /home/nathan/ros2_ws/install/image_processor/lib/image_processor
+Installing colour_detector_node script to /home/nathan/ros2_ws/install/image_processor/lib/image_processor
+Installing disease_detector_node script to /home/nathan/ros2_ws/install/image_processor/lib/image_processor
+Installing image_processor_node script to /home/nathan/ros2_ws/install/image_processor/lib/image_processor
+
+Installed /home/nathan/ros2_ws/build/image_processor
+running symlink_data
+creating /home/nathan/ros2_ws/install/image_processor/share/ament_index
+creating /home/nathan/ros2_ws/install/image_processor/share/ament_index/resource_index
+creating /home/nathan/ros2_ws/install/image_processor/share/ament_index/resource_index/packages
+symbolically linking /home/nathan/ros2_ws/build/image_processor/resource/image_processor -> /home/nathan/ros2_ws/install/image_processor/share/ament_index/resource_index/packages
+symbolically linking /home/nathan/ros2_ws/build/image_processor/package.xml -> /home/nathan/ros2_ws/install/image_processor/share/image_processor
+creating /home/nathan/ros2_ws/install/image_processor/share/image_processor/launch
+symbolically linking /home/nathan/ros2_ws/build/image_processor/launch/colour_detector.launch.py -> /home/nathan/ros2_ws/install/image_processor/share/image_processor/launch
+symbolically linking /home/nathan/ros2_ws/build/image_processor/launch/camera_viewer.launch.py -> /home/nathan/ros2_ws/install/image_processor/share/image_processor/launch
+symbolically linking /home/nathan/ros2_ws/build/image_processor/launch/disease_detector.launch.py -> /home/nathan/ros2_ws/install/image_processor/share/image_processor/launch
+symbolically linking /home/nathan/ros2_ws/build/image_processor/launch/image_processor.launch.py -> /home/nathan/ros2_ws/install/image_processor/share/image_processor/launch

@@ -1,0 +1,1 @@
+/home/nathan/ros2_ws/build/opennav_coverage_msgs/ament_cmake_export_libraries/ament_cmake_export_libraries-extras.cmake

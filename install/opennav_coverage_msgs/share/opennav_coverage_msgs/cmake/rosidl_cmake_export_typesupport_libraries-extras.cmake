@@ -1,0 +1,1 @@
+/home/nathan/ros2_ws/build/opennav_coverage_msgs/rosidl_cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake

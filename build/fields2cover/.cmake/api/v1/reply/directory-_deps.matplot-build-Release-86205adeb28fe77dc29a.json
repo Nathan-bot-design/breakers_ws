@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/matplot-build",
+		"source" : "/home/nathan/ros2_ws/build/fields2cover/_deps/matplot-src"
+	}
+}
